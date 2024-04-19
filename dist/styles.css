@@ -1,0 +1,334 @@
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
+  \********************************************************************************************************/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/App.css ***!
+  \******************************************************************************************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: gray;
+  color: white;
+}
+
+.PageNotFound {
+  width: 100%;
+  height: 100%;
+}
+
+.PageNotFoundContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/contactform/styles.css ***!
+  \********************************************************************************************************************************/
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactFormInputElement {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contactFormContainer {
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.contactTextArea {
+  height: 200px;
+}
+
+.contactFormTitle {
+  padding-bottom: 20px;
+}
+
+.contactNote {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.preference {
+  width: auto !important;
+}
+
+.contactSubmit {
+  margin-top: 40px !important;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactSubmit:hover {
+  background-color: #45a049;
+}
+
+.preferenceSet {
+  border-width: 1px;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/styles.scss ***!
+  \****************************************************************************************************************************/
+nav {
+  /* background-color:lightgray; */
+  background-color: gray;
+  height: 75px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-left: 20px;
+}
+
+nav a {
+  margin-right: 16px;
+  width: auto;
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  /* text-decoration: underline;
+  font-weight: bold; */
+}
+
+.loginBtn {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.logoutBtn {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.homeBtn {
+  position: absolute;
+  width: auto;
+  left: 10px;
+}
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/loginmodal/styles.css ***!
+  \*******************************************************************************************************************************/
+.loginInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  /* margin: 24px 0 12px 0; */
+  position: relative;
+}
+
+/* img.avatar {
+  width: 40%;
+  border-radius: 50%;
+} */
+.loginModalContainer {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.loginModalCancelContainer {
+  padding: 50px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  /* height: 100%;  */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* padding-top: 60px; */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/patientform/styles.css ***!
+  \********************************************************************************************************************************/
+.patientFormContainer {
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.inputSubmit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputField {
+  width: 50%;
+  display: block;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.patientFormContainer {
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.multiSet {
+  border-width: 0.5px;
+  width: 50%;
+  margin-bottom: 16px;
+}
+
+.multiSetInput {
+  margin-right: 5px;
+}
+
+.statesField {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}

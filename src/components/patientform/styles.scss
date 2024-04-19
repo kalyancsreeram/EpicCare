@@ -1,0 +1,46 @@
+.patientFormContainer{
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 20px;
+}
+.inputSubmit{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.inputField{   
+    width: 50%;  
+    display: block; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.patientFormContainer{
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 50px;
+  padding-top: 20px;
+}
+.multiSet{
+  border-width: 0.5px;
+  width: 50%;
+  margin-bottom: 16px;
+}
+.multiSetInput{
+  margin-right: 5px;
+}
+.statesField{
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
