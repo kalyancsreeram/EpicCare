@@ -4,7 +4,7 @@ import './styles.scss';
 function ContactForm() {
   return (
     <div className="contactFormContainer">
-        <h3 className='contactFormTitle'>CONTACT US</h3>
+        <h1 className='contactFormTitle'>CONTACT US</h1>
         <p>Thank you for your interest in Epic Care. Please fill out the form below or call us with your questions at (xxx) xxx-xxxx.</p>
         <p className='contactNote'>NOTE: Please use this form for general information purposes only. DO NOT send personal health information through this form.</p>
         <div>
