@@ -3,7 +3,7 @@ import ServicesComp from './servicescomp/ServicesComp'
 
 function Services() {
   return (
-    <div>
+    <div  style = {{minHeight:"100vh"}}>
       <ServicesComp/>
     </div>
   )

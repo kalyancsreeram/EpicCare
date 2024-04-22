@@ -3,7 +3,10 @@ import ContactForm from './contactform/ContactForm'
 
 function ContactUs() {
   return (
-   <ContactForm/>
+    <div  style = {{minHeight:"100vh"}}>
+        <ContactForm/>
+    </div>
+   
   )
 }
 

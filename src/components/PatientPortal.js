@@ -4,7 +4,10 @@ import PatientFormComp from './patientform/PatientFormComp'
 
 function PatientPortal() {
   return (
-    <PatientFormComp/>
+    <div style = {{minHeight:"100vh"}}>
+      <PatientFormComp/>
+    </div>
+   
   )
 }
 

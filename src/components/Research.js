@@ -3,7 +3,7 @@ import ResearchComp from './research/ResearchComp'
 
 function Research() {
   return (
-    <div>
+    <div style = {{minHeight:"100vh"}}>
       <ResearchComp/>
     </div>
   )

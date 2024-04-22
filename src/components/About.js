@@ -3,7 +3,7 @@ import AboutComp from './aboutcomp/AboutComp'
 
 function About() {
   return (
-    <div>
+    <div  style = {{minHeight:"100vh"}}>
       <AboutComp/>
     </div>
   )
