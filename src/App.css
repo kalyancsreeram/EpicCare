@@ -25,4 +25,7 @@ body {
   min-height: 100vh;
 }
 
+.homePage{
+  min-height: calc(100vh - 86px);
+}
 

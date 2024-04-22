@@ -14,6 +14,7 @@ import PhysicianPortalComp from './components/physiciangrid/PhysicianPortalComp'
 import { AuthProvider } from './utils/auth';
 import RequireAuth from './utils/RequireAuth';
 import Footer from './components/Footer';
+import HomePageFooter from './components/homepagefooter/HomePageFooter';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='physician-portal' element={<RequireAuth><PhysicianPortalComp/></RequireAuth>}></Route>
         <Route path='*' element={<NoMatch/>}></Route>          
       </Routes>
+      <HomePageFooter/>
       <Footer/>
     </AuthProvider>
   );

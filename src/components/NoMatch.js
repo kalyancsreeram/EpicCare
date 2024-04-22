@@ -1,5 +1,5 @@
 import React from 'react'
-import PageNotFound from '../assets/PageNotFound.png'
+import PageNotFound from '../assets/images/PageNotFound.png'
 
 function NoMatch() {
   return (

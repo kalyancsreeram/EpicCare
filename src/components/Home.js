@@ -1,8 +1,13 @@
 import React from 'react'
+import Testimonials from './dashboardpage/testimonials/Testimonials'
+import CEO from './dashboardpage/ceocomp/CEO'
 
 function Home() {
   return (
-    <div style = {{minHeight:"100vh"}}>Home</div>
+    <div className='homePage'>
+      <CEO></CEO>
+      <Testimonials></Testimonials>      
+    </div>
   )
 }
 

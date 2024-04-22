@@ -4,7 +4,7 @@ import './styles.scss';
 import LoginModal from '../loginmodal/LoginModal';
 import { useAuth } from '../../utils/auth';
 
-import Doctor from '../../assets/doctorImg.png'
+import CompanyLogo from '../../assets/images/companyLogo.png'
 
 
 function NavBar() {
@@ -27,7 +27,7 @@ function NavBar() {
   return (
     <div>      
       <nav>
-          <img className='homeBtn' alt='Doctor' style={{width: '40px', height:'40px', cursor:'pointer'}} src={Doctor} onClick={homeBtnHandler} />
+          <img className='homeBtn' alt='Doctor' style={{width: '100px', height:'50px', cursor:'pointer', left: '10'}} src={CompanyLogo} onClick={homeBtnHandler} />
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>

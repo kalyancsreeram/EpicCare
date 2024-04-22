@@ -1,0 +1,40 @@
+.ceoContainerMain{
+    color: black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../../../assets/images/bgImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    .ceoContainer{
+        margin: 50px;
+        display: flex;
+        width: 60%;
+    }
+    .ceoImage{
+        display: flex;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .ceoMessage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 50px;
+        p{
+            text-align: justify;
+        }
+        .ceoTitle{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    }
+}
