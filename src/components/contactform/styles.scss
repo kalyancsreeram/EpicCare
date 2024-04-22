@@ -16,9 +16,15 @@ input[type=submit]:hover {
 
 .contactFormContainer {
   /* border-radius: 5px; */
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
+  // padding: 50px;
+  // padding-top: 20px;
+
+  border-radius: 5px;
+  background-color: lightblue;
   padding: 50px;
-  padding-top: 20px;
+  margin: 20px;
+    
 }
 
 .contactTextArea{
@@ -37,8 +43,7 @@ input[type=submit]:hover {
   width: auto !important;
 }
 
-.contactSubmit {
-  margin-top: 40px !important;
+.contactSubmit { 
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -51,4 +56,14 @@ input[type=submit]:hover {
 }
 .preferenceSet{
   border-width: 1px;
+}
+
+.countryField{
+  display: block;
+  width: 250px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

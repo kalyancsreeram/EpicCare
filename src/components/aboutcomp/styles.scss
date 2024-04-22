@@ -1,0 +1,27 @@
+.aboutContainer{
+    text-align: justify;
+    padding: 20px;
+
+    .main-title{
+        color: darkcyan;
+    }
+
+    .intro{
+     border-radius: 5px;
+     background-color: lightblue;
+     padding: 10px 20px;
+     text-align: justify;
+    }
+    .intro-content{
+        padding: 20px;
+    }
+
+   .about_title{
+     color: darkcyan;
+   }
+   .about_secondary_title{
+    color: darkcyan;
+    opacity: 0.8;
+    text-decoration: underline;
+   }
+}

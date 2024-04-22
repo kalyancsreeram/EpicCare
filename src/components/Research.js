@@ -1,8 +1,11 @@
 import React from 'react'
+import ResearchComp from './research/ResearchComp'
 
 function Research() {
   return (
-    <div>Research</div>
+    <div>
+      <ResearchComp/>
+    </div>
   )
 }
 

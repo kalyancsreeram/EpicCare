@@ -1,8 +1,11 @@
 import React from 'react'
+import ServicesComp from './servicescomp/ServicesComp'
 
 function Services() {
   return (
-    <div>Services</div>
+    <div>
+      <ServicesComp/>
+    </div>
   )
 }
 

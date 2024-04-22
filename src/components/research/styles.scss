@@ -1,0 +1,17 @@
+.researchContainer{
+    text-align: justify;
+    padding: 20px;
+
+    .research-title{
+        color: darkcyan;
+    }
+
+    .researchNotes{
+        border-radius: 5px;
+        background-color: lightblue;
+        color: rgba($color: #000000, $alpha: .7);
+        padding: 10px 20px;
+        text-align: justify;
+    }   
+   
+}

@@ -17,12 +17,19 @@ function ContactForm() {
                 <input type='text' className='contactFormInputElement' id='email' name='email' placeholder='Email Address'/>
                 <label htmlFor="phone">Phone</label>
                 <input type='number' className='contactFormInputElement' id='phone' name='phone' placeholder='Phone Number'/>
-               
+                <label htmlFor="country">Country</label>
+                <select className='countryField' name="country" id="country">
+                  <option value="United States">United States</option>
+                  <option value="India">India</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Australia">Australia</option>
+                </select>
 
                 <label htmlFor="message">Comments/Message</label>
                 <textarea className='contactTextArea contactFormInputElement' id="message" name="message" placeholder="Type your message here..."></textarea>
 
-                <fieldset className='preferenceSet'>
+
+                {/* <fieldset className='preferenceSet'>
                   <legend>Preferred Method of Communication</legend>
                   <div>
                   <input type='checkbox' className='preference contactFormInputElement' id='preferencePhone' name='preferencePhone' value='phone'/>
@@ -32,10 +39,10 @@ function ContactForm() {
                   <input type='checkbox' id='preferenceEmail' className='preference contactFormInputElement' name='preferenceEmail' value='email'/>
                   <label htmlFor="preferenceEmail">By Email</label>                  
                   </div>
-                </fieldset>     
+                </fieldset>      */}
                 <input className='contactSubmit' type="submit" value="Submit"></input>
 
-            </form>
+            </form>           
         </div>      
     </div>
     
