@@ -1,15 +1,13 @@
 .aboutContainer{
     text-align: justify;
-    padding: 20px;
+   // padding: 20px;
 
     .main-title{
         color: #006ba6;
     }
 
     .intro{
-    //  border-radius: 5px;
-    //  background-color: lightblue;
-     padding: 10px 20px;
+     padding: 10px 40px;
      text-align: justify;
     }
     .intro-content{
@@ -23,5 +21,32 @@
     color:#006ba6;
     opacity: 0.8;
     text-decoration: underline;
+   }
+
+   .core-values-container{        
+       //background-color: rgb(202, 202, 170);
+       background-color: rgb(122, 159, 171);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .first_row,
+   .second_row
+   {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;       
+   }
+   .card{   
+    margin: 20px;   
+   }
+   .card > div > div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+   }
+   .core_values_title{
+    font-size: 32px;
+    color: rgb(36, 35, 35);
    }
 }
