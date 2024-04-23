@@ -10,22 +10,34 @@ const AboutComp = () => {
   return (
     <div className='aboutContainer'>
         <div className='intro'>
-            <h2 className='main-title'>About US</h2>
-            <p>
+            <Typography className='main-title' gutterBottom variant="h4" component="div">
+                About Us
+            </Typography>
+           
+             <Typography variant="body2" color="text.primary">
                 <b>SeizureCare is an American Healthcare Company</b> with a team of professionals who provide EEG and expert assistance services 24X7. Critical care, long-term, and ambulatory EEG have now become the standard of care for patients with epilepsy and those admitted to the ICU in the USA and some developed countries. In many other developing countries, these services are not widely available and are costly. We are here to bridge the gap and bring high quality EEG and expert assistance services accessible to everyone.
                 The team of SeizureCare is equipped with an epileptologist trained in the USA and certified by the American board. SeizureCare provides high-quality, affordable long-term EEG services and expert EEG reports along with expert assistance in the field of Neurology & Epileptology to people at different parts of the globe. We will also collaborate with various NGO groups to extend our reach to the needy. 
                 SeizureCare strive to establish an efficient coordinating human organization with technological support, collaborate with various EEG companies and supportive groups to further reduce service costs, and conduct CMEs and educational sessions to highlight the benefits of our services in enhancing patient care standards in different states and countries to aid those in need.
-            </p>
+             </Typography>
             <div>
-                <h3 className='about_title'>Our Mission</h3>
-                <p>To Provide Quality & Expert EEG services at affordable cost to enhance the clinical outcomes.</p>
-            </div>
-            <div>
-                <h3 className='about_title'>Our Vision</h3>
-                <p>
-                To spread the Quality & Expert EEG services across the globe in the next 5 years, thereby marking a new dimension in the treating the Neurological conditions. 
-                </p>
-            </div>
+            <Typography className='about_title' gutterBottom variant="h5" component="div">
+                Our Mission
+            </Typography>
+               
+            <Typography variant="body2" color="text.primary">
+                To Provide Quality & Expert EEG services at affordable cost to enhance the clinical outcomes.
+            </Typography>               
+        </div>
+        <div>
+            <Typography className='about_title' gutterBottom variant="h5" component="div">
+                Our Vision
+            </Typography>
+           
+            <Typography variant="body2" color="text.primary">
+            To spread the Quality & Expert EEG services across the globe in the next 5 years, thereby marking a new dimension in the treating the Neurological conditions. 
+            </Typography>
+            
+        </div>
         </div>
         <div className='core-values-container'>
                 <h3 className='core_values_title'>Our Core Values</h3>
@@ -86,7 +98,7 @@ const AboutComp = () => {
                     </div>
                 </div>
                
-            </div>
+        </div>
     </div>
   )
 }

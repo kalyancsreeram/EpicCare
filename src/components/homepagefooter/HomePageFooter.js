@@ -23,7 +23,7 @@ function HomePageFooter() {
         </div>
         <div className='footerLinks'>                   
             <p><a href="/about">About</a></p>
-            <p><a href="/contact">Contact</a> </p>
+            <p><a href="/contact-us">Contact</a> </p>
             <p><a href="/submit-form">Submit Form</a></p>
             <p><a href="/research">Research</a></p>
             <p><a href="/services">Services</a></p>            

@@ -1,5 +1,5 @@
 .ceoContainerMain{
-    color: black;
+    color: rgb(29, 25, 73);
     display: flex;
     position: relative;
     justify-content: center;
@@ -36,5 +36,10 @@
             margin-bottom: 5px;
             font-weight: bold;
         }
+    }
+    .welcome_msg{
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
