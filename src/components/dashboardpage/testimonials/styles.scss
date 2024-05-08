@@ -1,5 +1,5 @@
 .carousel-root {
-    width: 95% !important;
+    width: 100% !important;
     margin-top: 3% !important;
     margin-bottom: 20px;
   }
@@ -12,6 +12,7 @@
   .control-next,
   .control-prev{
     width: 60px;
+    margin: 20px;
   }
   
   .carousel .slide img {
