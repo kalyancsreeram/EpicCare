@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className="footer">
-        Copyright &#169; 2024 EpicCare, LLC | Privacy Notice
+        Copyright &#169; 2024 SeizureCare | Privacy Notice
     </div>
   )
 }

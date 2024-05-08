@@ -1,32 +1,75 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles.scss';
+import { countriesList } from '../../utils/countries';
+import axios from 'axios';
 
 function ContactForm() {
+  const [formData, setFormData] = useState({
+    firstname:"",
+    lastname:"",
+    email:"",
+    phone:"",
+    country:"Select a country",
+    message:""
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+    
+     
+      axios
+       .post('http://localhost:3001/contactus', { ...formData })
+       .then(response => {
+        setFormData({ firstname: '', lastname: '', phone: '', country:'Select a country',  email: '', message: '' });
+         alert('Data has been successfully sent')
+       })
+       .catch(() => {
+        alert('Something went wrong. Try again later');
+        // setResult({ success: false, message: 'Something went wrong. Try again later'});
+       })
+  };
+
   return (
     <div className="contactFormContainer">
         <h1 className='contactFormTitle'>CONTACT US</h1>
-        <p>Thank you for your interest in Epic Care. Please fill out the form below or call us with your questions at (xxx) xxx-xxxx.</p>
+        <p>Thank you for your interest in SeizureCare. Please fill out the below form with your comments or message.</p>
         <p className='contactNote'>NOTE: Please use this form for general information purposes only. DO NOT send personal health information through this form.</p>
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="fname">First Name</label>
-                <input type='text' className='contactFormInputElement' id='fname' name='firstname' placeholder='First Name'/>
+                <input type='text' className='contactFormInputElement' id='firstname' name='firstname' placeholder='First Name'
+                       value={formData.fname}
+                       onChange={handleChange}/>
                 <label htmlFor="lname">Last Name</label>
-                <input type='text' className='contactFormInputElement' id='lname' name='lastname' placeholder='Last Name'/>
+                <input type='text' className='contactFormInputElement' id='lastname' name='lastname' placeholder='Last Name'
+                       value={formData.lname}
+                       onChange={handleChange}/>
                 <label htmlFor="email">Email</label>
-                <input type='text' className='contactFormInputElement' id='email' name='email' placeholder='Email Address'/>
+                <input type='text' className='contactFormInputElement' id='email' name='email' placeholder='Email Address'
+                       value={formData.email}
+                       onChange={handleChange}/>
                 <label htmlFor="phone">Phone</label>
-                <input type='number' className='contactFormInputElement' id='phone' name='phone' placeholder='Phone Number'/>
+                <input type='number' className='contactFormInputElement' id='phone' name='phone' placeholder='Phone Number'
+                       value={formData.phone}
+                       onChange={handleChange}/>
                 <label htmlFor="country">Country</label>
-                <select className='countryField' name="country" id="country">
-                  <option value="United States">United States</option>
-                  <option value="India">India</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Australia">Australia</option>
+                <select className='countryField' name="country" id="country" value={formData.country}
+                        onChange={handleChange}>                 
+                  {
+                    countriesList.map(country => <option value={country.name} key={country.code}>{country.name}</option>)
+                  }
                 </select>
 
                 <label htmlFor="message">Comments/Message</label>
-                <textarea className='contactTextArea contactFormInputElement' id="message" name="message" placeholder="Type your message here..."></textarea>
+                <textarea className='contactTextArea contactFormInputElement' id="message" name="message" placeholder="Type your message here..."
+                          value={formData.commentsMsg}
+                          onChange={handleChange}/>
 
 
                 {/* <fieldset className='preferenceSet'>

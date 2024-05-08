@@ -6,20 +6,33 @@ import CardOne from "../../assets/images/card-one.jpeg";
 import CardTwo from "../../assets/images/card-two.jpeg";
 import CardThree from "../../assets/images/card-three.jpeg"
 
+import Typography from '@mui/material/Typography';
+
 const ServicesComp = () => {
   return (
     <div className='servicesContainer'>
         <div className='intro'>
-            <h2 className='main-title'>Services</h2>
-            <p>
-                 We offer High-quality long-term EEG services following established EEG acquisition guidelines with Expert EEG reports and guidance for neurologists in day-to-day practice.
-            </p>
-            <p>
-                Additionally, we also provide awareness about epilepsy and its treatment options, including surgeries, by conducting regular teaching sessions and guiding neurologists and neurosurgeons to enhance their interactions with expert epileptologists from the USA.
-            </p>
-            <div>
-                <h3 className='services_title'>Types of EEG tests</h3>
-                <p>We offer different EEG tests depending on the medical issue. EEG test types include:</p>
+            <Typography className='main-title' gutterBottom variant="h4" component="div">
+                Services
+            </Typography>
+            <Typography variant="body2" color="text.primary" className='services_notes'>
+                We offer High-quality long-term EEG services following established EEG acquisition guidelines with Expert EEG reports and guidance for neurologists in day-to-day practice.
+           </Typography>
+           <Typography variant="body2" color="text.primary" className='services_notes'>
+                Additionally, we also provide awareness about epilepsy and its treatment options, including
+                surgeries, by conducting regular teaching sessions and guiding neurologists and neurosurgeons to
+                enhance their interactions with expert epileptologists from the USA.
+           </Typography>
+          
+           <div>
+           <Typography className='main-title' gutterBottom variant="h5" component="div">
+              Types of EEG tests
+           </Typography>
+           <Typography variant="body2" color="text.primary" className='services_notes'>
+              We offer different EEG tests depending on the medical issue. EEG test types include:
+           </Typography>
+                {/* <h3 className='services_title'>Types of EEG tests</h3> */}
+                <p></p>
                 <MediaControlCard title='Routine EEG' desc='Routine EEG scans may involve looking at flashing lights or taking breaths at different times during the test. 
                 This type of EEG test may take 20 to 30 minutes.'
                 source={CardOne}/>

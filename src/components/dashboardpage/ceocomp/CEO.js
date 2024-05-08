@@ -13,18 +13,18 @@ function CEO() {
             </div>
             <div className='ceoMessage'>
               <Typography gutterBottom variant="h5" component="div" style={{fontWeight:'bold'}}>
-                 WELCOME MESSAGE FROM CEO
+                 CEO MESSAGE
               </Typography>
              
               <Typography className='welcome_msg' gutterBottom variant="p" component="div">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  <b>Welcome to SeizureCare, American Healthcare Network</b>. We pride ourselves on being a leading provider of EEG testing, offering expert services that earn the trust and respect of our clients by not only reporting EEG results but also assisting in effective patient treatment. Our commitment to modernizing equipment and supporting remote medical practices helps us meet growing healthcare demands while maintaining patient confidentiality. SeizureCare operates globally, working in demanding environments to ensure the best care and swift treatment outcomes everywhere. Our corporate culture emphasizes integrity, empathy, quality, innovation, and continuous improvement, reflecting our dedication to excellence in every interaction.
               </Typography>
 
-              <Typography className='ceoTitle' gutterBottom variant="p" component="div" style={{fontWeight:'bold'}}>
+              {/* <Typography className='ceoTitle' gutterBottom variant="p" component="div" style={{fontWeight:'bold'}}>
                 Demish Tornado
-              </Typography>
+              </Typography> */}
               <Typography className='ceoTitle' gutterBottom variant="p" component="div" style={{fontWeight:'bold'}}>
-                CEO & Founder
+                Chief Executive Officer
               </Typography> 
             </div>
         </div>

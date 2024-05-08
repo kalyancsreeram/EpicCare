@@ -21,11 +21,10 @@ function Testimonials() {
     <div>
       <img src={John} alt="John"/>
       <div className="myCarousel">
-        <h3>Shirley Fultz</h3>
-        <h4>Designer</h4>
+        <h3>Yuneli</h3>
+      
         <p>
-          It's freeing to be able to catch up on customized news and not be
-          distracted by a social media element on the same site
+          I recently got myself tested with EEG. I was so impressed by the service they have provided at my place rather than me rushing to hospital and staying there for around 24 hours for the continuous EEG test. The staff were very polite and professional. They explained to me about the test and made sure I was comforted. This test helped my doctor to quickly diagnose and pinpoint the issue and which helped in quick diagnosis and treatment. 
         </p>
       </div>
     </div>
@@ -33,11 +32,10 @@ function Testimonials() {
     <div>
     <img src={Victor} alt="Victor"/>
       <div className="myCarousel">
-        <h3>Daniel Keystone</h3>
-        <h4>Designer</h4>
+        <h3>Marco</h3>
+        
         <p>
-          The simple and intuitive design makes it easy for me use. I highly
-          recommend Fetch to my peers.
+          Undergoing an EEG test at home was incredibly convenient. The SeizureCare team was thorough and professional, explaining every step of the process and ensuring I was comfortable throughout. The home service saved me the stress of a hospital visit and allowed my doctor to rapidly diagnose and treat my condition effectively. I'm grateful for their exceptional care.
         </p>
       </div>
     </div>
@@ -45,11 +43,10 @@ function Testimonials() {
     <div>
     <img src={Tina} alt="Tina"/>
       <div className="myCarousel">
-        <h3>Theo Sorel</h3>
-        <h4>Designer</h4>
+        <h3>Priya</h3>
+        
         <p>
-          I enjoy catching up with Fetch on my laptop, or on my phone when
-          I'm on the go!
+          I had a fantastic experience with my home EEG test provided by SeizureCare. The technicians were knowledgeable and respectful, ensuring a smooth and comfortable testing process right in my living room. This convenience significantly reduced my anxiety and expedited my diagnosis and treatment. I highly recommend their services for their professionalism and care.
         </p>
       </div>
     </div>

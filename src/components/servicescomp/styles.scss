@@ -26,12 +26,24 @@
    .service_card{
      div {
        margin: 10px;
-       width: 75%;
+       width: 75%;      
+     }   
+     .MuiTypography-h6{
+      color: #003b71;
+      font-weight: bold;
      }
+     .MuiTypography-p{
+      color: #fffefe;    
+     }
+       
    }
    .media_control_card{
     width: 80%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(137, 180, 194);
+   }
+   .services_notes{
     margin-bottom: 20px;
    }
 }
