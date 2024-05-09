@@ -2,9 +2,9 @@ import React from 'react'
 
 import './styles.scss';
 import MediaControlCard from './MediaControlCard';
-import CardOne from "../../assets/images/card-one.jpeg";
-import CardTwo from "../../assets/images/card-two.jpeg";
-import CardThree from "../../assets/images/card-three.jpeg"
+import CardOne from "../../assets/images/card-one.jpg";
+import CardTwo from "../../assets/images/card-two.jpg";
+import CardThree from "../../assets/images/card-three.jpg"
 
 import Typography from '@mui/material/Typography';
 

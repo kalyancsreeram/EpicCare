@@ -28,7 +28,7 @@ body {
   align-items: center;
   height: 75px;
   width: 100%;
-  background-color: gray;
+  background-color: #003b71;
   color: white;
 }
 
@@ -42,10 +42,574 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
+  min-height: 100vh;
 }
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/contactform/styles.css ***!
-  \********************************************************************************************************************************/
+
+.homePage {
+  min-height: calc(100vh - 86px);
+}
+/*!*************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
+  \*************************************************************************************************************************************************************/
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  background: none;
+  border: 0;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.carousel .control-arrow:focus, .carousel .control-arrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  margin: 0 5px;
+  display: inline-block;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  content: "";
+}
+
+.carousel .control-disabled.control-arrow {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: inherit;
+  display: none;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 0;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+}
+
+.carousel .control-next.control-arrow {
+  right: 0;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+}
+
+.carousel-root {
+  outline: none;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  width: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.carousel .carousel {
+  position: relative;
+}
+
+.carousel .control-arrow {
+  outline: 0;
+  border: 0;
+  background: none;
+  top: 50%;
+  margin-top: -13px;
+  font-size: 18px;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 20px;
+  overflow: hidden;
+}
+
+.carousel .thumbs {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -ms-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.carousel .thumb {
+  -webkit-transition: border 0.15s ease-in;
+  -moz-transition: border 0.15s ease-in;
+  -ms-transition: border 0.15s ease-in;
+  -o-transition: border 0.15s ease-in;
+  transition: border 0.15s ease-in;
+  display: inline-block;
+  margin-right: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 3px solid #fff;
+  padding: 2px;
+}
+
+.carousel .thumb:focus {
+  border: 3px solid #ccc;
+  outline: none;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid #333;
+}
+
+.carousel .thumb img {
+  vertical-align: top;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  -webkit-transition: height 0.15s ease-in;
+  -moz-transition: height 0.15s ease-in;
+  -ms-transition: height 0.15s ease-in;
+  -o-transition: height 0.15s ease-in;
+  transition: height 0.15s ease-in;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.carousel .slider-wrapper.axis-vertical {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.carousel .slider-wrapper.axis-vertical .slider {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.carousel .slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+.carousel .slider.animated {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.carousel .slide img {
+  width: 100%;
+  vertical-align: top;
+  border: 0;
+}
+
+.carousel .slide iframe {
+  display: inline-block;
+  width: calc(100% - 80px);
+  margin: 0 40px 40px;
+  border: 0;
+}
+
+.carousel .slide .legend {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 960px) {
+  .carousel .control-dots {
+    bottom: 0;
+  }
+}
+.carousel .control-dots .dot {
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.carousel .carousel-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.carousel:hover .slide .legend {
+  opacity: 1;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/testimonials/styles.scss ***!
+  \************************************************************************************************************************************************/
+@charset "UTF-8";
+.carousel-root {
+  width: 100% !important;
+  margin-top: 3% !important;
+  margin-bottom: 20px;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.control-next,
+.control-prev {
+  width: 60px;
+  margin: 20px;
+}
+
+.carousel .slide img {
+  width: 139px !important;
+  border-radius: 50%;
+}
+
+.myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 286px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 4% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: #222;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important;
+}
+
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+  .myCarousel {
+    background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 269px;
+  }
+  .carousel .slide img {
+    width: 24% !important;
+    border-radius: 50%;
+  }
+}
+/*!*******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/ceocomp/styles.scss ***!
+  \*******************************************************************************************************************************************/
+.ceoContainerMain {
+  color: rgb(29, 25, 73);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  background-image: url(dist/a4004ce204a7eed570a2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ceoContainerMain .ceoContainer {
+  margin: 50px;
+  display: flex;
+  width: 60%;
+}
+.ceoContainerMain .ceoImage {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+.ceoContainerMain .ceoImage img {
+  width: 100%;
+}
+.ceoContainerMain .ceoMessage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 50px;
+}
+.ceoContainerMain .ceoMessage p {
+  text-align: justify;
+}
+.ceoContainerMain .ceoMessage .ceoTitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.ceoContainerMain .welcome_msg {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/cardscomp/styles.scss ***!
+  \*********************************************************************************************************************************************/
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cardsContainer .card {
+  margin: 20px;
+}
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/aboutcomp/styles.scss ***!
+  \*******************************************************************************************************************************/
+.aboutContainer {
+  text-align: justify;
+}
+.aboutContainer .main-title {
+  color: #006ba6;
+}
+.aboutContainer .intro {
+  padding: 20px 40px;
+  text-align: justify;
+}
+.aboutContainer .intro-content {
+  padding: 20px;
+}
+.aboutContainer .about_title {
+  margin-top: 20px;
+  color: #006ba6;
+}
+.aboutContainer .about_secondary_title {
+  color: #006ba6;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.aboutContainer .core-values-container {
+  background-color: rgb(122, 159, 171);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutContainer .first_row,
+.aboutContainer .second_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutContainer .second_row {
+  margin-bottom: 20px;
+}
+.aboutContainer .card {
+  margin: 20px;
+}
+.aboutContainer .card > div > div {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.aboutContainer .core_values_title {
+  font-size: 32px;
+  color: rgb(36, 35, 35);
+}
+.aboutContainer .about_us_notes {
+  margin-bottom: 20px;
+}
+/*!*********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/contactform/styles.scss ***!
+  \*********************************************************************************************************************************/
 input[type=submit]:hover {
   background-color: #45a049;
 }
@@ -66,6 +630,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 50px;
   padding-top: 20px;
+  color: #003b71;
 }
 
 .contactTextArea {
@@ -86,7 +651,6 @@ input[type=submit]:hover {
 }
 
 .contactSubmit {
-  margin-top: 40px !important;
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -102,12 +666,87 @@ input[type=submit]:hover {
 .preferenceSet {
   border-width: 1px;
 }
+
+.countryField {
+  display: block;
+  width: 250px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/research/styles.scss ***!
+  \******************************************************************************************************************************/
+.researchContainer {
+  text-align: justify;
+  padding: 20px;
+}
+.researchContainer .main-title {
+  color: #006ba6;
+}
+.researchContainer .researchNotes {
+  border-radius: 5px;
+  background-color: lightblue;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  text-align: justify;
+  min-height: 100vh;
+}
+.researchContainer .research_notes_text {
+  margin-bottom: 20px;
+}
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/servicescomp/styles.scss ***!
+  \**********************************************************************************************************************************/
+.servicesContainer {
+  text-align: justify;
+  padding: 20px;
+}
+.servicesContainer .main-title {
+  color: #003b71;
+}
+.servicesContainer .intro {
+  padding: 10px 20px;
+  text-align: justify;
+}
+.servicesContainer .intro-content {
+  padding: 20px;
+}
+.servicesContainer .services_title {
+  color: #003b71;
+}
+.servicesContainer .services_secondary_title {
+  color: #003b71;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.servicesContainer .service_card div {
+  margin: 10px;
+  width: 75%;
+}
+.servicesContainer .service_card .MuiTypography-h6 {
+  color: #003b71;
+  font-weight: bold;
+}
+.servicesContainer .service_card .MuiTypography-p {
+  color: #fffefe;
+}
+.servicesContainer .media_control_card {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(137, 180, 194);
+}
+.servicesContainer .services_notes {
+  margin-bottom: 20px;
+}
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/styles.scss ***!
   \****************************************************************************************************************************/
 nav {
-  /* background-color:lightgray; */
-  background-color: gray;
+  background-color: #003b71;
   height: 75px;
   display: flex;
   justify-content: end;
@@ -124,11 +763,6 @@ nav a {
 
 nav a.active {
   text-decoration: underline;
-}
-
-nav a:hover {
-  /* text-decoration: underline;
-  font-weight: bold; */
 }
 
 .loginBtn {
@@ -148,9 +782,9 @@ nav a:hover {
   width: auto;
   left: 10px;
 }
-/*!*******************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/loginmodal/styles.css ***!
-  \*******************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/loginmodal/styles.scss ***!
+  \********************************************************************************************************************************/
 .loginInput {
   width: 100%;
   padding: 12px 20px;
@@ -277,14 +911,15 @@ button:hover {
     width: 100%;
   }
 }
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/patientform/styles.css ***!
-  \********************************************************************************************************************************/
+/*!*********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/patientform/styles.scss ***!
+  \*********************************************************************************************************************************/
 .patientFormContainer {
   /* border-radius: 5px; */
   background-color: #f2f2f2;
   padding: 50px;
   padding-top: 20px;
+  color: #003b71;
 }
 
 .inputSubmit {
@@ -331,4 +966,43 @@ button:hover {
   height: 30px;
   margin-top: 5px;
   margin-bottom: 16px;
+}
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!
+  \************************************************************************************************************************************/
+.homePageFooterContainer {
+  width: 100%;
+  height: 300px;
+  background-color: #003b71;
+  opacity: 0.7;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.homePageFooterContainer .address {
+  width: 33%;
+  margin: 100px;
+  font-size: large;
+}
+.homePageFooterContainer .footerLinks {
+  width: 33%;
+  height: 50%;
+  font-size: large;
+}
+.homePageFooterContainer p {
+  margin: 8px;
+}
+.homePageFooterContainer a {
+  color: white;
+}
+.homePageFooterContainer .socialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+.homePageFooterContainer .socialContainer svg {
+  width: 75px;
+  height: 75px;
+  margin: 20px;
 }
