@@ -27,7 +27,7 @@ function ContactForm() {
        .post('http://localhost:3001/contactus', { ...formData })
        .then(response => {
         setFormData({ firstname: '', lastname: '', phone: '', country:'Select a country',  email: '', message: '' });
-         alert('Data has been successfully sent')
+         alert('Data has been successfully sent...')
        })
        .catch(() => {
         alert('Something went wrong. Try again later');
