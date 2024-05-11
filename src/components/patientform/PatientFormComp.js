@@ -13,7 +13,7 @@ function PatientFormComp() {
     files: []
   });
 
-  const [additionalFiles, setAdditionalFiles] = useState([]);
+  const [additionalFields, setAdditionalFields] = useState([]);
   const [count, setCount] = useState(0);
 
   const handleChange = (event) => {
@@ -22,6 +22,7 @@ function PatientFormComp() {
   };
 
   const handleFileChange = (event) => {
+    console.log(event.target.files)
     setFormData((prevState) => ({ ...prevState, files: [...formData.files, event.target.files[0]] }));
   }
 
@@ -39,12 +40,18 @@ function PatientFormComp() {
     //   })
   };
 
-  const addFile = () => {
+  const addField = () => {
     setCount(count + 1); 
-    setAdditionalFiles([...additionalFiles, {name: `file${count + 1}`}]);   
+    setAdditionalFields([...additionalFields, {name: `file${count + 1}`}]);   
   }
-  const deleteFile = (fileName) => {       
-    setAdditionalFiles([...additionalFiles.filter((file) => file.name !== fileName )]);   
+  const deleteFile = (fieldName, uploadedFileName) => {          
+    setAdditionalFields([...additionalFields.filter((field) => field.name !== fieldName )]);
+    setFormData((prevState) => ({ ...prevState, files: [...formData.files.filter(file => file.name !== uploadedFileName )] }));   
+  }
+
+  const resetFirstFile = () => {    
+    document.querySelector('.firstFile').value = "";
+    setFormData((prevState) => ({ ...prevState, files: [...formData.files.slice(1)] }));
   }
 
 
@@ -123,16 +130,16 @@ function PatientFormComp() {
           <input className='inputField' type='text' id='studytype' name='studytype'/> */}
           <label>Patient Files</label>
           <div className='fileUploadField'>
-            <input type="file" onChange={handleFileChange}/> 
-            <button onClick={addFile} className='add_button' title='Add'>+</button>  
-            <button className='delete_button' title='Delete' onClick={() => {}}>-</button>
+            <input className="firstFile" type="file" onChange={handleFileChange}/> 
+            <button onClick={addField} className='add_button' title='Add'>+</button>  
+            <button className='delete_button' title='Delete' onClick={resetFirstFile}>-</button>
           </div>
           
           {
-            additionalFiles.map((file, index) => {
+            additionalFields.map((field, index) => {
               return (
-                <UploadComp key={file.name} fileName={file.name} handleFileChange={handleFileChange}
-                addFile={addFile} deleteFile={deleteFile} elementIndex={index}></UploadComp>
+                <UploadComp key={field.name} fieldName={field.name} handleFileChange={handleFileChange}
+                addField={addField} deleteFile={deleteFile} elementIndex={index}></UploadComp>
               )
             })
           }    

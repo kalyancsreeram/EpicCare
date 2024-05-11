@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function UploadComp(props) {
+  const [uploadedFileName, setuploadedFileName] = useState('');
+
+  const handleFileChange = (event) => {
+    setuploadedFileName(event.target.files[0].name);
+    props.handleFileChange(event);
+  }
   return (
     <div className='upload_comp'>
-        <input type="file" onChange={props.handleFileChange}/>
-        <button className='add_button' title="Add" onClick={props.addFile}>+</button>
-        <button className='delete_button' title='Delete' onClick={() => props.deleteFile(props.fileName)}>-</button>
+        <input type="file" onChange={handleFileChange}/>
+        <button className='add_button' title="Add" onClick={props.addField}>+</button>
+        <button className='delete_button' title='Delete' onClick={() => props.deleteFile(props.fieldName, uploadedFileName)}>-</button>
     </div>
   )
 }
