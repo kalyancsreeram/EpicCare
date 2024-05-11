@@ -4,6 +4,11 @@ import './styles.scss';
 import axios from 'axios';
 import UploadComp from './UploadComp';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCirclePlus} from '@fortawesome/free-solid-svg-icons';
+import {faCircleMinus} from '@fortawesome/free-solid-svg-icons';
+
+
 
 function PatientFormComp() {
 
@@ -21,28 +26,29 @@ function PatientFormComp() {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleFileChange = (event) => {
-    console.log(event.target.files)
+  const handleFileChange = (event) => { 
     setFormData((prevState) => ({ ...prevState, files: [...formData.files, event.target.files[0]] }));
   }
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData);    
-    // axios
-    //   .post('http://localhost:3001/patientdata', { ...formData })
-    //   .then(response => {
-    //   setFormData({ firstname: '', lastname: '', files: [] });
-    //     alert('Data has been successfully sent...')
-    //   })
-    //   .catch(() => {
-    //      alert('Something went wrong. Try again later');        
-    //   })
+    event.preventDefault();   
+    axios
+      .post('http://localhost:3001/patientform', { ...formData })
+      .then(response => {
+        setFormData({ firstname: '', lastname: '', files: [] });
+        setAdditionalFields([]);
+        setCount(0);
+        document.querySelector('.firstFile').value = "";
+        alert('Data has been successfully sent...')
+      })
+      .catch(() => {
+         alert('Something went wrong. Try again later');        
+      })
   };
 
   const addField = () => {
     setCount(count + 1); 
-    setAdditionalFields([...additionalFields, {name: `file${count + 1}`}]);   
+    setAdditionalFields([...additionalFields, {name: `file${count + 1}`}]);  
   }
   const deleteFile = (fieldName, uploadedFileName) => {          
     setAdditionalFields([...additionalFields.filter((field) => field.name !== fieldName )]);
@@ -130,9 +136,9 @@ function PatientFormComp() {
           <input className='inputField' type='text' id='studytype' name='studytype'/> */}
           <label>Patient Files</label>
           <div className='fileUploadField'>
-            <input className="firstFile" type="file" onChange={handleFileChange}/> 
-            <button onClick={addField} className='add_button' title='Add'>+</button>  
-            <button className='delete_button' title='Delete' onClick={resetFirstFile}>-</button>
+            <input className="firstFile" type="file" onChange={handleFileChange}/>            
+            <FontAwesomeIcon icon={faCirclePlus} onClick={addField} className='add_button'/>
+            <FontAwesomeIcon icon={faCircleMinus} title='Delete' onClick={resetFirstFile} className='delete_button'/>            
           </div>
           
           {

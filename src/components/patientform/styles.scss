@@ -6,14 +6,6 @@
   //color: #006ba6;
   color: #003b71;
 }
-.inputSubmit{
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 .inputField{   
     width: 50%;  
     display: block; 
@@ -24,6 +16,15 @@
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+.inputSubmit{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 .patientFormContainer{
   /* border-radius: 5px; */
@@ -55,13 +56,13 @@
   display: flex;
   margin-top: 5px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .add_button,
 .delete_button{
   padding: 0;
   width: 25px !important;
-  height: 25px;
-  margin-left: 10px;
+  height: 25px; 
   margin-right: 10px;
 }

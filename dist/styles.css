@@ -923,15 +923,6 @@ button:hover {
   color: #003b71;
 }
 
-.inputSubmit {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .inputField {
   width: 50%;
   display: block;
@@ -942,6 +933,16 @@ button:hover {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+.inputSubmit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .patientFormContainer {
@@ -974,6 +975,7 @@ button:hover {
   display: flex;
   margin-top: 5px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .add_button,
@@ -981,7 +983,6 @@ button:hover {
   padding: 0;
   width: 25px !important;
   height: 25px;
-  margin-left: 10px;
   margin-right: 10px;
 }
 /*!************************************************************************************************************************************!*\
