@@ -968,6 +968,22 @@ button:hover {
   margin-top: 5px;
   margin-bottom: 16px;
 }
+
+.upload_comp,
+.fileUploadField {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.add_button,
+.delete_button {
+  padding: 0;
+  width: 25px !important;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!
   \************************************************************************************************************************************/
