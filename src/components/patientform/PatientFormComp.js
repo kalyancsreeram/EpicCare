@@ -1,12 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles.scss';
 
+import axios from 'axios';
+import UploadComp from './UploadComp';
+
+
 function PatientFormComp() {
+
+  const [formData, setFormData] = useState({
+    firstname:"",
+    lastname:"",
+    files: []
+  });
+
+  const [additionalFiles, setAdditionalFiles] = useState([]);
+  const [count, setCount] = useState(0);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleFileChange = (event) => {
+    setFormData((prevState) => ({ ...prevState, files: [...formData.files, event.target.files[0]] }));
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);    
+    // axios
+    //   .post('http://localhost:3001/patientdata', { ...formData })
+    //   .then(response => {
+    //   setFormData({ firstname: '', lastname: '', files: [] });
+    //     alert('Data has been successfully sent...')
+    //   })
+    //   .catch(() => {
+    //      alert('Something went wrong. Try again later');        
+    //   })
+  };
+
+  const addFile = () => {
+    setCount(count + 1); 
+    setAdditionalFiles([...additionalFiles, {name: `file${count + 1}`}]);   
+  }
+  const deleteFile = (fileName) => {       
+    setAdditionalFiles([...additionalFiles.filter((file) => file.name !== fileName )]);   
+  }
+
+
   return (
     <div className="patientFormContainer">
       <h1 className='contactFormTitle'>SUBMIT AN ORDER ONLINE</h1>
       <h3 className='contactFormTitle'>Patient Information</h3>
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* <div>
           <label for="servicestart">Service Start</label>
           <input className='inputField' type='date' id='sstart' name='servicestart'/>
@@ -19,9 +65,13 @@ function PatientFormComp() {
           */}
          
           <label htmlFor="fname">Patient First Name</label>
-          <input className='inputField' type='text' id='fname' name='firstname' placeholder='First name'/>
+          <input className='inputField' type='text' id='fname' name='firstname' 
+                 placeholder='First name'  value={formData.firstname}
+                 onChange={handleChange}/>
           <label htmlFor="lname">Patient Last Name</label>
-          <input className='inputField' type='text' id='lname' name='lastname' placeholder='Last Name'/>         
+          <input className='inputField' type='text' id='lname' name='lastname' 
+                 placeholder='Last Name'  value={formData.lastname}
+                 onChange={handleChange}/>         
           <label htmlFor="dob">Date Of Birth</label>
           <input className='inputField' type='date' id='dob' name='serviceend' placeholder='dd-mm-yyyy'/>
           <fieldset className='multiSet'>
@@ -71,6 +121,22 @@ function PatientFormComp() {
           <input className='inputField' type='text' id='referringphysician' name='referringphysician'/>
           <label for="studytype">Study Type</label>
           <input className='inputField' type='text' id='studytype' name='studytype'/> */}
+          <label>Patient Files</label>
+          <div className='fileUploadField'>
+            <input type="file" onChange={handleFileChange}/> 
+            <button onClick={addFile} className='add_button' title='Add'>+</button>  
+            <button className='delete_button' title='Delete' onClick={() => {}}>-</button>
+          </div>
+          
+          {
+            additionalFiles.map((file, index) => {
+              return (
+                <UploadComp key={file.name} fileName={file.name} handleFileChange={handleFileChange}
+                addFile={addFile} deleteFile={deleteFile} elementIndex={index}></UploadComp>
+              )
+            })
+          }    
+          
 
           <input className='inputField inputSubmit' type="submit" value="Submit"></input>
       </form>

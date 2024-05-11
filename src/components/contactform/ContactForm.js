@@ -44,11 +44,11 @@ function ContactForm() {
             <form onSubmit={handleSubmit}>
                 <label htmlFor="fname">First Name</label>
                 <input type='text' className='contactFormInputElement' id='firstname' name='firstname' placeholder='First Name'
-                       value={formData.fname}
+                       value={formData.firstname}
                        onChange={handleChange}/>
                 <label htmlFor="lname">Last Name</label>
                 <input type='text' className='contactFormInputElement' id='lastname' name='lastname' placeholder='Last Name'
-                       value={formData.lname}
+                       value={formData.lastname}
                        onChange={handleChange}/>
                 <label htmlFor="email">Email</label>
                 <input type='text' className='contactFormInputElement' id='email' name='email' placeholder='Email Address'
