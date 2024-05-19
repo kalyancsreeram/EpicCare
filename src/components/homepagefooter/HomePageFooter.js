@@ -22,12 +22,12 @@ function HomePageFooter() {
             <p><a href="/">Hyderabad</a> | <a href="/">Bangalore</a> </p>
 
         </div>
-        <div className='footerLinks'>                   
+        <div className='footerLinks'>      
+            <p><a href="/services">Services</a></p>   
+            <p><a href="/order">Order</a></p>     
+            <p><a href="/research">Research</a></p>         
             <p><a href="/about">About</a></p>
             <p><a href="/contact-us">Contact</a> </p>
-            <p><a href="/submit-form">Submit Form</a></p>
-            <p><a href="/research">Research</a></p>
-            <p><a href="/services">Services</a></p>            
         </div>
         <div className='socialContainer'>
           <FontAwesomeIcon icon={faFacebook} />

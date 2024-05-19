@@ -25,7 +25,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='about' element={<About/>}></Route>
         <Route path='contact-us' element={<ContactUs/>}></Route>
-        <Route path='submit-form' element={<PatientPortal/>}></Route>          
+        <Route path='order' element={<PatientPortal/>}></Route>          
         <Route path='research' element={<Research/>}></Route>
         <Route path='services' element={<Services/>}></Route>
         <Route path='physician-portal' element={<RequireAuth><PhysicianPortalComp/></RequireAuth>}></Route>

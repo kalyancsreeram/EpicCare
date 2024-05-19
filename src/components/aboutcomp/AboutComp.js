@@ -15,25 +15,13 @@ const AboutComp = () => {
             </Typography>
                
             <Typography variant="body2" color="text.primary" className='about_us_notes'>
-                <b> SeizureCare is an American Healthcare Company</b> with a team of professionals who provide
-                    EEG and expert assistance services 24X7. Critical care, long-term, and ambulatory EEG have
-                    now become the standard of care for patients with epilepsy and those admitted to the ICU in the
-                    USA and some developed countries. In many other developing countries, these services are not
-                    widely available and are costly. We are here to bridge the gap and bring high quality EEG and
-                    expert assistance services accessible to everyone.
+                    <b>SeizureCare is an American Healthcare Company</b>. Connecting medical professionals worldwide to epilepsy expertise and resources, our goal is to reduce the barriers and create a more equitable future for all those affected. 
            </Typography>
            <Typography variant="body2" color="text.primary" className='about_us_notes'>
-                    The team of SeizureCare is equipped with an epileptologist trained in the USA and certified by
-                    the American board. SeizureCare provides high-quality, affordable long-term EEG services and
-                    expert EEG reports along with expert assistance in the field of Neurology &amp; Epileptology to
-                    people at different parts of the globe. We will also collaborate with various NGO groups to
-                    extend our reach to the needy.
+                     Epilepsy impacts the lives of millions globally, yet inadequate access to care persists, hindered by unaffordable services and a scarcity of trained specialists. Closing this gap is crucial to transform the lives of those affected by epilepsy, ensuring timely and quality care for all who need it. 
            </Typography>
            <Typography variant="body2" color="text.primary" className='about_us_notes'>
-                    SeizureCare strive to establish an efficient coordinating human organization with technological
-                    support, collaborate with various EEG companies and supportive groups to further reduce
-                    service costs, and conduct CMEs and educational sessions to highlight the benefits of our
-                    services in enhancing patient care standards in different states and countries to aid those in need.
+                     SeizureCare achieves this goal with the expertise of American board-certified epileptologists and innovative remote software solutions, enabling efficient and accessible services anytime, anywhere. Additionally, SeizureCare strives to establish an efficient coordinating human organization and collaborate with various technology companies and NGO groups to make high-quality epilepsy care affordable and available to the needy. 
            </Typography>
 
         <div>
@@ -42,7 +30,7 @@ const AboutComp = () => {
             </Typography>
                
             <Typography variant="body2" color="text.primary">
-                To Provide Quality & Expert EEG services at affordable cost to enhance the clinical outcomes.
+                     We dedicated ourselves to the unrelenting quest for knowledge and discovery to transform epilepsy care by joining forces against epilepsy to crack the code of this complex condition. We believe in an inspirational research quote by Roosevelt - <i><q>Every doubt is an opportunity to discover.</q></i>
             </Typography>               
         </div>
         <div>
@@ -51,7 +39,7 @@ const AboutComp = () => {
             </Typography>
            
             <Typography variant="body2" color="text.primary">
-            To spread the Quality & Expert EEG services across the globe in the next 5 years, thereby marking a new dimension in the treating the Neurological conditions. 
+                Our vision is to expand top-tier epilepsy remote services globally over the next five years, setting new standards in the management and changing outcomes of epilepsy-related neurological conditions.
             </Typography>
             
         </div>
@@ -62,55 +50,55 @@ const AboutComp = () => {
                     <div className='first_row'>
                         <Card sx={{ maxWidth: 345 }} className='card'> 
                             <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Integrity
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                As individuals and together, we adhere to the highest professional, moral, and ethical standards built on a foundation of honesty, confidentiality, trust, respect, and transparency.
-                            </Typography>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Integrity
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    We uphold the highest standards of professionalism, ethics, and honesty in all our actions, fostering a culture of confidentiality, trust, respect, and transparency.
+                                </Typography>
                             </CardContent>           
                         </Card>
                         <Card sx={{ maxWidth: 345 }} className='card'>           
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                Empathy
+                                    Empathy
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                We strive to be the best in all we do through our daily commitment to understand and care for our members and each other.
+                                    Our commitment to excellence is reflected in our dedication to understanding and addressing the needs of our client physicians every day.
                                 </Typography>
                             </CardContent>               
                         </Card>
                         <Card sx={{ maxWidth: 345 }} className='card'>           
                                 <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                Quality and Innovation
+                                     Quality and Innovation
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                We seek new and creative interventions that provide for more effective, safe, and efficient practices to bring the best of the outcome.
+                                     We constantly seek innovative solutions that enhance safety and efficiency, striving to implement the most effective practices for superior outcomes.
                                 </Typography>
                                 </CardContent>                
                         </Card>
                     </div>
                     <div className='second_row'>
                         <Card sx={{ maxWidth: 345 }} className='card'>           
-                                <CardContent>
+                            <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                Collaboration
+                                    Collaboration
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                We are committed to building strong partnerships with hospitals to put our expertise to the task and with organizations that helps us to reach to the patients who are financially compromised. We work closely with all stakeholders to ensure our members are provided with a superior experience of care.
+                                    We are resolute in forming robust partnerships with hospitals and organizations, particularly those concerning financially disadvantaged patients, to extend our reach and impact. Our collaborative efforts ensure that all stakeholders experience exceptional support.
                                 </Typography>
-                                </CardContent>               
+                            </CardContent>               
                         </Card>
                         <Card sx={{ maxWidth: 345 }} className='card'>           
-                                <CardContent>
+                            <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
-                                Continuous Improvement
+                                     Refinement
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                We, at SeizureCare strive to continuously learn and upgrade ourselves and integrate technology advancements to achieve quicker, better and accurate clinical outcome.
+                                     SeizureCare is devoted to ongoing learning and technological integration to achieve faster, more precise, and effective clinical results, continually enhancing the quality of care we provide.
                                 </Typography>
-                                </CardContent>                
+                            </CardContent>                
                         </Card>
                     </div>
                 </div>
