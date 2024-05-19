@@ -18,5 +18,23 @@
     .research_notes_text{
         margin-bottom: 20px;
     }
+
+    .researchPointsContainer{
+        display: flex;
+       
+        width: 100%;
+
+        .researchPointsNotes{
+            width:70%
+        }
+        .researchPointsNotesMedia {
+            width: 30%;
+            padding: 20px;
+            img{
+                width: 100%;               
+                height: 100%;
+            }
+        }
+    }
    
 }

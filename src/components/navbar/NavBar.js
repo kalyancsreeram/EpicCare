@@ -4,8 +4,8 @@ import './styles.scss';
 import LoginModal from '../loginmodal/LoginModal';
 import { useAuth } from '../../utils/auth';
 
-// import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
-import CompanyLogo from '../../assets/images/companyLogo.png'
+//import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
+import CompanyLogo from '../../assets/images/CompanyLogoEdited.png'
 
 
 function NavBar() {
@@ -28,11 +28,12 @@ function NavBar() {
   return (
     <div>      
       <nav>
-          <img className='homeBtn' alt='SeizureCare' style={{width: '100px', height:'50px', cursor:'pointer', left: '10'}} src={CompanyLogo} onClick={homeBtnHandler} />
+          <img className='homeBtn' alt='SeizureCare' style={{width: '165px', height:'70px', cursor:'pointer', left: '10'}} src={CompanyLogo} onClick={homeBtnHandler} />
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/services'>Services</NavLink>  
           <NavLink to='/order'>Order</NavLink>   
-          <NavLink to='/research'>Research</NavLink>      
+          <NavLink to='/research'>Research</NavLink>     
+          <NavLink to='/resources'>Resources</NavLink>   
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>          
           {

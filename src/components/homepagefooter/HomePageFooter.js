@@ -19,13 +19,14 @@ function HomePageFooter() {
             <p>Fax: (262) 754-0897</p>
             <p>Toll Free: (866) 374-7648</p> */}
             {/* <p><a href="/">Office Locations</a></p> */}
-            <p><a href="/">Hyderabad</a> | <a href="/">Bangalore</a> </p>
+            <p><a href="/">USA</a> | <a href="/">INDIA</a> </p>
 
         </div>
         <div className='footerLinks'>      
             <p><a href="/services">Services</a></p>   
             <p><a href="/order">Order</a></p>     
-            <p><a href="/research">Research</a></p>         
+            <p><a href="/research">Research</a></p>   
+            <p><a href="/resources">Resources</a></p>      
             <p><a href="/about">About</a></p>
             <p><a href="/contact-us">Contact</a> </p>
         </div>

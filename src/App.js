@@ -15,6 +15,7 @@ import { AuthProvider } from './utils/auth';
 import RequireAuth from './utils/RequireAuth';
 import Footer from './components/Footer';
 import HomePageFooter from './components/homepagefooter/HomePageFooter';
+import Resources from './components/Resources';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='contact-us' element={<ContactUs/>}></Route>
         <Route path='order' element={<PatientPortal/>}></Route>          
         <Route path='research' element={<Research/>}></Route>
+        <Route path='resources' element={<Resources/>}></Route>
         <Route path='services' element={<Services/>}></Route>
         <Route path='physician-portal' element={<RequireAuth><PhysicianPortalComp/></RequireAuth>}></Route>
         <Route path='*' element={<NoMatch/>}></Route>          
