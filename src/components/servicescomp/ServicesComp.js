@@ -3,11 +3,11 @@ import React from 'react'
 import './styles.scss';
 import MediaControlCard from './MediaControlCard';
 import ServicesOne from "../../assets/images/services-one.jpg";
-import ServicesTwo from "../../assets/images/services-two.JPG";
-import ServicesThree from "../../assets/images/services-three.JPG";
-import ServicesFour from "../../assets/images/services-four.JPG";
-import ServicesFive from "../../assets/images/services-five.JPG";
-import ServicesSix from "../../assets/images/services-six.JPG";
+import ServicesTwo from "../../assets/images/services-two.png";
+import ServicesThree from "../../assets/images/services-three.png";
+import ServicesFour from "../../assets/images/services-four.png";
+import ServicesFive from "../../assets/images/services-five.png";
+import ServicesSix from "../../assets/images/services-six.png";
 
 
 
