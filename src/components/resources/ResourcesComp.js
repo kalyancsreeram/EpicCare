@@ -77,7 +77,7 @@ function ResourcesComp() {
           <span>1.</span><a href='www.epilepsy.com'>www.epilepsy.com</a>
         </Typography>
 
-        <Typography className='boldHeading addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding' gutterBottom variant="h6" component="div">
             National Epilepsy foundation
         </Typography>
 
@@ -93,7 +93,7 @@ function ResourcesComp() {
         <span>2.</span><a href='www.cdc.gov/epilepsy'>www.cdc.gov/epilepsy</a>
         </Typography>
 
-        <Typography className='boldHeading addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding' gutterBottom variant="h6" component="div">
            Epilepsy information from the Centers for Disease Control and Prevention
         </Typography>
 
@@ -109,7 +109,7 @@ function ResourcesComp() {
         <span>3.</span><a href='www.seizuretracker.com'>www.seizuretracker.com</a>
         </Typography>
 
-        <Typography className='boldHeading addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding' gutterBottom variant="h6" component="div">
            Downloadable logs, spreadsheets, and smartphone apps
         </Typography>
 
@@ -123,7 +123,7 @@ function ResourcesComp() {
         <span>4.</span><a href='www.coping-with-navigator.com'>www.coping-with-navigator.com</a>
         </Typography>
 
-        <Typography className='boldHeading addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding' gutterBottom variant="h6" component="div">
          Forum for patients and families coping with epilepsy
         </Typography>
 
