@@ -21,7 +21,7 @@ function ResourcesComp() {
             Epilepsy and management
         </Typography>
 
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography className='smallerFont' gutterBottom variant="h6" component="div">
             <ul>
               <li>Fisher RS. Operational classification of seizure types by the International League Against Epilepsy: Position Paper of the ILAE Commission for Classification and Terminology. Epilepsia. 2017.</li>
               <li>Fisher RS. Instruction manual for the ILAE 2017 operational classification of seizure types. Epilepsia. 2017</li>
@@ -38,7 +38,7 @@ function ResourcesComp() {
             EEG
         </Typography>
 
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography className='smallerFont' gutterBottom variant="h6" component="div">
             <ul>              
               <li>Hirsch LJ. American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology: 2021 Version. J Clin Neurophysiol. 2021</li>
               <li>Tsuchida TN. American Clinical Neurophysiology Society standardized EEG terminology and categorization for the description of continuous EEG monitoring in neonates: report of the American Clinical Neurophysiology Society critical care monitoring committee. J Clin Neurophysiol. 2013</li>
@@ -55,7 +55,7 @@ function ResourcesComp() {
            Epilepsy surgery
         </Typography>
 
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography className='smallerFont' gutterBottom variant="h6" component="div">
             <ul>              
               <li>Jayakar P. Task Force for Paediatric Epilepsy Surgery, Commission for Paediatrics, and the Diagnostic Commission of the International League Against Epilepsy. Diagnostic test utilization in evaluation for resective epilepsy surgery in children. Epilepsia. 2014</li>
               <li>Gonzalez-Martinez J. Stereoelectroencephalography in the "difficult to localize" refractory focal epilepsy: early experience from a North American epilepsy center. Epilepsia. 2013</li>
@@ -74,14 +74,14 @@ function ResourcesComp() {
         </Typography>
 
         <Typography gutterBottom variant="h6" component="div">
-          <span>1.</span><a href='www.epilepsy.com'>www.epilepsy.com</a>
+          <span className='smallerFont'>1.</span><a href='www.epilepsy.com' className='smallerFont'>www.epilepsy.com</a>
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
             National Epilepsy foundation
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
             <ul>              
               <li>Include an overview of epilepsy, discussions of treatments including medications</li>
               <li>Special sections for kids, teens, and families</li>
@@ -90,14 +90,14 @@ function ResourcesComp() {
         </Typography> 
 
         <Typography gutterBottom variant="h6" component="div">
-        <span>2.</span><a href='www.cdc.gov/epilepsy'>www.cdc.gov/epilepsy</a>
+        <span className='smallerFont'>2.</span><a href='www.cdc.gov/epilepsy' className='smallerFont'>www.cdc.gov/epilepsy</a>
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
            Epilepsy information from the Centers for Disease Control and Prevention
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
             <ul>              
               <li>Fast facts about epilepsy</li>
               <li>Link to videos and resources for teens, friends, and parents</li>
@@ -106,24 +106,24 @@ function ResourcesComp() {
         </Typography> 
 
         <Typography gutterBottom variant="h6" component="div">
-        <span>3.</span><a href='www.seizuretracker.com'>www.seizuretracker.com</a>
+        <span className='smallerFont'>3.</span><a href='www.seizuretracker.com' className='smallerFont'>www.seizuretracker.com</a>
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
            Downloadable logs, spreadsheets, and smartphone apps
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
             <ul>              
               <li>Track seizure activity and medication</li>                       
             </ul>
         </Typography> 
 
         <Typography gutterBottom variant="h6" component="div">
-        <span>4.</span><a href='www.coping-with-navigator.com'>www.coping-with-navigator.com</a>
+        <span className='smallerFont'>4.</span><a href='www.coping-with-navigator.com' className='smallerFont'>www.coping-with-navigator.com</a>
         </Typography>
 
-        <Typography className='addPadding' gutterBottom variant="h6" component="div">
+        <Typography className='addPadding smallerFont' gutterBottom variant="h6" component="div">
          Forum for patients and families coping with epilepsy
         </Typography>
 

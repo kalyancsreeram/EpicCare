@@ -1129,7 +1129,7 @@ button:hover {
   text-align: center;
 }
 .resourcesContainer .resourcesTable {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .resourcesContainer .tableHeading {
   margin-top: 40px;
@@ -1142,4 +1142,7 @@ button:hover {
 }
 .resourcesContainer .addPadding {
   padding-left: 32px;
+}
+.resourcesContainer .smallerFont {
+  font-size: 1rem;
 }
