@@ -498,6 +498,7 @@ body {
 /*!*******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/ceocomp/styles.scss ***!
   \*******************************************************************************************************************************************/
+@charset "UTF-8";
 .ceoContainerMain {
   color: rgb(29, 25, 73);
   display: flex;
@@ -512,7 +513,7 @@ body {
 .ceoContainerMain .ceoContainer {
   margin: 50px;
   display: flex;
-  width: 60%;
+  width: 75%;
 }
 .ceoContainerMain .ceoImage {
   display: flex;
@@ -542,6 +543,42 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.ceoContainerMain .welcome_msg blockquote {
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+}
+.ceoContainerMain .welcome_msg blockquote:before {
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: -10px;
+  left: 0;
+  content: "“";
+}
+.ceoContainerMain .welcome_msg blockquote:after {
+  position: absolute;
+  /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+  float: right;
+  font-size: 6em;
+  line-height: 1;
+  right: 0;
+  bottom: -60px;
+  content: "”";
+}
+.ceoContainerMain .welcome_msg blockquote footer {
+  padding: 1em 2em 0 0;
+  text-align: right;
+}
+.ceoContainerMain .welcome_msg blockquote cite:before {
+  content: "–  ";
+}
+.ceoContainerMain .welcome_msg blockquote cite {
+  font-style: normal;
+}
+.ceoContainerMain .seizureCare {
+  width: 40%;
+}
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/cardscomp/styles.scss ***!
   \*********************************************************************************************************************************************/
@@ -552,6 +589,17 @@ body {
 }
 .cardsContainer .card {
   margin: 20px;
+}
+.cardsContainer .card .MuiTypography-h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.cardsContainer .card p {
+  font-size: 12px;
+}
+.cardsContainer .card img {
+  margin-top: 2px;
+  object-fit: contain;
 }
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/aboutcomp/styles.scss ***!
@@ -616,7 +664,7 @@ input[type=submit]:hover {
 }
 
 .contactFormInputElement {
-  width: 100%;
+  width: 40%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -624,6 +672,7 @@ input[type=submit]:hover {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  display: block;
 }
 
 .contactFormContainer {
@@ -698,6 +747,21 @@ input[type=submit]:hover {
 .researchContainer .research_notes_text {
   margin-bottom: 20px;
 }
+.researchContainer .researchPointsContainer {
+  display: flex;
+  width: 100%;
+}
+.researchContainer .researchPointsContainer .researchPointsNotes {
+  width: 70%;
+}
+.researchContainer .researchPointsContainer .researchPointsNotesMedia {
+  width: 30%;
+  padding: 20px;
+}
+.researchContainer .researchPointsContainer .researchPointsNotesMedia img {
+  width: 100%;
+  height: 100%;
+}
 /*!**********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/servicescomp/styles.scss ***!
   \**********************************************************************************************************************************/
@@ -733,6 +797,7 @@ input[type=submit]:hover {
 }
 .servicesContainer .service_card .MuiTypography-p {
   color: #fffefe;
+  font-size: 14px;
 }
 .servicesContainer .media_control_card {
   width: 80%;
@@ -742,6 +807,9 @@ input[type=submit]:hover {
 }
 .servicesContainer .services_notes {
   margin-bottom: 20px;
+}
+.servicesContainer .servicesSummary {
+  width: 80%;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/styles.scss ***!
@@ -1023,4 +1091,55 @@ button:hover {
   width: 75px;
   height: 75px;
   margin: 20px;
+}
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/resources/styles.scss ***!
+  \*******************************************************************************************************************************/
+.resourcesContainer {
+  padding: 40px;
+}
+.resourcesContainer .resourcesMainHeading {
+  color: #006ba6;
+  margin-bottom: 20px;
+}
+.resourcesContainer .boldHeading {
+  font-weight: bold;
+}
+.resourcesContainer a {
+  margin-left: 16px;
+}
+.resourcesContainer ul {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.resourcesContainer table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.resourcesContainer td, .resourcesContainer th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.resourcesContainer tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.resourcesContainer .check {
+  text-align: center;
+}
+.resourcesContainer .resourcesTable {
+  margin-top: 40px;
+}
+.resourcesContainer .tableHeading {
+  margin-top: 40px;
+  color: #006ba6;
+  text-decoration: underline;
+}
+.resourcesContainer .secondaryTitle {
+  color: #006ba6;
+  text-decoration: underline;
+}
+.resourcesContainer .addPadding {
+  padding-left: 32px;
 }
