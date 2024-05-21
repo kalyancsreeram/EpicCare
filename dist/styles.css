@@ -49,6 +49,16 @@ body {
 .homePage {
   min-height: calc(100vh - 86px);
 }
+
+.orderFormContainer {
+  background-color: #f2f2f2;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.servicesLabel {
+  color: #003b71;
+}
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
   \*************************************************************************************************************************************************************/
@@ -1038,6 +1048,13 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.servicesField {
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+}
+
 .upload_comp,
 .fileUploadField {
   display: flex;
@@ -1052,6 +1069,31 @@ button:hover {
   width: 25px !important;
   height: 25px;
   margin-right: 10px;
+}
+
+.patientNote {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.patientNoteContainer {
+  margin-top: 20px;
+}
+
+.orderTextArea {
+  height: 200px;
+}
+
+.orderFormInputElement {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  display: block;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!

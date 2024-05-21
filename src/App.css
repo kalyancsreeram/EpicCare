@@ -29,3 +29,12 @@ body {
   min-height: calc(100vh - 86px);
 }
 
+.orderFormContainer{
+  background-color: #f2f2f2;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.servicesLabel{
+  color: #003b71;
+}
+

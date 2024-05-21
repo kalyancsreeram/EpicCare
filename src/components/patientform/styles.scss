@@ -51,6 +51,12 @@
   margin-top: 5px;
   margin-bottom: 16px;
 }
+.servicesField{
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;  
+}
 .upload_comp,
 .fileUploadField{
   display: flex;
@@ -65,4 +71,28 @@
   width: 25px !important;
   height: 25px; 
   margin-right: 10px;
+}
+
+.patientNote{
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.patientNoteContainer{
+  margin-top: 20px;
+}
+
+.orderTextArea{
+  height: 200px;
+}
+
+.orderFormInputElement{
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  display: block;
 }
