@@ -189,18 +189,9 @@ function PatientFormComp() {
               <p>Thank you for your interest in SeizureCare. We will revert back with confirmation. You can also reach in  questions at <i>info@seizurecarenet.com</i></p>
               <p className='patientNote'>NOTE: Please use this form for general information purposes only. DO NOT send personal health information through this form.</p>
           </div>
-                
-          
 
           <input className='inputField inputSubmit' type="submit" value="Submit"></input>
-      </form>
-
-      {
-        
-      }
-      <form>
-
-      </form>
+      </form>      
     </div>
   )
 }
