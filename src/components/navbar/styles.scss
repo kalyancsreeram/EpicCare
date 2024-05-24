@@ -1,5 +1,5 @@
 nav{  
-   background-color: #003b71;
+   background-color: white;
    height: 75px;
    display: flex;
    justify-content: end;
@@ -8,9 +8,14 @@ nav{
 }
 nav a {
     margin-right: 16px;
+    font-weight: 550;
     width: auto;
-    color: white;
+    color:#35294D;
     text-decoration: none;
+}
+
+nav a:hover{
+    opacity: 0.8;
 }
 
 nav a.active {

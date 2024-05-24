@@ -3,7 +3,6 @@ import React from 'react'
 import './styles.scss';
 
 import Typography from '@mui/material/Typography';
-import ResearchMediaOne from "../../assets/images/researchMediaOne.jpg"
 
 const ResearchComp = () => {
   return (
@@ -33,9 +32,9 @@ const ResearchComp = () => {
                       <li><b>Clinical Trials and Outcomes Research:</b> Evaluating the efficacy and safety of novel treatments and assessing patient outcomes.</li>
                       <li><b>Epilepsy Advocacy and Stigma Reduction:</b> Promoting awareness, education, and support to combat stigma and improve quality of life for individuals with epilepsy.</li>                 
                   </ul>                
-                <div className='researchPointsNotesMedia'>
+                {/* <div className='researchPointsNotesMedia'>
                   <img alt='Research Media' src={ResearchMediaOne}/>
-                </div>
+                </div> */}
                </div>
               
            </Typography>

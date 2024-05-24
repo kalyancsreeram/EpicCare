@@ -1,8 +1,4 @@
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .contactFormInputElement{
   width: 40%;
   padding: 12px;
@@ -18,11 +14,12 @@ input[type=submit]:hover {
 .contactFormContainer {
   /* border-radius: 5px; */
   background-color: #f2f2f2;
+  //background-color: rgba($color: #C6AADB, $alpha: .2);   
   padding: 50px;
   padding-top: 20px;
   // color:#006ba6;
 
-  color: #003b71;
+  color: #35294D;
   // border-radius: 5px;
   // background-color: lightblue;
   // padding: 50px;
@@ -47,7 +44,7 @@ input[type=submit]:hover {
 }
 
 .contactSubmit { 
-  background-color: #04AA6D;
+  background-color: #673147;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -55,7 +52,8 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 .contactSubmit:hover {
-  background-color: #45a049;
+  background-color: #673147 !important;
+  opacity: 0.8;
 }
 .preferenceSet{
   border-width: 1px;

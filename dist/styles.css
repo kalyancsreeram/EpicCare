@@ -29,7 +29,8 @@ body {
   align-items: center;
   height: 75px;
   width: 100%;
-  background-color: #003b71;
+  background-color: #35294D;
+  /* CSS3 */
   color: white;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .servicesLabel {
-  color: #003b71;
+  color: #35294D;
 }
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
@@ -407,7 +408,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 286px;
+  height: 350px;
 }
 
 .carousel .control-dots {
@@ -515,7 +516,7 @@ body {
   position: relative;
   justify-content: center;
   width: 100%;
-  background-image: url(a4004ce204a7eed570a2.png);
+  background-image: url(94d1e77c2bc131def256.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -611,6 +612,13 @@ body {
   margin-top: 2px;
   object-fit: contain;
 }
+
+.three-panel-main-title {
+  color: #35294D;
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+}
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/aboutcomp/styles.scss ***!
   \*******************************************************************************************************************************/
@@ -618,7 +626,7 @@ body {
   text-align: justify;
 }
 .aboutContainer .main-title {
-  color: #006ba6;
+  color: #35294D;
 }
 .aboutContainer .intro {
   padding: 20px 40px;
@@ -629,15 +637,15 @@ body {
 }
 .aboutContainer .about_title {
   margin-top: 20px;
-  color: #006ba6;
+  color: #35294D;
 }
 .aboutContainer .about_secondary_title {
-  color: #006ba6;
+  color: #35294D;
   opacity: 0.8;
   text-decoration: underline;
 }
 .aboutContainer .core-values-container {
-  background-color: rgb(122, 159, 171);
+  background-color: rgba(198, 170, 219, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -669,10 +677,6 @@ body {
 /*!*********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/contactform/styles.scss ***!
   \*********************************************************************************************************************************/
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .contactFormInputElement {
   width: 40%;
   padding: 12px;
@@ -690,7 +694,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 50px;
   padding-top: 20px;
-  color: #003b71;
+  color: #35294D;
 }
 
 .contactTextArea {
@@ -711,7 +715,7 @@ input[type=submit]:hover {
 }
 
 .contactSubmit {
-  background-color: #04AA6D;
+  background-color: #673147;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -720,7 +724,8 @@ input[type=submit]:hover {
 }
 
 .contactSubmit:hover {
-  background-color: #45a049;
+  background-color: #673147 !important;
+  opacity: 0.8;
 }
 
 .preferenceSet {
@@ -741,18 +746,23 @@ input[type=submit]:hover {
   \******************************************************************************************************************************/
 .researchContainer {
   text-align: justify;
-  padding: 20px;
 }
 .researchContainer .main-title {
-  color: #006ba6;
+  color: #35294D;
 }
 .researchContainer .researchNotes {
-  border-radius: 5px;
-  background-color: lightblue;
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(198, 170, 219, 0.2);
+  color: black;
   padding: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: justify;
   min-height: 100vh;
+  background-image: url(df86ce0f661dddc65d0e.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
 }
 .researchContainer .research_notes_text {
   margin-bottom: 20px;
@@ -762,7 +772,7 @@ input[type=submit]:hover {
   width: 100%;
 }
 .researchContainer .researchPointsContainer .researchPointsNotes {
-  width: 70%;
+  width: 100%;
 }
 .researchContainer .researchPointsContainer .researchPointsNotesMedia {
   width: 30%;
@@ -777,10 +787,9 @@ input[type=submit]:hover {
   \**********************************************************************************************************************************/
 .servicesContainer {
   text-align: justify;
-  padding: 20px;
 }
 .servicesContainer .main-title {
-  color: #003b71;
+  color: #35294D;
 }
 .servicesContainer .intro {
   padding: 10px 20px;
@@ -797,35 +806,54 @@ input[type=submit]:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
+.servicesContainer .service_card {
+  min-height: 250px;
+}
 .servicesContainer .service_card div {
   margin: 10px;
-  width: 75%;
+  width: 100%;
 }
 .servicesContainer .service_card .MuiTypography-h6 {
-  color: #003b71;
+  color: #35294D;
   font-weight: bold;
+  text-align: left;
 }
 .servicesContainer .service_card .MuiTypography-p {
-  color: #fffefe;
+  color: black;
   font-size: 14px;
 }
 .servicesContainer .media_control_card {
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: rgb(137, 180, 194);
+  width: 100%;
+  margin: 20px;
+  background-color: rgba(198, 170, 219, 0.2);
 }
-.servicesContainer .services_notes {
-  margin-bottom: 20px;
+.servicesContainer .media_control_card img {
+  object-fit: cover;
 }
 .servicesContainer .servicesSummary {
   width: 80%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.servicesContainer .service-panel {
+  width: 50%;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.servicesContainer .service-panel .css-1rorjgf-MuiCardMedia-root {
+  width: 40%;
+}
+.servicesContainer .services-panel-container {
+  display: flex;
+  margin-right: 20px;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/navbar/styles.scss ***!
   \****************************************************************************************************************************/
 nav {
-  background-color: #003b71;
+  background-color: white;
   height: 75px;
   display: flex;
   justify-content: end;
@@ -835,9 +863,14 @@ nav {
 
 nav a {
   margin-right: 16px;
+  font-weight: 550;
   width: auto;
-  color: white;
+  color: #35294D;
   text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.8;
 }
 
 nav a.active {
@@ -875,7 +908,7 @@ nav a.active {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #673147;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -998,7 +1031,7 @@ button:hover {
   background-color: #f2f2f2;
   padding: 50px;
   padding-top: 20px;
-  color: #003b71;
+  color: #35294D;
 }
 
 .inputField {
@@ -1014,13 +1047,19 @@ button:hover {
 }
 
 .inputSubmit {
-  background-color: #04AA6D;
+  background-color: #673147;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  width: 200px;
+}
+
+.inputSubmit:hover {
+  background-color: #673147 !important;
+  opacity: 0.8;
 }
 
 .patientFormContainer {
@@ -1072,12 +1111,14 @@ button:hover {
 }
 
 .patientNote {
-  font-style: italic;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .patientNoteContainer {
   margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .orderTextArea {
@@ -1095,15 +1136,23 @@ button:hover {
   resize: vertical;
   display: block;
 }
+
+.contactInfo {
+  text-decoration: underline;
+  color: #003b71;
+}
+
+.contactInfo:hover {
+  opacity: 0.8;
+}
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!
   \************************************************************************************************************************************/
 .homePageFooterContainer {
   width: 100%;
   height: 300px;
-  background-color: #003b71;
-  opacity: 0.7;
-  color: white;
+  background-color: rgba(200, 172, 221, 0.4);
+  color: #35294D;
   display: flex;
   align-items: center;
 }
@@ -1111,37 +1160,55 @@ button:hover {
   width: 33%;
   margin: 100px;
   font-size: large;
+  display: flex;
 }
 .homePageFooterContainer .footerLinks {
   width: 33%;
   height: 50%;
   font-size: large;
+  padding-left: 20px;
 }
 .homePageFooterContainer p {
   margin: 8px;
 }
 .homePageFooterContainer a {
-  color: white;
+  color: #35294D;
+}
+.homePageFooterContainer a:hover {
+  opacity: 0.8;
+}
+.homePageFooterContainer .worldMap {
+  width: 175px;
+  height: 100px;
+}
+.homePageFooterContainer .addressText {
+  display: inline-block;
+  align-content: center;
 }
 .homePageFooterContainer .socialContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33%;
+  padding-right: 20px;
 }
 .homePageFooterContainer .socialContainer svg {
   width: 75px;
   height: 75px;
   margin: 20px;
 }
+.homePageFooterContainer .socialContainer svg:hover {
+  opacity: 0.8;
+}
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/resources/styles.scss ***!
   \*******************************************************************************************************************************/
 .resourcesContainer {
   padding: 40px;
+  background-color: rgba(198, 170, 219, 0.2);
 }
 .resourcesContainer .resourcesMainHeading {
-  color: #006ba6;
+  color: #35294D;
   margin-bottom: 20px;
 }
 .resourcesContainer .boldHeading {
@@ -1166,6 +1233,9 @@ button:hover {
 .resourcesContainer tr:nth-child(even) {
   background-color: #dddddd;
 }
+.resourcesContainer tr:nth-child(odd) {
+  background-color: white;
+}
 .resourcesContainer .check {
   text-align: center;
 }
@@ -1174,11 +1244,11 @@ button:hover {
 }
 .resourcesContainer .tableHeading {
   margin-top: 40px;
-  color: #006ba6;
+  color: #35294D;
   text-decoration: underline;
 }
 .resourcesContainer .secondaryTitle {
-  color: #006ba6;
+  color: #35294D;
   text-decoration: underline;
 }
 .resourcesContainer .addPadding {

@@ -1,8 +1,9 @@
 .resourcesContainer{
     padding: 40px;
+    background-color: rgba($color: #C6AADB, $alpha: .2); 
 
     .resourcesMainHeading{
-        color: #006ba6;
+        color: #35294D;
         margin-bottom: 20px;
     }
 
@@ -32,6 +33,9 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
+      tr:nth-child(odd) {
+        background-color: white;
+      }
       .check{
         text-align: center;
       }
@@ -42,11 +46,11 @@
 
       .tableHeading{
         margin-top: 40px;
-        color: #006ba6;
+        color: #35294D;
         text-decoration: underline;
       }
       .secondaryTitle{
-        color: #006ba6;
+        color: #35294D;
         text-decoration: underline;
       }
       .addPadding{

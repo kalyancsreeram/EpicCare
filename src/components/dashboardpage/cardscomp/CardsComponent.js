@@ -12,7 +12,15 @@ import './styles.scss';
 
 export default function CardsComponent() {
   return (
-    <div className='cardsContainer'>       
+    <>
+      <div className='three-panel-main-title'>
+        <Typography gutterBottom variant="h5" component="div">
+                Latest developments in Epilepsy:
+        </Typography>
+      </div>
+
+      <div className='cardsContainer'>       
+       
         <Card sx={{ maxWidth: 345 }} className='card'>
             {/* <CardActionArea> */}
                 <CardMedia
@@ -67,6 +75,8 @@ export default function CardsComponent() {
                 </CardContent>
             {/* </CardActionArea> */}
         </Card>
-    </div>
+      </div>
+    </>
+  
   );
 }

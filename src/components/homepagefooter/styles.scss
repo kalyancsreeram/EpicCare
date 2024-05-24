@@ -1,27 +1,41 @@
 .homePageFooterContainer{
     width: 100%;
     height: 300px;
-    background-color: #003b71;
-    opacity: 0.7;
-    color: white;
+    //background-color: #8F262B;
+    background-color: rgba($color: #C8ACDD, $alpha: .4); 
+    color: #35294D;
     display: flex;
     align-items: center;
     .address{
         width: 33%;    
         margin: 100px;  
-        font-size: large;  
+        font-size: large; 
+        display: flex; 
     }
     .footerLinks{
         width: 33%;
         height: 50%;
         font-size: large;  
+        padding-left: 20px;
     }
    
     p{
         margin: 8px;
     }
     a{
-        color: white;
+        //color: white;
+        color: #35294D;
+    }
+    a:hover{
+        opacity: 0.8;
+    }
+    .worldMap{
+        width:175px;
+        height: 100px;
+    }
+    .addressText{
+        display: inline-block;
+        align-content: center;
     }
 
     .socialContainer{
@@ -29,10 +43,14 @@
         align-items: center;
         justify-content: center;
         width: 33%;
+        padding-right: 20px;
         svg{
             width: 75px;
             height: 75px;
             margin: 20px;
+        }
+        svg:hover{
+            opacity: 0.8;
         }
     }
 }

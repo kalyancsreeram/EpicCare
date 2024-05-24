@@ -1,14 +1,14 @@
 .servicesContainer{
     text-align: justify;
-    padding: 20px;
+    // padding: 20px;
     
     .main-title{
-        color: #003b71;     
+        color: #35294D;     
     }
 
     .intro{
      padding: 10px 20px;
-     text-align: justify;
+     text-align: justify;    
     }
     .intro-content{
         padding: 20px;
@@ -24,30 +24,48 @@
    }
 
    .service_card{
+    min-height: 250px;
      div {
        margin: 10px;
-       width: 75%;      
+       width: 100%;      
      }   
      .MuiTypography-h6{
-      color: #003b71;
+      color: #35294D;
       font-weight: bold;
+      text-align: left;
      }
      .MuiTypography-p{
-      color: #fffefe;  
+      color: black;  
       font-size: 14px; 
-     }
+     }   
          
    }
    .media_control_card{
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgb(137, 180, 194);
+    width: 100%;
+    margin:20px;    
+    background-color: rgba($color: #C6AADB, $alpha: .2);   
+    img{
+      object-fit: cover;
+    }
    }
-   .services_notes{
-    margin-bottom: 20px;    
-   }
+   
    .servicesSummary{
     width: 80%;
+    margin-left:20px;
+    margin-bottom:20px;
+   }
+   .service-panel{
+    width: 50%;  
+    margin: 20px;  
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    .css-1rorjgf-MuiCardMedia-root{
+      width: 40%;
+    }
+   }
+   .services-panel-container{
+      display: flex;
+      margin-right: 20px;
    }
 }

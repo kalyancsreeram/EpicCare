@@ -3,7 +3,7 @@
    // padding: 20px;
 
     .main-title{
-        color: #006ba6;
+        color: #35294D;
     }
 
     .intro{
@@ -16,17 +16,18 @@
 
    .about_title{
     margin-top: 20px;
-     color:#006ba6;
+     color:#35294D;
    }
    .about_secondary_title{
-    color:#006ba6;
+    color:#35294D;
     opacity: 0.8;
     text-decoration: underline;
    }
 
    .core-values-container{        
        //background-color: rgb(202, 202, 170);
-       background-color: rgb(122, 159, 171);
+    //    background-color: rgb(122, 159, 171);
+       background-color: rgba($color: #C6AADB, $alpha: .2);   
        display: flex;
        flex-direction: column;
        align-items: center;

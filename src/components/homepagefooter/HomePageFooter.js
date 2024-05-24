@@ -7,19 +7,19 @@ import {faYoutubeSquare} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import WorldMap from "../../assets/images/map.png"
 
 function HomePageFooter() {
   return (
     <div className='homePageFooterContainer'>
-        <div className='address'>                   
-            <p><b>SeizureCare</b></p>
-            {/* <p>626 W. Moreland Blvd.</p>
-            <p>Waukesha, WI 53188</p>
-            <p>Phone: (262) 754-0898</p>
-            <p>Fax: (262) 754-0897</p>
-            <p>Toll Free: (866) 374-7648</p> */}
-            {/* <p><a href="/">Office Locations</a></p> */}
+        <div className='address'>   
+          <div className='addressText'>
+            <p><b>SeizureCare</b></p>          
             <p><a href="/">USA</a> | <a href="/">INDIA</a> </p>
+          </div>  
+          <img className="worldMap" alt='SeizureCare' src={WorldMap}/>           
+            
+            {/* <img */}
 
         </div>
         <div className='footerLinks'>      

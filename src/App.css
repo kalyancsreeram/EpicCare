@@ -9,8 +9,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 75px;
-  width: 100%;
-  background-color:#003b71;
+  width: 100%;  
+  background-color: #35294D;
+ 
+  /* CSS3 */
   color: white;  
 }
 .PageNotFound{
@@ -30,11 +32,11 @@ body {
 }
 
 .orderFormContainer{
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; 
   padding-left: 50px;
   padding-top: 20px;
 }
 .servicesLabel{
-  color: #003b71;
+  color: #35294D;
 }
 

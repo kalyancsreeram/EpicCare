@@ -34,7 +34,7 @@ function NavBar() {
           <NavLink to='/order'>Order</NavLink>   
           <NavLink to='/research'>Research</NavLink>     
           <NavLink to='/resources'>Resources</NavLink>   
-          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/about'>About Us</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>          
           {
             auth.user && (

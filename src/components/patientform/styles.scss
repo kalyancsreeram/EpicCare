@@ -4,7 +4,7 @@
   padding: 50px;
   padding-top: 20px;
   //color: #006ba6;
-  color: #003b71;
+  color: #35294D;
 }
 .inputField{   
     width: 50%;  
@@ -18,13 +18,18 @@
     resize: vertical;
 }
 .inputSubmit{
-  background-color: #04AA6D;
+  background-color: #673147;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  width: 200px;
+}
+.inputSubmit:hover{
+  background-color: #673147 !important;
+  opacity: 0.8;
 }
 .patientFormContainer{
   /* border-radius: 5px; */
@@ -74,11 +79,13 @@
 }
 
 .patientNote{
-  font-style: italic;
   padding-bottom: 20px;
+  font-weight: bold;  
 }
 .patientNoteContainer{
   margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .orderTextArea{
@@ -96,3 +103,12 @@
   resize: vertical;
   display: block;
 }
+
+.contactInfo{
+  text-decoration: underline;
+  color: #003b71;  
+  }
+
+  .contactInfo:hover{
+    opacity: 0.8;    
+  }
