@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './styles.scss';
-import MediaControlCard from './MediaControlCard';
+import MediaControlDiv from './MediaControlDiv';
 import ServicesOne from "../../assets/images/services-one.jpg";
 import ServicesTwo from "../../assets/images/services-two.png";
 import ServicesThree from "../../assets/images/services-three.png";
@@ -25,22 +25,21 @@ const ServicesComp = () => {
               </Typography>             
            </div>
            <div className='services-panel-container'>
-                <div className='service-panel'>  
-                    <p></p>
-                    <MediaControlCard title='Monitored Video EEG Services' desc='Short-term and long-term video EEG monitoring, adhering to established acquisition guidelines. Providing real-time, actionable insights to physicians based on EEG analysis to expedite treatment decisions and patient care.'
-                    source={ServicesOne}/>
-                    <MediaControlCard title='Epilepsy Management' desc='Supporting day-to-day treatment decisions for outpatient and inpatient settings, empowering clinicians with up-to-date knowledge.'
-                    source={ServicesTwo}/>
-                    <MediaControlCard title='Epilepsy Monitoring Unit (EMU) Services' desc='For patients with drug-resistant epilepsy, providing specialized tailored plans (Video EEG, MEG, SPM-PET, interictal and ictal SPECT,functional MRI, TMS, etc) to better understand epileptogenic networks.'
-                    source={ServicesThree}/>                           
+                <div className='service-panel'>                     
+                    <MediaControlDiv title='Monitored Video EEG Services' desc='Short-term and long-term video EEG monitoring, adhering to established acquisition guidelines. Providing real-time, actionable insights to physicians based on EEG analysis to expedite treatment decisions and patient care.'
+                    source={ServicesOne} styleLR={'Left'}/>
+                    <MediaControlDiv title='Epilepsy Management' desc='Supporting day-to-day treatment decisions for outpatient and inpatient settings, empowering clinicians with up-to-date knowledge.'
+                    source={ServicesTwo} styleLR={'Left'}/>
+                    <MediaControlDiv title='Epilepsy Monitoring Unit (EMU) Services' desc='For patients with drug-resistant epilepsy, providing specialized tailored plans (Video EEG, MEG, SPM-PET, interictal and ictal SPECT,functional MRI, TMS, etc) to better understand epileptogenic networks.'
+                    source={ServicesThree} styleLR={'Left'}/>                           
                 </div>
                 <div className='service-panel'>
-                <MediaControlCard title='Epilepsy Surgery Consultation' desc=' Offering expert guidance for epilepsy surgery decision-making, including personalized stereo EEG plans, and comprehensive post-operative care, empowering clinical management with epilepsy devices such as VNS, RNS, DBS, etc.'
-                    source={ServicesFour}/>
-                    <MediaControlCard title='Educational Webinars and Knowledge Dissemination' desc='Advancing the field of epilepsy through regular webinars and the distribution of expert knowledge, enhancing the skills of healthcare professionals globally.'
-                    source={ServicesFive}/>
-                    <MediaControlCard title='Research and Collaboration' desc='Promoting and participating in epilepsy research, collaborating with multiple centers worldwide to drive innovations and improve patient outcomes.'
-                    source={ServicesSix}/>   
+                    <MediaControlDiv title='Epilepsy Surgery Consultation' desc=' Offering expert guidance for epilepsy surgery decision-making, including personalized stereo EEG plans, and comprehensive post-operative care, empowering clinical management with epilepsy devices such as VNS, RNS, DBS, etc.'
+                    source={ServicesFour} styleLR={'Right'}/>
+                    <MediaControlDiv title='Educational Webinars and Knowledge Dissemination' desc='Advancing the field of epilepsy through regular webinars and the distribution of expert knowledge, enhancing the skills of healthcare professionals globally.'
+                    source={ServicesFive} styleLR={'Right'}/>
+                    <MediaControlDiv title='Research and Collaboration' desc='Promoting and participating in epilepsy research, collaborating with multiple centers worldwide to drive innovations and improve patient outcomes.'
+                    source={ServicesSix} styleLR={'Right'}/>   
                 </div>    
             </div>
             <Typography variant="body2" color="text.primary" className='servicesSummary'>
