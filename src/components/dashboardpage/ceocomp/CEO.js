@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.scss';
 import Typography from '@mui/material/Typography';
 
-import Welcome from "../../../assets/images/welcomeImg.png"
+import Welcome from "../../../assets/images/welcomeImg.jpg"
 
 function CEO() {
   return (
