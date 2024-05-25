@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './styles.scss';
 import { countriesList } from '../../utils/countries';
 import axios from 'axios';
-import { CONSTANTS } from '../../constants';
+import { CONSTANTS } from '../../Constants';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
