@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './styles.scss';
 import { countriesList } from '../../utils/countries';
 import axios from 'axios';
+import { CONSTANTS } from '../../constants';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -21,10 +22,8 @@ function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-    
-     
       axios
-       .post('http://localhost:3001/contactus', { ...formData })
+       .post(`http://${CONSTANTS.serverURL}/contactus`, { ...formData })
        .then(response => {
         setFormData({ firstname: '', lastname: '', phone: '', country:'Select a country',  email: '', message: '' });
          alert('Data has been successfully sent...')
