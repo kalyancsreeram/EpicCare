@@ -7,6 +7,7 @@ import UploadComp from './UploadComp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCirclePlus} from '@fortawesome/free-solid-svg-icons';
 import {faCircleMinus} from '@fortawesome/free-solid-svg-icons';
+import { CONSTANTS } from '../../Constants';
 
 
 
@@ -35,7 +36,7 @@ function PatientFormComp() {
   const handleSubmit = (event) => {
     event.preventDefault();   
     axios
-      .post('http://localhost:3001/patientform', { ...formData })
+      .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
       .then(response => {
         setFormData({ firstname: '', lastname: '', files: [] });
         setAdditionalFields([]);

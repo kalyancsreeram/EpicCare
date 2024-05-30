@@ -31,9 +31,9 @@ function HomePageFooter() {
             <p><a href="/contact-us">Contact</a> </p>
         </div>
         <div className='socialContainer'>
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faYoutubeSquare} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon className='fbIcon' icon={faFacebook} />
+          <FontAwesomeIcon className='ytIcon' icon={faYoutubeSquare} />
+          <FontAwesomeIcon className='linkedInIcon' icon={faLinkedin} />
         </div>
     </div>
   )

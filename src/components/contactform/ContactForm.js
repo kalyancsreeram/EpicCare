@@ -23,7 +23,7 @@ function ContactForm() {
     event.preventDefault();
     console.log(formData);
       axios
-       .post(`http://${CONSTANTS.serverURL}/contactus`, { ...formData })
+       .post(`${CONSTANTS.serverURL}/contactus`, { ...formData })
        .then(response => {
         setFormData({ firstname: '', lastname: '', phone: '', country:'Select a country',  email: '', message: '' });
          alert('Data has been successfully sent...')
