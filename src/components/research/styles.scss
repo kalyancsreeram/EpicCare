@@ -23,9 +23,14 @@
 
     .research_notes_text{
         margin-bottom: 20px;
-        font-size: 1rem !important;
+        font-size: 1.05rem !important;
         line-height: 1.6;
         font-weight: 500;
+        .research_notes_text_title{
+            font-weight: bold;
+            font-size: 1.25rem !important;
+            line-height: 1.6;           
+        }
     }
 
     .researchPointsContainer{

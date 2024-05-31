@@ -14,7 +14,7 @@ const ResearchComp = () => {
            
             <Typography variant="body2" color="text.primary" className='research_notes_text'>
                The research scope in epilepsy is vast and multidisciplinary, encompassing various aspects of this complex condition.
-               <br></br> <br></br><b>Some potential areas of investigation include:</b>
+               <br></br> <br></br><span className='research_notes_text_title'>Some potential areas of investigation include:</span>
                <div className='researchPointsContainer'>              
                   <ul className='researchPointsNotes'>
                       <li><b>Etiology and Pathophysiology: </b>Uncovering the underlying causes, mechanisms, and neural circuits involved in epilepsy.</li>

@@ -781,9 +781,14 @@ body {
 }
 .researchContainer .research_notes_text {
   margin-bottom: 20px;
-  font-size: 1rem !important;
+  font-size: 1.05rem !important;
   line-height: 1.6;
   font-weight: 500;
+}
+.researchContainer .research_notes_text .research_notes_text_title {
+  font-weight: bold;
+  font-size: 1.25rem !important;
+  line-height: 1.6;
 }
 .researchContainer .researchPointsContainer {
   display: flex;
