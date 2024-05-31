@@ -648,6 +648,7 @@ body {
 .aboutContainer .about_title {
   margin-top: 20px;
   color: #35294D;
+  font-weight: bold !important;
 }
 .aboutContainer .about_secondary_title {
   color: #35294D;

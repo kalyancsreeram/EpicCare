@@ -17,8 +17,9 @@
     }
 
    .about_title{
-    margin-top: 20px;
+     margin-top: 20px;
      color:#35294D;
+     font-weight: bold !important;
    }
    .about_secondary_title{
     color:#35294D;
@@ -26,9 +27,7 @@
     text-decoration: underline;
    }
 
-   .core-values-container{        
-       //background-color: rgb(202, 202, 170);
-    //    background-color: rgb(122, 159, 171);
+   .core-values-container{ 
        background-color: rgba($color: #C6AADB, $alpha: .2);   
        display: flex;
        flex-direction: column;
