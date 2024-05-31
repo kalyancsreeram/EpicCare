@@ -773,10 +773,10 @@ body {
   padding-right: 10%;
   text-align: justify;
   min-height: 100vh;
-  background-image: url(df86ce0f661dddc65d0e.png);
+  background-image: url(61670f8c1a58fde50db3.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 .researchContainer .research_notes_text {
