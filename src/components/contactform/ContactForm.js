@@ -10,7 +10,7 @@ function ContactForm() {
     lastname:"",
     email:"",
     phone:"",
-    country:"Select a country",
+    country:"India",
     message:""
   });
 
