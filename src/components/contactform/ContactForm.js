@@ -38,7 +38,7 @@ function ContactForm() {
       axios
        .post(`${CONSTANTS.serverURL}/contactus`, { ...formData })
        .then(response => {
-        setFormData({ firstname: '', lastname: '', phone: '', country:'Select a country',  email: '', message: '' });
+        setFormData({ firstname: '', lastname: '', phone: '', country:'India',  email: '', message: '' });
         document.getElementById("contactUs").disabled = false;
         setLoading(false); 
         alert('Data has been successfully sent...');
@@ -95,7 +95,7 @@ function ContactForm() {
 
                   <label htmlFor="message">Comments/Message</label>
                   <textarea className='contactTextArea contactFormInputElement' id="message" name="message" placeholder="Type your message here..."
-                            value={formData.commentsMsg}
+                            value={formData.message}
                             onChange={handleChange}/>
 
 
