@@ -24,8 +24,12 @@
 }
 
 .three-panel-main-title{
-color: #35294D;     
-display: block;
-margin-top: 1.5rem;
-margin-left: 3rem;
+    color: #35294D;     
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    .bold_text{
+        font-weight: bold;
+    }
+   
 }

@@ -28,7 +28,7 @@ function NavBar() {
   return (
     <div>      
       <nav>
-          <img className='homeBtn' alt='SeizureCare' style={{width: '165px', height:'70px', cursor:'pointer', left: '10'}} src={CompanyLogo} onClick={homeBtnHandler} />
+          <img className='homeBtn' alt='SeizureCare' style={{width: '200px', cursor:'pointer', left: '10'}} src={CompanyLogo} onClick={homeBtnHandler} />
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/services'>Services</NavLink>  
           <NavLink to='/order'>Order</NavLink>   

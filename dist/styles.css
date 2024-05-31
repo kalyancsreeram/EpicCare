@@ -625,6 +625,9 @@ body {
   margin-top: 1.5rem;
   margin-left: 3rem;
 }
+.three-panel-main-title .bold_text {
+  font-weight: bold;
+}
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/aboutcomp/styles.scss ***!
   \*******************************************************************************************************************************/
@@ -757,9 +760,6 @@ body {
 /*!******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/research/styles.scss ***!
   \******************************************************************************************************************************/
-.researchContainer {
-  text-align: justify;
-}
 .researchContainer .main-title {
   color: #35294D;
   font-weight: bold;
@@ -1295,6 +1295,9 @@ button:hover {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+.resourcesContainer .lifestyle_choices {
+  padding-left: 2rem;
 }
 .resourcesContainer tr:nth-child(even) {
   background-color: #dddddd;

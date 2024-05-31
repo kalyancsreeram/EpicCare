@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Typography from '@mui/material/Typography';
-
 function ResourcesTable() {
   return (
-    <div className='resourcesTable'>
-        <Typography className='boldHeading' gutterBottom variant="h6" component="div">
-            Possible features:
-        </Typography>
-        <table>       
+    <div className='resourcesTable'>       
+        <table>    
+            <tr>
+                <th>Possible features:</th>
+                <th></th>
+                <th></th>
+            </tr>   
             <tr>
                 <td>Seizure calender</td>
                 <td className='check'><span>&#10003;</span></td>
@@ -50,17 +50,17 @@ function ResourcesTable() {
                 <td></td>
             </tr>
             <tr>
-                <td>Diet</td>
+                <td className='lifestyle_choices'>- Diet</td>
                 <td className='check'><span>&#10003;</span></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Mood</td>
+                <td className='lifestyle_choices'>- Mood</td>
                 <td className='check'><span>&#10003;</span></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Triggers</td>
+                <td className='lifestyle_choices'>- Triggers</td>
                 <td className='check'><span>&#10003;</span></td>
                 <td></td>
             </tr>

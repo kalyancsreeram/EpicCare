@@ -14,7 +14,7 @@ export default function CardsComponent() {
   return (
     <>
       <div className='three-panel-main-title'>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" className='bold_text'>
                 Latest developments in Epilepsy:
         </Typography>
       </div>
