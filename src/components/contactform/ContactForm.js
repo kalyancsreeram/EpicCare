@@ -36,7 +36,7 @@ function ContactForm() {
 
   return (
     <div className="contactFormContainer">
-        <h1 className='contactFormTitle'>CONTACT US</h1>
+        <h1 className='contactFormTitle'>Contact Us</h1>
         <p>Thank you for your interest in SeizureCare. Please fill out the below form with your comments or message.</p>
         <p className='contactNote'>NOTE: Please use this form for general information purposes only. DO NOT send personal health information through this form.</p>
         <div>

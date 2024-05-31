@@ -20,7 +20,7 @@ const ServicesComp = () => {
               <Typography className='main-title' gutterBottom variant="h4" component="div">
                   Services
               </Typography>
-              <Typography variant="body2" color="text.primary">
+              <Typography variant="body2" color="text.primary" className='services_text'>
                 SeizureCare provides cutting-edge, remote care through a range of specialized services, delivering comprehensive support to providers dealing with epilepsy patients.
               </Typography>             
            </div>

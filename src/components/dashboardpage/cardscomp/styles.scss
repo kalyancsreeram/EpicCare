@@ -16,12 +16,16 @@
             margin-top: 2px;
             object-fit: contain;
         }
+        .card_text{
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
     }  
-  }
+}
 
-  .three-panel-main-title{
-    color: #35294D;     
-    display: block;
-    margin-top: 1.5rem;
-    margin-left: 3rem;
-   }
+.three-panel-main-title{
+color: #35294D;     
+display: block;
+margin-top: 1.5rem;
+margin-left: 3rem;
+}

@@ -1,9 +1,11 @@
 .aboutContainer{
     text-align: justify;
+   
    // padding: 20px;
 
     .main-title{
         color: #35294D;
+        font-weight: bold;
     }
 
     .intro{
@@ -56,5 +58,11 @@
    }
    .about_us_notes{
      margin-bottom: 20px;
+     font-size: 1rem;
+     line-height: 1.6;
+   }
+   .about_us_sec_notes{
+     font-size: 1rem;
+     line-height: 1.6;
    }
 }

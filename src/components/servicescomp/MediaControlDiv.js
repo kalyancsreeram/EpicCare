@@ -11,7 +11,7 @@ function MediaControlDiv(props) {
             <Typography className='service-title' component="div" variant="h6">
                 {props.title}
             </Typography>
-            <Typography variant="p" color="text.secondary" component="div">
+            <Typography variant="p" color="text.secondary" component="div" className='services_text'>
                {props.desc}
             </Typography>
         </div>

@@ -1,10 +1,16 @@
 .resourcesContainer{
     padding: 40px;
     background-color: rgba($color: #C6AADB, $alpha: .2); 
-
+    
+    .css-1vw6mcs-MuiTypography-root{
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    
     .resourcesMainHeading{
         color: #35294D;
         margin-bottom: 20px;
+        
     }
 
     .boldHeading{

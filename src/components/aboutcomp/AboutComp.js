@@ -29,7 +29,7 @@ const AboutComp = () => {
                 Our Mission
             </Typography>
                
-            <Typography variant="body2" color="text.primary">
+            <Typography variant="body2" color="text.primary" className='about_us_notes'>
                      We dedicated ourselves to the unrelenting quest for knowledge and discovery to transform epilepsy care by joining forces against epilepsy to crack the code of this complex condition. We believe in an inspirational research quote by Roosevelt - <i><q>Every doubt is an opportunity to discover.</q></i>
             </Typography>               
         </div>
@@ -38,7 +38,7 @@ const AboutComp = () => {
                 Our Vision
             </Typography>
            
-            <Typography variant="body2" color="text.primary">
+            <Typography variant="body2" color="text.primary" className='about_us_notes'>
                 Our vision is to expand top-tier epilepsy remote services globally over the next five years, setting new standards in the management and changing outcomes of epilepsy-related neurological conditions.
             </Typography>
             
@@ -53,7 +53,7 @@ const AboutComp = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                     Integrity
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" className='about_us_sec_notes'>
                                     We uphold the highest standards of professionalism, ethics, and honesty in all our actions, fostering a culture of confidentiality, trust, respect, and transparency.
                                 </Typography>
                             </CardContent>           
@@ -63,7 +63,7 @@ const AboutComp = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                     Empathy
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" className='about_us_sec_notes'>
                                     Our commitment to excellence is reflected in our dedication to understanding and addressing the needs of our client physicians every day.
                                 </Typography>
                             </CardContent>               
@@ -73,7 +73,7 @@ const AboutComp = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                      Quality and Innovation
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" className='about_us_sec_notes'>
                                      We constantly seek innovative solutions that enhance safety and efficiency, striving to implement the most effective practices for superior outcomes.
                                 </Typography>
                                 </CardContent>                
@@ -85,7 +85,7 @@ const AboutComp = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                     Collaboration
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" className='about_us_sec_notes'>
                                     We are resolute in forming robust partnerships with hospitals and organizations, particularly those concerning financially disadvantaged patients, to extend our reach and impact. Our collaborative efforts ensure that all stakeholders experience exceptional support.
                                 </Typography>
                             </CardContent>               
@@ -95,7 +95,7 @@ const AboutComp = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                      Refinement
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" className='about_us_sec_notes'>
                                      SeizureCare is devoted to ongoing learning and technological integration to achieve faster, more precise, and effective clinical results, continually enhancing the quality of care we provide.
                                 </Typography>
                             </CardContent>                

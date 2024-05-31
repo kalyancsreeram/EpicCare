@@ -1,7 +1,8 @@
 .servicesContainer{
    
     .main-title{
-        color: #35294D;     
+        color: #35294D;   
+        font-weight: bold;  
     }
 
     .intro{
@@ -51,6 +52,8 @@
     width: 80%;
     margin-left:20px;
     margin-bottom:20px;
+    font-size: 1rem;
+    line-height: 1.6;
    }
    .service-panel{
     width: 50%;     
@@ -99,5 +102,9 @@
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .services_text{
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
