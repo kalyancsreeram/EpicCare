@@ -2,9 +2,9 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import Yuneli from '../../../assets/images/Yuneli.jpg'
-import Marco from '../../../assets/images/Marco.jpg'
-import Priya from '../../../assets/images/Priya.jpg'
+// import Yuneli from '../../../assets/images/Yuneli.jpg'
+// import Marco from '../../../assets/images/Marco.jpg'
+// import Priya from '../../../assets/images/Priya.jpg'
 
 import './styles.scss';
 
@@ -19,7 +19,7 @@ function Testimonials() {
     interval={6100}
   >
     <div>
-      <img src={Yuneli} alt="Yuneli"/>
+      {/* <img src={Yuneli} alt="Yuneli"/> */}
       <div className="myCarousel">
         <h3>Yuneli</h3>      
         <p>
@@ -29,7 +29,7 @@ function Testimonials() {
     </div>
 
     <div>
-    <img src={Marco} alt="Marco"/>
+    {/* <img src={Marco} alt="Marco"/> */}
       <div className="myCarousel">
         <h3>Marco</h3>        
         <p>
@@ -39,7 +39,7 @@ function Testimonials() {
     </div>
 
     <div>
-    <img src={Priya} alt="Priya"/>
+    {/* <img src={Priya} alt="Priya"/> */}
       <div className="myCarousel">
         <h3>Priya</h3>        
         <p>
