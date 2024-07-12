@@ -733,16 +733,18 @@ body {
 
 .contactSubmit {
   background-color: #673147;
-  color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-.contactSubmit:hover {
+.contactSubmit:hover:enabled {
+  cursor: pointer;
   background-color: #673147 !important;
+  border: none;
   opacity: 0.8;
+  color: white;
 }
 
 .preferenceSet {
@@ -939,7 +941,13 @@ nav a.active {
 .loginBtn {
   width: auto;
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.signupBtn {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .logoutBtn {
@@ -1083,6 +1091,121 @@ button:hover {
   }
 }
 /*!*********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/signupmodal/styles.scss ***!
+  \*********************************************************************************************************************************/
+.signupmodal {
+  /* Full-width input fields */
+  /* Add a background color when the inputs get focus */
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Float cancel and signup buttons and add an equal width */
+  /* Add padding to container elements */
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* Add Zoom Animation */
+  /* Style the horizontal ruler */
+  /* Clear floats */
+  /* Change styles for cancel button and signup button on extra small screens */
+}
+.signupmodal h1 {
+  margin-top: 0;
+}
+.signupmodal input[type=text], .signupmodal input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.signupmodal input[type=text]:focus, .signupmodal input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.signupmodal button {
+  background-color: #673147;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.signupmodal button:hover {
+  opacity: 0.8;
+}
+.signupmodal .cancelbtn {
+  padding: 14px 20px;
+  background-color: #474e5d;
+}
+.signupmodal .cancelbtn, .signupmodal .signupbtn {
+  float: left;
+  width: 50%;
+}
+.signupmodal .close {
+  position: relative;
+  left: 95%;
+  top: 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: 100;
+}
+.signupmodal .container {
+  padding: 16px;
+}
+.signupmodal .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+.signupmodal .modal-content {
+  background-color: #fefefe;
+  margin: 0% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+.signupmodal .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.signupmodal hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.signupmodal .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .signupmodal .cancelbtn, .signupmodal .signupbtn {
+    width: 100%;
+  }
+}
+/*!*********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/patientform/styles.scss ***!
   \*********************************************************************************************************************************/
 .patientFormContainer {
@@ -1129,13 +1252,15 @@ button:hover {
 }
 
 .multiSet {
-  border-width: 0.5px;
   width: 50%;
   margin-bottom: 16px;
-}
-
-.multiSetInput {
-  margin-right: 5px;
+  display: block;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
 }
 
 .statesField {
@@ -1203,6 +1328,15 @@ button:hover {
 
 .contactInfo:hover {
   opacity: 0.8;
+}
+
+.patientForm2Submit:hover:enabled {
+  opacity: 0.8;
+}
+
+.patientForm2Submit {
+  color: white;
+  background-color: #673147 !important;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!

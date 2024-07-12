@@ -51,6 +51,8 @@ function ContactForm() {
        })
   };
   const style = { position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" };
+  const { firstname, phone, email } = formData;
+  const enabled = firstname.length > 0 && (phone.length > 0  || email.length > 0);
    return (
     <>    
       <div style={style}>
@@ -110,7 +112,7 @@ function ContactForm() {
                     <label htmlFor="preferenceEmail">By Email</label>                  
                     </div>
                   </fieldset>      */}
-                  <input className='contactSubmit' type="submit" value="Submit"></input>
+                  <input className='contactSubmit' type="submit" value="Submit" disabled={!enabled}></input>
 
               </form>           
           </div>      

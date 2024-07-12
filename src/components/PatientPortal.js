@@ -22,7 +22,10 @@ function PatientPortal() {
         </select>      
       </div>
       { typeOfService === 'EEG' &&  <PatientFormComp/> }
-      { typeOfService !== 'EEG' &&  <PatientFormComp2/> }
+      { typeOfService === 'EpilepsyCare' &&  <PatientFormComp2 typeOfService="EpilepsyCare"/> }
+      { typeOfService === 'EMU' &&  <PatientFormComp2 typeOfService="EMU"/> }
+      { typeOfService === 'EpilepsySurgicalEvaluation' &&  <PatientFormComp2 typeOfService="EpilepsySurgicalEvaluation"/> }
+
     </div>
    
   )

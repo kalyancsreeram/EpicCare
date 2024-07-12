@@ -41,14 +41,21 @@
   // padding: 50px;
   // margin: 20px;
 }
-.multiSet{
-  border-width: 0.5px;
+.multiSet{  
   width: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
+  display: block; 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+ 
+  resize: vertical;
 }
-.multiSetInput{
-  margin-right: 5px;
-}
+// .multiSetInput{
+//   margin-right: 5px;
+// }
 .statesField{
   display: block;
   width: 100px;
@@ -111,4 +118,13 @@
 
   .contactInfo:hover{
     opacity: 0.8;    
+  }
+
+  .patientForm2Submit:hover:enabled{
+    opacity: 0.8;      
+  }
+
+  .patientForm2Submit{
+    color: white;
+    background-color: #673147 !important;
   }

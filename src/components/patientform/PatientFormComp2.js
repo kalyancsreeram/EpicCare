@@ -1,14 +1,18 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
+import { CONSTANTS } from '../../Constants';
 
-function PatientFormComp2() {
+function PatientFormComp2(props) {
+
+  const { typeOfService } = props;
 
   const [formData, setFormData] = useState({
     drName:"",
     hospital:"",
     contactInfo: "",
-    message: "",    
+    message: "",   
+    typeOfService: typeOfService,
   });
 
   const handleChange = (event) => {
@@ -17,19 +21,24 @@ function PatientFormComp2() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();   
+    event.preventDefault();  
+    console.log(formData); 
     axios
-      .post('http://localhost:3001/patientform', { ...formData })
+      .post(`${CONSTANTS.serverURL}/ordernoneegservice`, { ...formData })
       .then(response => {
+        console.log(response);
         setFormData({ drName: '', hospital: '', contactInfo: '', message: '' });  
         alert('Data has been successfully sent...')
       })
       .catch(() => {
-         alert('Something went wrong. Try again later');        
+          alert('Something went wrong. Try again later');        
       })
   };
 
-  return (
+  const { drName, hospital, contactInfo } = formData;
+  const enabled = drName.length > 0 && hospital.length > 0  && contactInfo.length > 0;
+
+return (
     <div className="patientFormContainer">         
       <form onSubmit={handleSubmit}>     
           <label htmlFor="drName">Doctor Name</label>
@@ -54,7 +63,8 @@ function PatientFormComp2() {
               <p>Thank you for your interest in SeizureCare. We will get back to you with confirmation shortly. <br></br>If you have any questions, feel free to contact us at <span className='contactInfo'>info@seizurecarenet.com</span>.</p>
               <p className='patientNote'>NOTE: Please use this form for general clinical information only. DO NOT send any specific patient health information through this form.</p>
           </div>
-          <input className='inputField inputSubmit' type="submit" value="Submit"></input>
+          <input className='inputField patientForm2Submit' type="submit" value="Submit" 
+          disabled={!enabled}></input>
       </form>    
     </div>
   )

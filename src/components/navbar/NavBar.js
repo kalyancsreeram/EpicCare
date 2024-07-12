@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import './styles.scss';
 import LoginModal from '../loginmodal/LoginModal';
+import SignupModal from '../signupmodal/SignupModal';
 import { useAuth } from '../../utils/auth';
 
 //import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
@@ -24,6 +25,10 @@ function NavBar() {
     navigate('/');
   }
 
+  
+  const signupBtnHandler = () => {
+    document.getElementById('signupModal').style.display='block'
+  }
 
   return (
     <div>      
@@ -47,13 +52,19 @@ function NavBar() {
             )
           }
           {
+            !auth.user && (
+              <button className='signupBtn' onClick={signupBtnHandler}>Sign Up</button> 
+            )
+          }
+          {
             auth.user && (
               <button className='logoutBtn' onClick={logoutBtnHandler}>Logout</button> 
             )
           }        
           
       </nav>
-      <LoginModal/>         
+      <LoginModal/>   
+      <SignupModal/>      
     </div>
     
   )
