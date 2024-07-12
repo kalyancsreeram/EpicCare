@@ -117,7 +117,7 @@ function PatientFormComp() {
 
   const patientFormSubmit = () => {
       axios
-      .post(`${CONSTANTS.serverURL}/ordereegservice`, { ...formData })
+      .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
       .then(response => {
           console.log(response);             
           setFormData({ 

@@ -24,7 +24,7 @@ function PatientFormComp2(props) {
     event.preventDefault();  
     console.log(formData); 
     axios
-      .post(`${CONSTANTS.serverURL}/ordernoneegservice`, { ...formData })
+      .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
       .then(response => {
         console.log(response);
         setFormData({ drName: '', hospital: '', contactInfo: '', message: '' });  
