@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import './styles.scss';
 import LoginModal from '../loginmodal/LoginModal';
@@ -7,11 +7,18 @@ import { useAuth } from '../../utils/auth';
 
 //import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
 import CompanyLogo from '../../assets/images/CompanyLogoEdited.png'
+import { decodeToken } from '../../utils/tokenUtil';
 
 
 function NavBar() {
   const navigate = useNavigate();
   const auth = useAuth();
+
+  useEffect(() => {
+    const token = decodeToken();   
+    console.log(`Auth --> ${auth}`)
+    auth.login(token);
+  }, []);
 
   const loginBtnHandler = () => {
     document.getElementById('loginModal').style.display='block'

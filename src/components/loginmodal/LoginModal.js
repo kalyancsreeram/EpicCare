@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../utils/auth';
 import axios from 'axios';
@@ -55,7 +55,10 @@ function LoginModal() {
            .post(`${CONSTANTS.serverURL}/login`, { ...user })
            .then(response => {
                 console.log(response);
-                auth.login(user.username);
+                const { token } = response.data;
+                // Store the token in local storage
+                localStorage.setItem('token', token);
+                auth.login(token);
                 setUser({ username: '', password: '' });            
                 setLoading(false);   
                 navigate('physician-portal');       

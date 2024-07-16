@@ -10,6 +10,7 @@ function SignupModal() {
         email:"",
         password:"",    
         confirmPwd: "",
+        name: ""
     });
     const [color] = useState("#9b2c79");
     const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ function SignupModal() {
 
     const closeHandler = () => {
         document.getElementById('signupModal').style.display='none';         
-        setFormData({ email: '', password: '', confirmPwd: '', });        
+        setFormData({ email: '', password: '', confirmPwd: '', name: '' });        
     }
 
     const handleChange = (event) => {
@@ -60,7 +61,7 @@ function SignupModal() {
          .post(`${CONSTANTS.serverURL}/signup`, { ...formData })
          .then(response => {
               console.log(response);             
-              setFormData({ email: '', password: '', confirmPwd: '', });            
+              setFormData({ email: '', password: '', name: '' });            
               setLoading(false);                   
               document.getElementById('signupModal').style.display='none'   
               alert('Account created successfully!!');         
@@ -92,7 +93,10 @@ function SignupModal() {
                     <h1>Sign Up</h1>
                     <p>Please fill in this form to create an account.</p>
                     <hr></hr>
-                   
+                    <label htmlFor="psw"><b>Name</b></label>
+                    <input id="signupname" type="text" placeholder="Enter Name" name="name" required
+                           value={formData.name} onChange={handleChange}></input>
+
                     <label htmlFor="email"><b>Email</b></label>                    
                     <input type="text" placeholder="Enter Email" name="email" required  
                            value={formData.email} onChange={handleChange}></input>

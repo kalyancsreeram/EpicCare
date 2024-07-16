@@ -1,10 +1,17 @@
-import React from 'react'
-import { useAuth } from '../../utils/auth'
+import React, {useState, useEffect} from 'react'
+import { decodeToken } from '../../utils/tokenUtil';
 
 function PhysicianGridComp() {
-  const auth = useAuth();
+ 
+  const [user, setUser]= useState('');
+
+  useEffect(() => {
+    const token = decodeToken();     
+    setUser(token.user.name);
+  }, []);
+
   return (
-    <div>Welcome {auth.user}</div>
+    <div>Welcome {user}</div>
   )
 }
 

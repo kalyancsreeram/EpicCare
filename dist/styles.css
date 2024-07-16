@@ -1109,11 +1109,12 @@ button:hover {
 }
 .signupmodal h1 {
   margin-top: 0;
+  margin-bottom: 15px;
 }
 .signupmodal input[type=text], .signupmodal input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 5px 0 18px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -1193,7 +1194,7 @@ button:hover {
 }
 .signupmodal hr {
   border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .signupmodal .clearfix::after {
   content: "";
@@ -1204,6 +1205,13 @@ button:hover {
   .signupmodal .cancelbtn, .signupmodal .signupbtn {
     width: 100%;
   }
+}
+.signupmodal label {
+  font-size: 16px;
+}
+.signupmodal p {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 /*!*********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/patientform/styles.scss ***!
