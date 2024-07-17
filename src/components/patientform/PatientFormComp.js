@@ -176,15 +176,15 @@ function PatientFormComp() {
           
             */}
           
-            <label htmlFor="fname">Patient First Name</label>
+            <label className='boldText' htmlFor="fname">Patient First Name</label>
             <input className='inputField' type='text' id='fname' name='firstname' 
                   placeholder='First name'  value={formData.firstname}
                   onChange={handleChange}/>
-            <label htmlFor="lname">Patient Last Name</label>
+            <label className='boldText' htmlFor="lname">Patient Last Name</label>
             <input className='inputField' type='text' id='lname' name='lastname' 
                   placeholder='Last Name'  value={formData.lastname}
                   onChange={handleChange}/>         
-            <label htmlFor="dob">Date Of Birth</label> {age > 0 && <label>   [Age: {age}]</label> }
+            <label className='boldText' htmlFor="dob">Date Of Birth</label> {age > 0 && <label>   [Age: {age}]</label> }
             <input className='inputField' type='date' id='dob' name='serviceend' 
             placeholder='dd-mm-yyyy' onChange={(event) => setAge(calculate_age(event.target.value))}/>
             {/* <fieldset className='multiSet'>
@@ -198,20 +198,20 @@ function PatientFormComp() {
                 <label htmlFor="female">Female</label>                  
               </div>
             </fieldset>    */}
-             <label>Gender</label>
+             <label className='boldText'>Gender</label>
              <select className='multiSet' name="gender" value={formData.gender} onChange={handleChange}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>                
              </select>   
           
-            <label htmlFor="address">Address</label>
+            <label className='boldText' htmlFor="address">Address</label>
             <input className='inputField' type='text' id='address' name='addressLine1' placeholder='Street Address' value={formData.addressLine1}
                   onChange={handleChange}/>
             <input className='inputField' type='text' id='address2' name='addressLine2' placeholder='Address Line #2'
                    value={formData.addressLine2}
                    onChange={handleChange}/>           
 
-            <label htmlFor="city">City</label>
+            <label className='boldText' htmlFor="city">City</label>
             <input className='inputField' type='text' id='city' name='city' placeholder='City'
                    value={formData.city}
                    onChange={handleChange}/>
@@ -224,47 +224,47 @@ function PatientFormComp() {
               <option value="Chicago">Chicago</option>
             </select> */}
 
-            <label htmlFor="state">State</label>
+            <label className='boldText' htmlFor="state">State</label>
             <input className='inputField' type='text' id='state' name='state' placeholder='State'
                    value={formData.state}
                    onChange={handleChange}/>
 
-            <label htmlFor="zip">ZIP Code</label>
+            <label className='boldText' htmlFor="zip">ZIP Code</label>
             <input className='inputField' type='number' id='zip' name='zip' placeholder='Zip Code'
                    value={formData.zip}
                    onChange={handleChange}/>
             
-            <label htmlFor="phone">Phone Number</label>
+            <label className='boldText' htmlFor="phone">Phone Number</label>
             <input className='inputField' type='number' id='phone' name='phone' placeholder='Phone Number'
                    value={formData.phone}
                    onChange={handleChange}/>
 
-            <label htmlFor="email">Email</label>
+            <label className='boldText' htmlFor="email">Email</label>
             <input className='inputField' type='text' id='email' name='email' placeholder='Email'
                    value={formData.email}
                    onChange={handleChange}/>
 
-            <label htmlFor="uid">UID</label>
+            <label className='boldText' htmlFor="uid">UID</label>
             <input className='inputField' type='text' id='uid' name='uid' placeholder='Uid'
                    value={formData.uid}
                    onChange={handleChange}/>
 
-            <label htmlFor="eegType">Type of EEG</label>
+            <label className='boldText' htmlFor="eegType">Type of EEG</label>
             <input className='inputField' type='text' id='eegType' name='eegType' placeholder='EEG Type'
                    value={formData.eegType}
                    onChange={handleChange}/>
 
-            <label htmlFor="advisingDr">Advising Doctor</label>
+            <label className='boldText' htmlFor="advisingDr">Advising Doctor</label>
             <input className='inputField' type='text' id='advisingDr' name='advisingDoctor' placeholder='Advising Doctor'
                    value={formData.advisingDoctor}
                    onChange={handleChange}/>
 
-            <label htmlFor="timeSlot">Time Slot</label>
+            <label className='boldText' htmlFor="timeSlot">Time Slot</label>
             <input className='inputField' type='text' id='timeSlot' name='timeslot' placeholder='Time Slot'
                    value={formData.timeslot}
                    onChange={handleChange}/>
 
-            <label htmlFor="message">Message</label>
+            <label className='boldText' htmlFor="message">Message</label>
             <textarea className='orderTextArea orderFormInputElement' id="message" name="message" placeholder="Type your message here..."
                       value={formData.message}
                       onChange={handleChange}/>

@@ -13,7 +13,7 @@ function PatientPortal() {
     <div style = {{minHeight:"100vh"}} >
       <div className='orderFormContainer'>
         <h1 className='servicesLabel'>Order Online</h1>
-        <label htmlFor="serviceType" className='servicesLabel'>Type of service</label>
+        <label htmlFor="serviceType" className='typeOfService'>Type of service</label>
         <select className='servicesField' name="services" id="services" value={typeOfService} onChange={serviceChangeHandler}>
           <option value="EEG">EEG Services</option>
           <option value="EpilepsyCare">Epilepsy Care</option>

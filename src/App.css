@@ -37,6 +37,12 @@ body {
   padding-top: 20px;
 }
 .servicesLabel{
-  color: #35294D;
+  color: #35294D;  
+}
+.typeOfService{
+  color: #35294D; 
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;   
+  font-size: 1.25rem;
 }
 

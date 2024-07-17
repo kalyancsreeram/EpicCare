@@ -71,23 +71,23 @@ function ContactForm() {
           <p className='contactNote'>NOTE: Please use this form for general information purposes only. DO NOT send personal health information through this form.</p>
           <div>
               <form onSubmit={handleSubmit}>
-                  <label htmlFor="fname">First Name</label>
+                  <label className='boldText' htmlFor="fname">First Name</label>
                   <input type='text' className='contactFormInputElement' id='firstname' name='firstname' placeholder='First Name'
                         value={formData.firstname}
                         onChange={handleChange}/>
-                  <label htmlFor="lname">Last Name</label>
+                  <label className='boldText' htmlFor="lname">Last Name</label>
                   <input type='text' className='contactFormInputElement' id='lastname' name='lastname' placeholder='Last Name'
                         value={formData.lastname}
                         onChange={handleChange}/>
-                  <label htmlFor="email">Email</label>
+                  <label className='boldText' htmlFor="email">Email</label>
                   <input type='text' className='contactFormInputElement' id='email' name='email' placeholder='Email Address'
                         value={formData.email}
                         onChange={handleChange}/>
-                  <label htmlFor="phone">Phone</label>
+                  <label className='boldText' htmlFor="phone">Phone</label>
                   <input type='number' className='contactFormInputElement' id='phone' name='phone' placeholder='Phone Number'
                         value={formData.phone}
                         onChange={handleChange}/>
-                  <label htmlFor="country">Country</label>
+                  <label className='boldText' htmlFor="country">Country</label>
                   <select className='countryField' name="country" id="country" value={formData.country}
                           onChange={handleChange}>                 
                     {
@@ -95,7 +95,7 @@ function ContactForm() {
                     }
                   </select>
 
-                  <label htmlFor="message">Comments/Message</label>
+                  <label className='boldText' htmlFor="message">Comments/Message</label>
                   <textarea className='contactTextArea contactFormInputElement' id="message" name="message" placeholder="Type your message here..."
                             value={formData.message}
                             onChange={handleChange}/>

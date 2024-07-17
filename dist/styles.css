@@ -60,6 +60,13 @@ body {
 .servicesLabel {
   color: #35294D;
 }
+
+.typeOfService {
+  color: #35294D;
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+}
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
   \*************************************************************************************************************************************************************/
@@ -760,6 +767,11 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.boldText {
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 /*!******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/research/styles.scss ***!
   \******************************************************************************************************************************/
@@ -1341,6 +1353,11 @@ button:hover {
 .patientForm2Submit {
   color: white;
   background-color: #673147 !important;
+}
+
+.boldText {
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!

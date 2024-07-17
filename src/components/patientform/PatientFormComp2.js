@@ -41,20 +41,20 @@ function PatientFormComp2(props) {
 return (
     <div className="patientFormContainer">         
       <form onSubmit={handleSubmit}>     
-          <label htmlFor="drName">Doctor Name</label>
+          <label className='boldText' htmlFor="drName">Doctor Name</label>
           <input className='inputField' type='text' id='drName' name='drName' 
                 placeholder='Doctor Name' value={formData.drName}
                 onChange={handleChange}/>
-          <label htmlFor="hospital">Hospital</label>
+          <label className='boldText' htmlFor="hospital">Hospital</label>
           <input className='inputField' type='text' id='hospital' name='hospital' 
                 placeholder='Hospital'  value={formData.hospital}
                 onChange={handleChange}/>  
-          <label htmlFor="contactInfo">Contact Info</label>
+          <label className='boldText' htmlFor="contactInfo">Contact Info</label>
           <input className='inputField' type='text' id='contactInfo' name='contactInfo' 
                 placeholder='Contact Info' value={formData.contactInfo}
                 onChange={handleChange}/>  
 
-          <label htmlFor="message">Message</label>
+          <label className='boldText' htmlFor="message">Message</label>
           <textarea className='orderTextArea orderFormInputElement' id="message" name="message" placeholder="Type your message here..."
                     value={formData.message}
                     onChange={handleChange}/>
