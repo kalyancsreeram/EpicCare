@@ -516,7 +516,7 @@ body {
   position: relative;
   justify-content: center;
   width: 100%;
-  background-image: url(94d1e77c2bc131def256.jpg);
+  background-image: url(2cb802383f5ab5764289.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -775,11 +775,6 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   min-height: 100vh;
-  background-image: url(61670f8c1a58fde50db3.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 .researchContainer .research_notes_text {
   margin-bottom: 20px;
@@ -920,6 +915,7 @@ nav {
   justify-content: end;
   align-items: center;
   padding-left: 20px;
+  margin-right: 10px;
 }
 
 nav a {

@@ -48,7 +48,7 @@ function NavBar() {
           <NavLink to='/resources'>Resources</NavLink>   
           <NavLink to='/about'>About Us</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>          
-          {
+          {/* {
             auth.user && (
               <NavLink to='/physician-portal'>Physician</NavLink>  
             )
@@ -67,7 +67,7 @@ function NavBar() {
             auth.user && (
               <button className='logoutBtn' onClick={logoutBtnHandler}>Logout</button> 
             )
-          }        
+          }         */}
           
       </nav>
       <LoginModal/>   
