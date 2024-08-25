@@ -6,7 +6,7 @@ import ServicesOne from "../../assets/images/services-one.jpg";
 import ServicesTwo from "../../assets/images/services-two.png";
 import ServicesThree from "../../assets/images/services-three.png";
 import ServicesFour from "../../assets/images/services-four.png";
-import ServicesFive from "../../assets/images/services-five.png";
+import ServicesFive from "../../assets/images/services-five.jpg";
 import ServicesSix from "../../assets/images/services-six.png";
 
 
