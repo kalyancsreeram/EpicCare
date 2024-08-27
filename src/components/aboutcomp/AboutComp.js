@@ -15,7 +15,7 @@ const AboutComp = () => {
             </Typography>
                
             <Typography variant="body2" color="text.primary" className='about_us_notes'>
-                    <b>SeizureCare is an American Healthcare Company</b>. Connecting medical professionals worldwide to epilepsy expertise and resources, our goal is to reduce the barriers and create a more equitable future for all those affected. 
+                    <b>SeizureCare is a Healthcare Company</b>. Connecting medical professionals worldwide to epilepsy expertise and resources, our goal is to reduce the barriers and create a more equitable future for all those affected. 
            </Typography>
            <Typography variant="body2" color="text.primary" className='about_us_notes'>
                      Epilepsy impacts the lives of millions globally, yet inadequate access to care persists, hindered by unaffordable services and a scarcity of trained specialists. Closing this gap is crucial to transform the lives of those affected by epilepsy, ensuring timely and quality care for all who need it. 
