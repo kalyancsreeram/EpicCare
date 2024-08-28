@@ -27,7 +27,7 @@ function CEO() {
             {/* <q><b>Welcome to SeizureCare, American Healthcare Network</b>. We pride ourselves on being a leading provider of EEG testing, offering expert services that earn the trust and respect of our clients by not only reporting EEG results but also assisting in effective patient treatment. Our commitment to modernizing equipment and supporting remote medical practices helps us meet growing healthcare demands while maintaining patient confidentiality. SeizureCare operates globally, working in demanding environments to ensure the best care and swift treatment outcomes everywhere. Our corporate culture emphasizes integrity, empathy, quality, innovation, and continuous improvement, reflecting our dedication to excellence in every interaction.</q> */}
             <blockquote>
               <p id="welcomeMsgText">
-                <b>Welcome to SeizureCare</b>, a healthcare company
+                <b>Welcome to SeizureCare</b>, an American healthcare company
                 revolutionizing remote epilepsy care. Our team of esteemed
                 American board-certified epileptologists earns global trust and
                 respect from healthcare professionals through an unwavering
