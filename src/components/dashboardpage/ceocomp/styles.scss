@@ -1,88 +1,94 @@
-.ceoContainerMain{
-    color: rgb(29, 25, 73);
+.ceoContainerMain {
+  color: rgb(29, 25, 73);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../../../assets/images/bgImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .ceoContainer {
+    margin: 50px;
     display: flex;
-    position: relative;
-    justify-content: center;
+    width: 75%;
+    align-items: center;
+  }
+  .ceoImage {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .ceoMessage {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-image: url("../../../assets/images/bgImage.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    .ceoContainer{
-        margin: 50px;
-        display: flex;
-        width: 75%;
-        align-items: center;
+    // padding-left: 50px;
+    margin-left: 50px;
+    p {
+      text-align: justify;
     }
-    .ceoImage{
-        display: flex;
-        align-items: center;
-        width: 25%;
-        height: 100%;
-        img{
-            width: 100%;
-        }
+    .ceoTitle {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-weight: bold;
     }
-    .ceoMessage{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-left: 50px;
-        p{
-            text-align: justify;
-        }
-        .ceoTitle{
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-    }
-    .welcome_msg{
-        text-align: justify;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 1rem;
-        line-height: 1.6;
-        blockquote {           
-            position: relative;
-            margin: 0.5em;
-            padding: 0.5em 2em 0.5em 3em;
-        }        
-        blockquote:before {   
-           // font-family: Georgia, serif;         
-            position: absolute;
-            font-size: 6em;
-            line-height: 1;
-            top: -10px;
-            left: 0;
-            content: "\201C";
-        }
-        blockquote:after {     
-            //font-family: Georgia, serif;       
-            position: absolute;
-           /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
-            float:right;
-            font-size:6em;
-            line-height: 1;
-            right:0;
-            bottom:-60px;
-            content: "\201D";
-        }
-        blockquote footer {
-            padding: 1em 2em 0 0;
-            text-align:right;
-        }
-        blockquote cite:before {
-            content: "\2013   ";
-        }
-        blockquote cite {
-            font-style: normal;
-        }
+  }
+  .welcome_msg {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    blockquote {
+      position: relative;
+      margin: 0.5em;
+      padding: 0.5em 2em 0.5em 3em;
     }
 
-    .seizureCare
-    {
-        width: 40%;
+    #welcomeMsgText {
+      margin: 1rem 0 0 1rem;
     }
+
+    blockquote:before {
+      // font-family: Georgia, serif;
+      position: absolute;
+      font-size: 6em;
+      line-height: 1;
+      top: -10px;
+      left: 0;
+      content: "\201C";
+    }
+    blockquote:after {
+      //font-family: Georgia, serif;
+      position: absolute;
+      /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+      float: right;
+      font-size: 6em;
+      line-height: 1;
+      right: 0;
+      bottom: -60px;
+      content: "\201D";
+    }
+    blockquote footer {
+      padding: 1em 2em 0 0;
+      text-align: right;
+    }
+    blockquote cite:before {
+      content: "\2013   ";
+    }
+    blockquote cite {
+      font-style: normal;
+    }
+  }
+
+  .seizureCareImg {
+    width: 40%;
+    border-radius: 30px;
+  }
 }
