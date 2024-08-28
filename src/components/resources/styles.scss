@@ -1,71 +1,74 @@
-.resourcesContainer{
-    padding: 40px;
-    background-color: rgba($color: #C6AADB, $alpha: .2); 
-    
-    .css-1vw6mcs-MuiTypography-root{
-      font-weight: bold;
-      font-size: 2rem;
-    }
-    
-    .resourcesMainHeading{
-        color: #35294D;
-        margin-bottom: 20px;
-        
-    }
+.resourcesContainer {
+  padding: 40px;
+  background-color: rgba($color: #c6aadb, $alpha: 0.2);
 
-    .boldHeading{
-        font-weight: bold;
-    }
-    a{
-        margin-left: 16px;
-    }
+  .css-1vw6mcs-MuiTypography-root {
+    font-weight: bold;
+    font-size: 2rem;
+  }
 
-    ul{
-        margin: 0;        
-    }
+  .resourcesMainHeading {
+    color: #35294d;
+    margin-bottom: 20px;
+  }
 
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      .lifestyle_choices{
-        padding-left: 2rem;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-      tr:nth-child(odd) {
-        background-color: white;
-      }
-      .check{
-        text-align: center;
-      }
+  .boldHeading {
+    font-weight: bold;
+  }
+  a {
+    margin-left: 16px;
+  }
 
-      .resourcesTable{
-        margin-top: 20px;
-      }
+  ul {
+    margin: 0;
+  }
 
-      .tableHeading{
-        margin-top: 40px;
-        color: #35294D;
-        text-decoration: underline;
-      }
-      .secondaryTitle{
-        color: #35294D;
-        text-decoration: underline;
-      }
-      .addPadding{
-        padding-left: 32px;
-      }
-      .smallerFont{
-        font-size: 1rem;
-      }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th.productName {
+    text-align: center;
+  }
+  .lifestyle_choices {
+    padding-left: 2rem;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  .check {
+    text-align: center;
+  }
+
+  .resourcesTable {
+    margin-top: 20px;
+  }
+
+  .tableHeading {
+    margin-top: 40px;
+    color: #35294d;
+    text-decoration: underline;
+  }
+  .secondaryTitle {
+    color: #35294d;
+    text-decoration: underline;
+  }
+  .addPadding {
+    padding-left: 32px;
+  }
+  .smallerFont {
+    font-size: 1rem;
+  }
 }
