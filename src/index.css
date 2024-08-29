@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: "DMSans", "Inter", sans-serif;
+  font-family: "DMSans", "Inter";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 900px;
