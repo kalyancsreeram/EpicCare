@@ -1,9 +1,17 @@
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
   \********************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url(f46567788e464ac34d10.woff) format("woff");
+}
+@font-face {
+  font-family: "DMSans";
+  src: local("DMSans"), url(b7cb88273f20693cb902.woff) format("woff");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "DMSans", "Inter";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 900px;
@@ -16,7 +24,7 @@ code {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/App.css ***!
   \******************************************************************************************************/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter;
 }
 
 * {
@@ -27,9 +35,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 40px;
   width: 100%;
-  background-color: #35294D;
+  background-color: #35294d;
+  font-size: 12px;
   /* CSS3 */
   color: white;
 }
@@ -58,13 +67,13 @@ body {
 }
 
 .servicesLabel {
-  color: #35294D;
+  color: #35294d;
 }
 
 .typeOfService {
-  color: #35294D;
+  color: #35294d;
   font-weight: bold;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
   font-size: 1.25rem;
 }
 /*!*************************************************************************************************************************************************************!*\
@@ -383,13 +392,12 @@ body {
 @charset "UTF-8";
 .carousel-root {
   width: 100% !important;
-  margin-top: 3% !important;
-  margin-bottom: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .carousel .slide {
   background: #fff !important;
-  color: black;
   height: 100%;
 }
 
@@ -406,16 +414,20 @@ body {
 
 .myCarousel {
   background: #fafafa;
-  margin-top: -6%;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 6%;
-  padding-bottom: 8%;
+  padding-top: 8%;
+  padding-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 350px;
+  height: 200px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
 }
 
 .carousel .control-dots {
@@ -425,46 +437,38 @@ body {
 }
 
 .myCarousel h3 {
-  color: #222;
-  font-weight: 100;
   letter-spacing: 0.2px;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 17px;
+  font-size: 1.3em;
+  font-family: "DMSans";
 }
 
 .myCarousel h4 {
-  text-transform: uppercase;
   margin-top: 0;
   padding-top: 0;
   font-weight: 500;
-  color: #787878;
   font-size: 14px;
 }
 
-.myCarousel p {
-  font-weight: 100 !important;
-  line-height: 29px !important;
-  color: #222;
-  font-size: 15px;
-  font-family: sans-serif;
+.carousel-testimony {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 1em;
   max-height: 67px;
 }
 
 .myCarousel p:before {
   content: "“";
   color: #aaa;
-  font-size: 26px;
-  font-family: monospace;
+  font-size: 30px;
   font-weight: 100;
 }
 
 .myCarousel p:after {
   content: "”";
   color: #aaa;
-  font-size: 26px;
-  font-family: monospace;
+  font-size: 30px;
   font-weight: 100;
   line-height: 0;
 }
@@ -532,6 +536,7 @@ body {
   margin: 50px;
   display: flex;
   width: 75%;
+  align-items: center;
 }
 .ceoContainerMain .ceoImage {
   display: flex;
@@ -546,7 +551,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .ceoContainerMain .ceoMessage p {
   text-align: justify;
@@ -560,13 +565,16 @@ body {
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: 1.2em;
   line-height: 1.6;
 }
 .ceoContainerMain .welcome_msg blockquote {
   position: relative;
   margin: 0.5em;
   padding: 0.5em 2em 0.5em 3em;
+}
+.ceoContainerMain .welcome_msg #welcomeMsgText {
+  margin: 1rem 0 0 1rem;
 }
 .ceoContainerMain .welcome_msg blockquote:before {
   position: absolute;
@@ -596,8 +604,9 @@ body {
 .ceoContainerMain .welcome_msg blockquote cite {
   font-style: normal;
 }
-.ceoContainerMain .seizureCare {
+.ceoContainerMain .seizureCareImg {
   width: 40%;
+  border-radius: 30px;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dashboardpage/cardscomp/styles.scss ***!
@@ -608,11 +617,17 @@ body {
   margin-top: 20px;
 }
 .cardsContainer .card {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
 }
 .cardsContainer .card .MuiTypography-h6 {
-  font-size: 16px;
+  font-size: 1.2em;
   font-weight: bold;
+  margin: 10px auto 10px auto;
 }
 .cardsContainer .card p {
   font-size: 12px;
@@ -622,18 +637,22 @@ body {
   object-fit: contain;
 }
 .cardsContainer .card .card_text {
-  font-size: 0.8rem;
+  font-size: 1em;
   line-height: 1.6;
 }
 
 .three-panel-main-title {
   color: #35294D;
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .three-panel-main-title .bold_text {
   font-weight: bold;
+  font-size: 1.5em;
 }
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/aboutcomp/styles.scss ***!
@@ -770,7 +789,6 @@ body {
 
 .boldText {
   font-weight: bold;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 /*!******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/research/styles.scss ***!
@@ -818,7 +836,7 @@ body {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/servicescomp/styles.scss ***!
   \**********************************************************************************************************************************/
 .servicesContainer .main-title {
-  color: #35294D;
+  color: #35294d;
   font-weight: bold;
 }
 .servicesContainer .intro {
@@ -844,7 +862,7 @@ body {
   width: 100%;
 }
 .servicesContainer .service_card .MuiTypography-h6 {
-  color: #35294D;
+  color: #35294d;
   font-weight: bold;
   text-align: left;
 }
@@ -888,7 +906,7 @@ body {
 }
 .servicesContainer .mediaDivContainer img {
   width: 35%;
-  height: auto;
+  height: 300px;
 }
 .servicesContainer .mediaDivContainer .mediaDivTextContainer {
   display: flex;
@@ -1357,36 +1375,54 @@ button:hover {
 
 .boldText {
   font-weight: bold;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/homepagefooter/styles.scss ***!
   \************************************************************************************************************************************/
 .homePageFooterContainer {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-color: rgba(200, 172, 221, 0.4);
-  color: #35294D;
+  color: #35294d;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 .homePageFooterContainer .address {
   width: 33%;
   margin: 100px;
   font-size: large;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.homePageFooterContainer .address .countriesList {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Inter";
+}
+.homePageFooterContainer .address .countriesList a:hover {
+  font-weight: bolder;
 }
 .homePageFooterContainer .footerLinks {
+  display: flex;
   width: 33%;
-  height: 50%;
   font-size: large;
   padding-left: 20px;
+  align-items: center;
+}
+.homePageFooterContainer .footerLinks .link a {
+  text-decoration: none;
+}
+.homePageFooterContainer .footerLinks .link a:hover {
+  font-weight: bolder;
 }
 .homePageFooterContainer p {
   margin: 8px;
 }
 .homePageFooterContainer a {
-  color: #35294D;
+  color: #35294d;
 }
 .homePageFooterContainer a:hover {
   opacity: 0.8;
@@ -1398,6 +1434,7 @@ button:hover {
 .homePageFooterContainer .addressText {
   display: inline-block;
   align-content: center;
+  margin-right: 10px;
 }
 .homePageFooterContainer .socialContainer {
   display: flex;
@@ -1407,7 +1444,7 @@ button:hover {
   padding-right: 20px;
 }
 .homePageFooterContainer .socialContainer svg {
-  width: 75px;
+  width: 2.5em;
   height: 75px;
   margin: 20px;
 }
@@ -1415,7 +1452,7 @@ button:hover {
   opacity: 0.8;
 }
 .homePageFooterContainer .socialContainer .fbIcon:hover {
-  color: #2D68C4;
+  color: #2d68c4;
 }
 .homePageFooterContainer .socialContainer .ytIcon:hover {
   color: #b2071d;
@@ -1435,7 +1472,7 @@ button:hover {
   font-size: 2rem;
 }
 .resourcesContainer .resourcesMainHeading {
-  color: #35294D;
+  color: #35294d;
   margin-bottom: 20px;
 }
 .resourcesContainer .boldHeading {
@@ -1448,14 +1485,17 @@ button:hover {
   margin: 0;
 }
 .resourcesContainer table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.resourcesContainer td, .resourcesContainer th {
+.resourcesContainer td,
+.resourcesContainer th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+.resourcesContainer th.productName {
+  text-align: center;
 }
 .resourcesContainer .lifestyle_choices {
   padding-left: 2rem;
@@ -1474,11 +1514,11 @@ button:hover {
 }
 .resourcesContainer .tableHeading {
   margin-top: 40px;
-  color: #35294D;
+  color: #35294d;
   text-decoration: underline;
 }
 .resourcesContainer .secondaryTitle {
-  color: #35294D;
+  color: #35294d;
   text-decoration: underline;
 }
 .resourcesContainer .addPadding {
