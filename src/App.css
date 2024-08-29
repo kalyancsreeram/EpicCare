@@ -44,6 +44,6 @@ body {
 .typeOfService {
   color: #35294d;
   font-weight: bold;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
   font-size: 1.25rem;
 }

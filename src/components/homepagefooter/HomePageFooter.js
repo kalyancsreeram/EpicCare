@@ -46,7 +46,7 @@ function HomePageFooter() {
         <p className="link">
           <a href="/about">About</a>
         </p>
-        |
+        |{/* //TODO: Fix link not working in the footer */}
         <p className="link">
           <a href="/contact-us">Contact</a>
         </p>
