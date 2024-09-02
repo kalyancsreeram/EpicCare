@@ -16,7 +16,7 @@ export default function CardsComponent() {
       <div className="three-panel-main-title">
         <Typography
           gutterBottom
-          variant="h5"
+          variant="h4"
           component="div"
           className="bold_text"
         >
