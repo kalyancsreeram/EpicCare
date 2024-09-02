@@ -5,6 +5,13 @@ import "./styles.scss";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import {
+  FaBalanceScale,
+  FaGem,
+  FaHeart,
+  FaLightbulb,
+  FaUsers,
+} from "react-icons/fa";
 
 const AboutComp = () => {
   return (
@@ -100,14 +107,27 @@ const AboutComp = () => {
         </div>
       </div>
       <div className="core-values-container">
-        <h3 className="core_values_title">Our Core Values</h3>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          className="core_values_title"
+        >
+          Our Core Values
+        </Typography>
+        {/* <h3 className="core_values_title"></h3> */}
         <div className="cards-container">
           <div className="first_row">
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Integrity
-                </Typography>
+                <div className="card_title">
+                  <div className="card_icon">
+                    <FaBalanceScale size={42} />
+                  </div>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Integrity
+                  </Typography>
+                </div>
                 <Typography
                   variant="body2"
                   color="text.secondary"
@@ -121,9 +141,20 @@ const AboutComp = () => {
             </Card>
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Empathy
-                </Typography>
+                <div className="card_title">
+                  <div className="card_icon">
+                    <FaHeart size={42} />
+                  </div>
+
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="div"
+                    className="card_title"
+                  >
+                    Empathy
+                  </Typography>
+                </div>
                 <Typography
                   variant="body2"
                   color="text.secondary"
@@ -137,9 +168,19 @@ const AboutComp = () => {
             </Card>
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Quality and Innovation
-                </Typography>
+                <div className="card_title">
+                  <div className="card_icon">
+                    <FaLightbulb size={42} />
+                  </div>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="div"
+                    className="card_title"
+                  >
+                    Quality and Innovation
+                  </Typography>
+                </div>
                 <Typography
                   variant="body2"
                   color="text.secondary"
@@ -155,9 +196,19 @@ const AboutComp = () => {
           <div className="second_row">
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Collaboration
-                </Typography>
+                <div className="card_title">
+                  <div className="card_icon">
+                    <FaUsers size={42} />
+                  </div>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="div"
+                    className="card_title"
+                  >
+                    Collaboration
+                  </Typography>
+                </div>
                 <Typography
                   variant="body2"
                   color="text.secondary"
@@ -173,9 +224,19 @@ const AboutComp = () => {
             </Card>
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Refinement
-                </Typography>
+                <div className="card_title">
+                  <div className="card_icon">
+                    <FaGem size={42} />
+                  </div>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="div"
+                    className="card_title"
+                  >
+                    Refinement
+                  </Typography>
+                </div>
                 <Typography
                   variant="body2"
                   color="text.secondary"
