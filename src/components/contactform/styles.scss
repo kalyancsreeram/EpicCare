@@ -1,5 +1,4 @@
-
-.contactFormInputElement{
+.contactFormInputElement {
   width: 40%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -14,55 +13,54 @@
 .contactFormContainer {
   /* border-radius: 5px; */
   background-color: #f2f2f2;
-  //background-color: rgba($color: #C6AADB, $alpha: .2);   
+  //background-color: rgba($color: #C6AADB, $alpha: .2);
   padding: 50px;
   padding-top: 20px;
   // color:#006ba6;
 
-  color: #35294D;
+  color: #35294d;
   // border-radius: 5px;
   // background-color: lightblue;
   // padding: 50px;
   // margin: 20px;
-    
 }
 
-.contactTextArea{
+.contactTextArea {
   height: 200px;
 }
-.contactFormTitle{
+.contactFormTitle {
   padding-bottom: 20px;
 }
 
-.contactNote{
+.contactNote {
   font-style: italic;
   padding-bottom: 20px;
 }
 
-.preference{
+.preference {
   width: auto !important;
 }
 
-.contactSubmit { 
+.contactSubmit {
   background-color: #673147;
   color: black;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;  
+  border-radius: 4px;
+  color: white;
 }
 
-.contactSubmit:hover:enabled { 
+.contactSubmit:hover:enabled {
   cursor: pointer;
   background-color: #673147 !important;
   border: none;
   opacity: 0.8;
-  color: white
 }
-.preferenceSet{
+.preferenceSet {
   border-width: 1px;
 }
 
-.countryField{
+.countryField {
   display: block;
   width: 250px;
   height: 35px;
@@ -72,7 +70,7 @@
   border-radius: 4px;
 }
 
-.boldText{
+.boldText {
   font-weight: bold;
-  // font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
+  // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
