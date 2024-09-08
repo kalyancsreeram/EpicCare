@@ -40,6 +40,7 @@ body {
 }
 .servicesLabel {
   color: #35294d;
+  padding: 0px;
 }
 .typeOfService {
   color: #35294d;
