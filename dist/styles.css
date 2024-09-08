@@ -53,8 +53,7 @@ body {
 
 .orderFormContainer {
   background-color: #f2f2f2;
-  padding-left: 50px;
-  padding-top: 20px;
+  padding: 40px;
 }
 
 .servicesLabel {
