@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import HomePageFooter from "./components/homepagefooter/HomePageFooter";
 import Resources from "./components/Resources";
 import { ThemeProvider, createTheme } from "@mui/material";
+import WIP from "./components/WIP";
 
 const headingStyle = {
   fontFamily: "DMSans",
@@ -61,6 +62,8 @@ function App() {
           <Route path="research" element={<Research />}></Route>
           <Route path="resources" element={<Resources />}></Route>
           <Route path="services" element={<Services />}></Route>
+          {/* //TODO: Temporary page, remove it once the actual link is working */}
+          <Route path="wip" element={<WIP />}></Route>
           <Route
             path="physician-portal"
             element={

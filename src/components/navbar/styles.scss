@@ -1,45 +1,52 @@
-nav{  
-   background-color: white;
-   height: 75px;
-   display: flex;
-   justify-content: end;
-   align-items: center;
-   padding-left: 20px;
-   margin-right: 10px;
+nav {
+  background-color: white;
+  height: 75px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 10px;
 }
 nav a {
-    margin-right: 16px;
-    font-weight: 550;
-    width: auto;
-    color:#35294D;
-    text-decoration: none;
+  margin-right: 16px;
+  font-weight: 550;
+  width: auto;
+  color: #35294d;
+  text-decoration: none;
 }
 
-nav a:hover{
-    opacity: 0.8;
+nav a:hover {
+  opacity: 0.8;
 }
 
 nav a.active {
- text-decoration: underline;   
+  text-decoration: underline;
 }
 
-.loginBtn {
-     width: auto;
-     margin-left: 10px;
-     margin-right: 10px;  
-}
-.signupBtn{
+.loginBtn-container {
+  .loginBtn {
     width: auto;
     margin-left: 10px;
-    margin-right: 10px;  
+    margin-right: 10px;
+    background-color: #35294d;
+  }
+  .loginBtn:hover {
+    background-color: #523f77;
+  }
+}
+
+.signupBtn {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .logoutBtn {
-    width: auto;
-    margin-left: 10px;
-    margin-right: 20px;  
+  width: auto;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-.homeBtn{
-    position: absolute;
-    width: auto;
-    left: 10px;
+.homeBtn {
+  position: absolute;
+  width: auto;
+  left: 10px;
 }
