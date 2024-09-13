@@ -18,8 +18,8 @@ function HomePageFooter() {
             <b>SeizureCare</b>
           </p>
           <div className="countriesList">
-            <a href="/">USA</a>
-            <a href="/">India</a>
+            <a href="https://seizurecarenet.com">USA</a>
+            <a href="https://seizurecarenet.in">India</a>
           </div>
         </div>
         <img className="worldMap" alt="SeizureCare" src={WorldMap} />
@@ -46,7 +46,6 @@ function HomePageFooter() {
         <p className="link">
           <a href="/about">About</a>
         </p>
-        |{/* //TODO: Fix link not working in the footer */}
         <p className="link">
           <a href="/contact-us">Contact</a>
         </p>
