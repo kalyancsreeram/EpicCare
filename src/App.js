@@ -77,7 +77,7 @@ function App() {
   }, []);
 
   const url =
-    "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?79565";
+    "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?98423%27";
 
   const options = {
     enabled: true,
@@ -101,7 +101,7 @@ function App() {
       ctaText: "Chat with us",
       borderRadius: "25",
       autoShow: false,
-      phoneNumber: "9199598192479",
+      phoneNumber: "919959819247",
     },
   };
 
