@@ -9,6 +9,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import WorldMap from "../../assets/images/map.png";
 
+const linkItems = [
+  "Services",
+  "Order",
+  "Research",
+  "Resources",
+  "About",
+  "Contact",
+];
+
 function HomePageFooter() {
   return (
     <div className="homePageFooterContainer">
@@ -27,28 +36,17 @@ function HomePageFooter() {
         {/* <img */}
       </div>
       <div className="footerLinks">
-        <p className="link">
-          <a href="/services">Services</a>
-        </p>
-        |
-        <p className="link">
-          <a href="/order">Order</a>
-        </p>
-        |
-        <p className="link">
-          <a href="/research">Research</a>
-        </p>
-        |
-        <p className="link">
-          <a href="/resources">Resources</a>
-        </p>
-        |
-        <p className="link">
-          <a href="/about">About</a>
-        </p>
-        <p className="link">
-          <a href="/contact-us">Contact</a>
-        </p>
+        {linkItems.map((item, i) => {
+          const link = `/${item.toLowerCase()}`;
+          return (
+            <>
+              <p className="link">
+                <a href={link}>{item}</a>
+              </p>
+              {i !== linkItems.length - 1 && "|"}
+            </>
+          );
+        })}
       </div>
       <div className="socialContainer">
         <FontAwesomeIcon className="fbIcon" icon={faFacebook} />
