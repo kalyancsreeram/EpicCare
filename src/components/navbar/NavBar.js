@@ -6,7 +6,7 @@ import SignupModal from "../signupmodal/SignupModal";
 import { useAuth } from "../../utils/auth";
 
 //import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
-import CompanyLogo from "../../assets/images/CompanyLogoEdited-in.png";
+import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
 import { decodeToken } from "../../utils/tokenUtil";
 import { Button } from "@mui/material";
 
