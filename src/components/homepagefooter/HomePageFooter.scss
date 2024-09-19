@@ -1,7 +1,6 @@
-.homePageFooterContainer {
+.footer-container {
   width: 100%;
   height: 200px;
-  //background-color: #8F262B;
   background-color: rgba($color: #c8acdd, $alpha: 0.4);
   color: #35294d;
   display: flex;
@@ -14,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    .countriesList {
+    .countries-list {
       display: flex;
       justify-content: space-around;
       font-family: "Inter";
@@ -24,7 +23,7 @@
       }
     }
   }
-  .footerLinks {
+  .footer-links {
     display: flex;
     width: 40%;
     font-size: large;
@@ -54,17 +53,17 @@
   a:hover {
     opacity: 0.8;
   }
-  .worldMap {
+  .world-map {
     width: 175px;
     height: 100px;
   }
-  .addressText {
+  .address-text {
     display: inline-block;
     align-content: center;
     margin-right: 10px;
   }
 
-  .socialContainer {
+  .socials-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,14 +77,43 @@
     svg:hover {
       opacity: 0.8;
     }
-    .fbIcon:hover {
+    .icon-fb:hover {
       color: #2d68c4;
     }
-    .ytIcon:hover {
+    .icon-yt:hover {
       color: #b2071d;
     }
-    .linkedInIcon:hover {
+    .icon-in:hover {
       color: #0077b5;
+    }
+  }
+}
+
+@media (320px <= width <= 480px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    row-gap: 30px;
+
+    .footer-links {
+      display: none;
+    }
+
+    .world-map {
+      display: none;
+    }
+
+    .address-text {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .socials-container {
+      padding-right: 0;
+      svg {
+        margin: 0px 20px;
+      }
     }
   }
 }

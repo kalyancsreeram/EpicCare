@@ -12,7 +12,7 @@ const WIP = () => {
         alignItems: "center",
         rowGap: "50px",
         textAlign: "center",
-        margin: "25vh 50vh"
+        margin: "30vh 10vw",
       }}
     >
       <Typography

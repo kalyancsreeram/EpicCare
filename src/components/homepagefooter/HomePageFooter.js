@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./styles.scss";
+import "./HomePageFooter.scss";
 
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
@@ -20,23 +20,20 @@ const linkItems = [
 
 function HomePageFooter() {
   return (
-    // TODO: Have to make it sticky, add a wrapper div maybe?
-    <div className="homePageFooterContainer">
+    <div className="footer-container">
       <div className="address">
-        <div className="addressText">
+        <div className="address-text">
           <p>
             <b>SeizureCare</b>
           </p>
-          <div className="countriesList">
+          <div className="countries-list">
             <a href="https://seizurecarenet.com">USA</a>
             <a href="https://seizurecarenet.in">India</a>
           </div>
         </div>
-        <img className="worldMap" alt="SeizureCare" src={WorldMap} />
-
-        {/* <img */}
+        <img className="world-map" alt="SeizureCare" src={WorldMap} />
       </div>
-      <div className="footerLinks">
+      <div className="footer-links">
         {linkItems.map((item, i) => {
           const link = `/${item.toLowerCase()}`;
           return (
@@ -49,10 +46,10 @@ function HomePageFooter() {
           );
         })}
       </div>
-      <div className="socialContainer">
-        <FontAwesomeIcon className="fbIcon" icon={faFacebook} />
-        <FontAwesomeIcon className="ytIcon" icon={faYoutubeSquare} />
-        <FontAwesomeIcon className="linkedInIcon" icon={faLinkedin} />
+      <div className="socials-container">
+        <FontAwesomeIcon className="icon-fb" icon={faFacebook} />
+        <FontAwesomeIcon className="icon-yt" icon={faYoutubeSquare} />
+        <FontAwesomeIcon className="icon-in" icon={faLinkedin} />
       </div>
     </div>
   );

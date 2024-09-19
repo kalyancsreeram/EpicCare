@@ -29,8 +29,12 @@ const ResearchComp = () => {
           {reseachNotes.map(({ title, content }, index) => {
             return (
               <li className="research-notes-list--item" key={index}>
-                <b>{title}: </b>
-                {content}
+                <p>
+                  <b>
+                    <p>{title}:</p>{" "}
+                  </b>
+                  {content}
+                </p>
               </li>
             );
           })}
