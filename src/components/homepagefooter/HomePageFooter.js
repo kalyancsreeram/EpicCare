@@ -20,6 +20,7 @@ const linkItems = [
 
 function HomePageFooter() {
   return (
+    // TODO: Have to make it sticky, add a wrapper div maybe?
     <div className="homePageFooterContainer">
       <div className="address">
         <div className="addressText">
@@ -39,12 +40,12 @@ function HomePageFooter() {
         {linkItems.map((item, i) => {
           const link = `/${item.toLowerCase()}`;
           return (
-            <>
-              <p className="link">
+            <div key={i}>
+              <span className="link">
                 <a href={link}>{item}</a>
-              </p>
+              </span>
               {i !== linkItems.length - 1 && "|"}
-            </>
+            </div>
           );
         })}
       </div>

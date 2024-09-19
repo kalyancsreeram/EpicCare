@@ -1,3 +1,4 @@
+import React from "react";
 import "./ResearchComp.scss";
 import Typography from "@mui/material/Typography";
 
@@ -25,9 +26,9 @@ const ResearchComp = () => {
       </span>
       <div className="research-points-container">
         <ul className="research-notes-list">
-          {reseachNotes.map(({ title, content }) => {
+          {reseachNotes.map(({ title, content }, index) => {
             return (
-              <li className="research-notes-list--item">
+              <li className="research-notes-list--item" key={index}>
                 <b>{title}: </b>
                 {content}
               </li>
