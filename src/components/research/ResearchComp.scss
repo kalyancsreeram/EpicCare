@@ -1,0 +1,69 @@
+.research-container {
+  color: rgba($color: #000000, $alpha: 1);
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .main-title {
+    color: #35294d;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+}
+
+.research-notes-content {
+  margin: 0 0 18px 0;
+  font-size: 1.1em; //** Can use this as default font size for desktop screens
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.research-notes-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.research-points-container {
+  .research-notes-list {
+    margin-bottom: 48px;
+
+    .research-notes-list--item {
+      margin-bottom: 16px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (320px <= width <= 480px) {
+  .research-container {
+    width: 100vw;
+    padding: 0px;
+    margin: 20px;
+  }
+
+  #researchScopeDesc {
+    margin-bottom: 0px;
+  }
+
+  .research-notes-text--title {
+    font-size: 22px;
+  }
+
+  .research-notes-content {
+    font-size: 16px;
+  }
+
+  .research-points-container {
+    .research-notes-list {
+      margin-bottom: 28px;
+      padding-left: 20px;
+
+      .research-notes-list--item {
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}
