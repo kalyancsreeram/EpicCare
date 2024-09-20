@@ -1,0 +1,96 @@
+nav {
+  background-color: white;
+  height: 75px;
+  padding-left: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav > .nav-links-desktop {
+  display: flex;
+  align-items: center;
+}
+
+nav > .nav-links-desktop > a {
+  margin-right: 16px;
+  font-weight: 550;
+  width: auto;
+  color: #35294d;
+  text-decoration: none;
+}
+
+nav > .nav-links-desktop > a:hover {
+  opacity: 0.8;
+}
+
+nav > .nav-links-desktop > a.active {
+  text-decoration: underline;
+}
+
+nav > .nav-links-mobile {
+  display: none;
+}
+
+.login-btn-container {
+  .login-btn {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #35294d;
+  }
+  .login-btn:hover {
+    background-color: #523f77;
+  }
+}
+
+.home-btn {
+  position: absolute;
+  width: auto;
+  left: 10px;
+}
+
+@media (320px <= width <= 480px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav > .nav-links-desktop {
+    display: none;
+  }
+
+  nav > .nav-links-mobile {
+    display: block;
+    button > svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  .home-btn {
+    position: static;
+  }
+
+  #burgerMenu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      padding: 20px;
+
+      a {
+        text-decoration: none;
+      }
+
+      a.active {
+        text-decoration: underline;
+      }
+
+      .login-btn {
+        margin: 0;
+      }
+    }
+  }
+}

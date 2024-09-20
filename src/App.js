@@ -114,12 +114,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
-          <Route path="contact-us" element={<ContactUs />}></Route>
+          <Route path="contact" element={<ContactUs />}></Route>
           <Route path="order" element={<PatientPortal />}></Route>
           <Route path="research" element={<Research />}></Route>
           <Route path="resources" element={<Resources />}></Route>
           <Route path="services" element={<Services />}></Route>
-          {/* //TODO: Temporary page, remove it once the actual link is working */}
+          {/* //!!Temporary page, remove it once the actual link is working */}
           <Route path="wip" element={<WIP />}></Route>
           <Route
             path="physician-portal"
