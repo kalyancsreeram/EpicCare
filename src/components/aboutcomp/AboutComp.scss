@@ -1,0 +1,173 @@
+.about-container {
+  .main-title {
+    color: #35294d;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+
+  .intro {
+    padding: 40px;
+    background-color: rgba($color: #c6aadb, $alpha: 0.2);
+  }
+
+  .intro-title {
+    margin-top: 20px;
+    color: #35294d;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  #firstHeadLineBold {
+    font-weight: bolder;
+    margin: 28px 24px 24px 24px;
+  }
+
+  .intro-notes {
+    margin: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .core-values-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 24px;
+    padding: 10px;
+  }
+
+  .core-values-title {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card {
+      flex: 0 1 calc(33.33% - 20px);
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1200px; // Limit total container width to 3 cards
+      margin: 0 auto; // Center container within the screen
+    }
+
+    @media (max-width: 1200px) {
+      .card {
+        flex: 0 1 calc(50% - 20px); // 2 cards per row for smaller screens
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 0 1 calc(100% - 20px); // 1 card per row for small screens
+      }
+    }
+  }
+
+  .card {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+
+    .MuiTypography-h6 {
+      font-size: 1.2em;
+      font-weight: bold;
+      // margin: 10px auto 10px auto;
+    }
+    .card-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      color: #35294d;
+    }
+  }
+
+  .card > div > div {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-content {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
+
+@media (width > 480px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .intro-title {
+      margin: 24px 24px -12px 24px;
+    }
+
+    #firstHeadLine {
+      margin: 24px;
+    }
+  }
+}
+
+@media (320px <= width <= 480px) {
+  .about-container {
+    width: 100vw;
+    .main-title {
+      color: #35294d;
+      font-weight: bolder;
+      font-size: 2em;
+    }
+
+    .intro {
+      background-color: rgba($color: #c6aadb, $alpha: 0.2);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .intro-title {
+      margin-top: 12px;
+      color: #35294d;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    #firstHeadLineBold {
+      font-weight: bolder;
+      margin: 0px 0px 12px 0px;
+    }
+
+    .intro-notes {
+      margin: 0 0 18px 0;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    #rooseveltQuote {
+      display: block;
+    }
+
+    .cards-container {
+      gap: 12px;
+    }
+  }
+}

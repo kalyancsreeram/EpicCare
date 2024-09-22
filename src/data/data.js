@@ -71,4 +71,39 @@ const researchNotes = [
   },
 ];
 
-export { researchNotes };
+const coreValues = [
+  {
+    value: "Integrity",
+    content: `We uphold the highest standards of professionalism, ethics,
+                  and honesty in all our actions, fostering a culture of
+                  confidentiality, trust, respect, and transparency.`,
+  },
+  {
+    value: "Empathy",
+    content: `Our commitment to excellence is reflected in our dedication to
+                  understanding and addressing the needs of our client
+                  physicians every day.`,
+  },
+  {
+    value: "Integrity",
+    content: `We uphold the highest standards of professionalism, ethics,
+                  and honesty in all our actions, fostering a culture of
+                  confidentiality, trust, respect, and transparency.`,
+  },
+  {
+    value: "Quality and Innovation",
+    content: `We constantly seek innovative solutions that enhance safety
+                  and efficiency, striving to implement the most effective
+                  practices for superior outcomes.`,
+  },
+  {
+    value: "Collaboration",
+    content: `We are resolute in forming robust partnerships with hospitals
+                  and organizations, particularly those concerning financially
+                  disadvantaged patients, to extend our reach and impact. Our
+                  collaborative efforts ensure that all stakeholders experience
+                  exceptional support.`,
+  },
+];
+
+export { researchNotes, coreValues };

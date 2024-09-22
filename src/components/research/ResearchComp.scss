@@ -19,8 +19,9 @@
 
 .research-notes-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   line-height: 1.6;
+  font-family: DMSans;
 }
 
 @media (width > 480px) {
@@ -29,6 +30,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+  
+  #researchScopeDesc {
+    margin: 20px;
   }
 
   .research-notes-title {
