@@ -1,4 +1,4 @@
-const reseachNotes = [
+const researchNotes = [
   {
     title: "Etiology and Pathophysiology",
     content:
@@ -71,4 +71,4 @@ const reseachNotes = [
   },
 ];
 
-export { reseachNotes };
+export { researchNotes };

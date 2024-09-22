@@ -2,7 +2,7 @@ import React from "react";
 import "./ResearchComp.scss";
 import Typography from "@mui/material/Typography";
 
-import { reseachNotes } from "../../data/data";
+import { researchNotes } from "../../data/data";
 
 const ResearchComp = () => {
   return (
@@ -20,21 +20,16 @@ const ResearchComp = () => {
         The research scope in epilepsy is vast and multidisciplinary,
         encompassing various aspects of this complex condition.
       </p>
-      <br />
       <span className="research-notes-title">
         Some potential areas of investigation include:
       </span>
       <div className="research-points-container">
         <ul className="research-notes-list">
-          {reseachNotes.map(({ title, content }, index) => {
+          {researchNotes.map(({ title, content }, index) => {
             return (
               <li className="research-notes-list--item" key={index}>
-                <p>
-                  <b>
-                    <p>{title}:</p>{" "}
-                  </b>
-                  {content}
-                </p>
+                <p className="list-item--title">{title}:</p>
+                <p className="list-item--content">{content}</p>
               </li>
             );
           })}
