@@ -59,6 +59,7 @@ nav > .nav-links-mobile {
   nav {
     display: flex;
     justify-content: space-between;
+    margin: 8px 12px 8px 0px;
   }
 
   nav > .nav-links-desktop {
@@ -86,6 +87,11 @@ nav > .nav-links-mobile {
 
       a {
         text-decoration: none;
+        color: inherit;
+
+        .nav-link--text {
+          color: #35294d;
+        }
       }
 
       a.active {

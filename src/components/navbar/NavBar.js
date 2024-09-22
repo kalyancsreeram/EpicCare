@@ -16,29 +16,9 @@ function NavBar() {
   const open = Boolean(anchorEl);
 
   const navigate = useNavigate();
-  // const auth = useAuth();
-
-  // useEffect(() => {
-  //   const token = decodeToken();
-  //   console.log(`Auth --> ${auth}`);
-  //   auth.login(token);
-  // }, []);
-
-  // const loginBtnHandler = () => {
-  //   document.getElementById("loginModal").style.display = "block";
-  // };
   const homeBtnHandler = () => {
     navigate("/");
   };
-
-  // const logoutBtnHandler = () => {
-  //   auth.logout();
-  //   navigate("/");
-  // };
-
-  // const signupBtnHandler = () => {
-  //   document.getElementById("signupModal").style.display = "block";
-  // };
 
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget);
@@ -61,7 +41,11 @@ function NavBar() {
   const getNavLinks = () => {
     return navListItems.map((item) => {
       const link = item !== "Home" ? `/${item.toLowerCase()}` : `/`;
-      return <NavLink to={link}>{item}</NavLink>;
+      return (
+        <NavLink to={link}>
+          <span className="nav-link--text">{item}</span>
+        </NavLink>
+      );
     });
   };
 
@@ -95,15 +79,17 @@ function NavBar() {
           >
             {getNavLinks()}
             <div className="login-btn-container">
-              <Button variant="contained" className="login-btn" href="/wip">
+              <Button
+                variant="contained"
+                className="login-btn"
+                onClick={() => navigate(`/wip`)}
+              >
                 Login
               </Button>
             </div>
           </Menu>
         </div>
       </nav>
-      {/* <LoginModal />
-      <SignupModal /> */}
     </div>
   );
 }
