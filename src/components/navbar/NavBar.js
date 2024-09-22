@@ -6,7 +6,7 @@ import "./NavBar.scss";
 import { useAuth } from "../../utils/auth";
 
 //import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
-import CompanyLogo from "../../assets/images/CompanyLogoEdited-in.png";
+import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
 // import { decodeToken } from "../../utils/tokenUtil";
 import { Button, IconButton, Menu } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
