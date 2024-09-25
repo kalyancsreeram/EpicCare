@@ -7,19 +7,21 @@ import { researchNotes } from "../../data/data";
 const ResearchComp = () => {
   return (
     <div className="research-container">
-      <Typography
-        className="main-title"
-        gutterBottom
-        variant="h1"
-        component="div"
-      >
-        Research
-      </Typography>
+      <div className="research-title-desc">
+        <Typography
+          className="main-title"
+          gutterBottom
+          variant="h1"
+          component="div"
+        >
+          Research
+        </Typography>
 
-      <p className="research-notes-content" id="researchScopeDesc">
-        The research scope in epilepsy is vast and multidisciplinary,
-        encompassing various aspects of this complex condition.
-      </p>
+        <p className="research-notes-content" id="researchScopeDesc">
+          The research scope in epilepsy is vast and multidisciplinary,
+          encompassing various aspects of this complex condition.
+        </p>
+      </div>
       <span className="research-notes-title">
         Some potential areas of investigation include:
       </span>

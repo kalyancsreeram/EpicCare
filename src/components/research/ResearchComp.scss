@@ -1,12 +1,16 @@
 .research-container {
   color: rgba($color: #000000, $alpha: 1);
-  padding: 40px;
   min-height: 100vh;
 
   .main-title {
     color: #35294d;
     font-weight: bolder;
     font-size: 2em;
+  }
+
+  .research-title-desc {
+    padding: 40px;
+    background-color: rgba($color: #c6aadb, $alpha: 0.2);
   }
 }
 
@@ -31,7 +35,7 @@
     justify-content: center;
     text-align: center;
   }
-  
+
   #researchScopeDesc {
     margin: 20px;
   }
@@ -71,24 +75,34 @@
   .research-container {
     width: 100vw;
     padding: 0px;
-    padding: 20px;
   }
 
-  .research-notes-text--title {
-    font-size: 22px;
+  .research-notes-title {
+    padding-left: 40px;
+    margin-top: 24px;
+    display: inline-block;
+  }
+
+  #researchScopeDesc {
+    padding: 0px;
+    margin: 0px;
   }
 
   .research-notes-content {
     font-size: 16px;
+    padding: 0 40px 0 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .research-points-container {
+    padding: 0 40px 0 40px;
     .research-notes-list {
       margin-bottom: 28px;
       padding-left: 20px;
 
       .research-notes-list--item {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         font-size: 16px;
         .list-item--title {
           font-weight: bolder;
