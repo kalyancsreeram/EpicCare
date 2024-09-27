@@ -15,7 +15,7 @@
 }
 
 .research-notes-content {
-  margin: 0 0 18px 0;
+  margin: 0 0 32px 0;
   font-size: 1.1em; //** Can use this as default font size for desktop screens
   line-height: 1.6;
   font-weight: 500;
@@ -34,6 +34,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    .research-title-desc {
+      padding-bottom: 20px;
+    }
   }
 
   #researchScopeDesc {
@@ -53,11 +57,12 @@
       list-style-type: none;
       padding: 0px;
 
-      .research-notes-list--item {
+      .research-notes-list-item {
         font-size: 1.1em;
         margin: 20px 24px;
         padding: 16px;
         border-radius: 30px;
+        background-color: rgba($color: #c6aadb, $alpha: 0.2);
         box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
           0px 1px 1px 0px rgba(0, 0, 0, 0.14),
           0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -101,7 +106,7 @@
       margin-bottom: 28px;
       padding-left: 20px;
 
-      .research-notes-list--item {
+      .research-notes-list-item {
         margin-bottom: 24px;
         font-size: 16px;
         .list-item--title {

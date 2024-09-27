@@ -29,7 +29,7 @@ const ResearchComp = () => {
         <ul className="research-notes-list">
           {researchNotes.map(({ title, content }, index) => {
             return (
-              <li className="research-notes-list--item" key={index}>
+              <li className="research-notes-list-item" key={index}>
                 <p className="list-item--title">{title}:</p>
                 <p className="list-item--content">{content}</p>
               </li>
