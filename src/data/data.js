@@ -106,4 +106,37 @@ const coreValues = [
   },
 ];
 
-export { researchNotes, coreValues };
+const servicesData = [
+  {
+    title: "Monitored Video EEG Services",
+    desc: "Short-term and long-term video EEG monitoring, adhering to established acquisition guidelines. Providing real-time, actionable insights to physicians based on EEG analysis to expedite treatment decisions and patient care.",
+    image: "services1.jpg",
+  },
+  {
+    title: "Epilepsy Management",
+    desc: "Supporting day-to-day treatment decisions for outpatient and inpatient settings, empowering clinicians with up-to-date knowledge.",
+    image: "services2.png",
+  },
+  {
+    title: "Epilepsy Monitoring Unit (EMU) Services",
+    desc: "For patients with drug-resistant epilepsy, providing specialized tailored plans (Video EEG, MEG, SPM-PET, interictal and ictal SPECT,functional MRI, TMS, etc) to better understand epileptogenic networks.",
+    image: "services3.png",
+  },
+  {
+    title: "Epilepsy Surgery Consultation",
+    desc: "Offering expert guidance for epilepsy surgery decision-making, including personalized stereo EEG plans, and comprehensive post-operative care, empowering clinical management with epilepsy devices such as VNS, RNS, DBS, etc.",
+    image: "services4.png",
+  },
+  {
+    title: "Educational Webinars and Knowledge Dissemination",
+    desc: "Advancing the field of epilepsy through regular webinars and the distribution of expert knowledge, enhancing the skills of healthcare professionals globally.",
+    image: "services5.jpg",
+  },
+  {
+    title: "Research and Collaboration",
+    desc: "Promoting and participating in epilepsy research, collaborating with multiple centers worldwide to drive innovations and improve patient outcomes.",
+    image: "services6.png",
+  },
+];
+
+export { researchNotes, coreValues, servicesData };
