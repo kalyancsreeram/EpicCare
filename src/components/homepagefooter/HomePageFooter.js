@@ -8,6 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import WorldMap from "../../assets/images/map.png";
+import { NavLink } from "react-router-dom";
 
 const linkItems = [
   "Services",
@@ -34,15 +35,15 @@ function HomePageFooter() {
         <img className="world-map" alt="SeizureCare" src={WorldMap} />
       </div>
       <div className="footer-links">
-        {linkItems.map((item, i) => {
+        {linkItems.map((item, index) => {
           const link = `/${item.toLowerCase()}`;
           return (
-            <div key={i}>
-              <span className="link">
-                <a href={link}>{item}</a>
-              </span>
-              {i !== linkItems.length - 1 && "|"}
-            </div>
+            <>
+              <NavLink to={link} key={index}>
+                <span className="link">{item}</span>
+              </NavLink>
+              {index !== linkItems.length - 1 && "|"}
+            </>
           );
         })}
       </div>
