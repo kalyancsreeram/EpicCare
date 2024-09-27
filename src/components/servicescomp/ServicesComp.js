@@ -37,6 +37,7 @@ const ServicesComp = () => {
               <div className="service-text">
                 <Typography
                   className="service-text--title"
+                  gutterBottom
                   component="div"
                   variant="h6"
                 >

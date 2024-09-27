@@ -11,20 +11,22 @@
 
   .intro {
     padding: 40px;
-    text-align: justify;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba($color: #c6aadb, $alpha: 0.2);
+
+    @media (320px <= width <= 480px) {
+      align-items: start;
+    }
   }
 
   .services-text--default {
     font-size: 1.1em; //** Can use this as default font size for desktop screens
     line-height: 1.6;
     font-weight: 500;
-    text-align: center;
     margin-top: 20px;
   }
 
@@ -33,11 +35,17 @@
   }
 
   .services-panel-container {
-    display: flex;
-    padding: 0 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 24px;
+
+    @media (width > 480px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 40px;
+    }
+
+    @media (320px <= width <= 480px) {
+      margin-bottom: 0px;
+    }
   }
 
   .service-container {
@@ -50,15 +58,30 @@
     border-radius: 30px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media (320px <= width <= 480px) {
+      max-width: 100vw;
+      flex-direction: column;
+    }
   }
 
   .service-image {
     margin-right: 32px;
     height: 300px;
+
+    @media (320px <= width <= 480px) {
+      height: 250px;
+    }
+
     img {
       width: 350px;
       height: 100%;
       object-fit: cover;
+
+      @media (320px <= width <= 480px) {
+        margin-right: 0px;
+        object-position: 50% 50%;
+      }
     }
   }
 
@@ -70,6 +93,17 @@
     gap: 20px;
     text-align: center;
     margin-right: 32px;
+
+    .MuiTypography-h6 {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    @media (320px <= width <= 480px) {
+      margin-right: 0px;
+      padding: 32px;
+      gap: 12px;
+    }
   }
 
   .service-text--title {
@@ -78,5 +112,22 @@
 
   .service-text--desc {
     font-size: 1.1em;
+
+    @media (320px <= width <= 480px) {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (320px <= width <= 480px) {
+  .services-container {
+    #servicesTextBottom {
+      padding: 0 40px;
+    }
+
+    .services-text--default {
+      font-size: 16px;
+    }
   }
 }
