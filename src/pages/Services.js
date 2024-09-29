@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesComp from './servicescomp/ServicesComp'
+import ServicesComp from '../components/servicescomp/ServicesComp'
 
 function Services() {
   return (

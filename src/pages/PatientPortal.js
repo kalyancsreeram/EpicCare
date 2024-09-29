@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import PatientFormComp from './patientform/PatientFormComp'
-import PatientFormComp2 from './patientform/PatientFormComp2';
+import PatientFormComp from '../components/patientform/PatientFormComp'
+import PatientFormComp2 from '../components/patientform/PatientFormComp2';
 
 
 function PatientPortal() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import ResearchComp from './research/ResearchComp'
+import ResearchComp from '../components/research/ResearchComp'
 
 function Research() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import ResourcesComp from './resources/ResourcesComp'
+import ResourcesComp from '../components/resources/ResourcesComp'
 
 function Resources() {
   return (

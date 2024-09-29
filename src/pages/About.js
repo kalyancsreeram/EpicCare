@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutComp from './aboutcomp/AboutComp'
+import AboutComp from '../components/aboutcomp/AboutComp'
 
 function About() {
   return (
