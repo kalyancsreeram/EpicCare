@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.scss";
-import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
+import CompanyLogo from "../../assets/images/CompanyLogoEdited-in.png";
 import { Button, IconButton, Menu } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
 
