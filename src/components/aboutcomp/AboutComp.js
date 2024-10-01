@@ -12,7 +12,7 @@ import {
   FaLightbulb,
   FaUsers,
 } from "react-icons/fa";
-import { coreValues } from "../../data/data";
+import { aboutPageData } from "../../data/data";
 
 const getIcon = (index, iconSize = 42) => {
   const valueIcons = [
@@ -136,7 +136,7 @@ const AboutComp = () => {
           Our Core Values
         </Typography>
         <div className="cards-container">
-          {coreValues.map(({ value, content }, index) => (
+          {aboutPageData["coreValues"].map(({ value, content }, index) => (
             <Card sx={{ maxWidth: 345 }} className="card" key={index}>
               <CardContent>
                 <div className="card-title">

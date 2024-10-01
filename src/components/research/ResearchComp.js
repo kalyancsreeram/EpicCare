@@ -2,7 +2,7 @@ import React from "react";
 import "./ResearchComp.scss";
 import Typography from "@mui/material/Typography";
 
-import { researchNotes } from "../../data/data";
+import { researchPageData } from "../../data/data";
 
 const ResearchComp = () => {
   return (
@@ -27,7 +27,7 @@ const ResearchComp = () => {
       </span>
       <div className="research-points-container">
         <ul className="research-notes-list">
-          {researchNotes.map(({ title, content }, index) => {
+          {researchPageData.map(({ title, content }, index) => {
             return (
               <li className="research-notes-list-item" key={index}>
                 <p className="list-item--title">{title}:</p>
