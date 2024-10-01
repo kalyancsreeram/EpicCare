@@ -4,10 +4,6 @@ import "./styles.scss";
 import axios from "axios";
 import UploadComp from "./UploadComp";
 import FadeLoader from "react-spinners/FadeLoader";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-import { faCircleMinus } from "@fortawesome/free-solid-svg-icons";
 import { CONSTANTS } from "../../Constants";
 
 function PatientFormComp() {

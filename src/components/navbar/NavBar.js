@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.scss";
-// import LoginModal from "../loginmodal/LoginModal";
-// import SignupModal from "../signupmodal/SignupModal";
-import { useAuth } from "../../utils/auth";
-
-//import CompanyLogo from '../../assets/images/CompanyLogoSVG.svg'
-import CompanyLogo from "../../assets/images/CompanyLogoEdited-in.png";
-// import { decodeToken } from "../../utils/tokenUtil";
+import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
 import { Button, IconButton, Menu } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
 
