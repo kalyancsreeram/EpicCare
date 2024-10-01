@@ -39,19 +39,16 @@ const AboutComp = () => {
           About Us
         </Typography>
 
-        <Typography
-          variant="body2"
-          color="text.primary"
-          className="intro-notes"
-          id="firstHeadLine"
-        >
+        <div className="intro-notes">
           <p id="firstHeadLineBold">
             SeizureCare is an American Healthcare Company.
           </p>
-          Connecting medical professionals worldwide to epilepsy expertise and
-          resources, our goal is to reduce the barriers and create a more
-          equitable future for all those affected.
-        </Typography>
+          <Typography variant="body2" color="text.primary" id="firstHeadLine">
+            Connecting medical professionals worldwide to epilepsy expertise and
+            resources, our goal is to reduce the barriers and create a more
+            equitable future for all those affected.
+          </Typography>
+        </div>
         <Typography
           variant="body2"
           color="text.primary"

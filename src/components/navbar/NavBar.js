@@ -39,10 +39,10 @@ function NavBar() {
   ];
 
   const getNavLinks = () => {
-    return navListItems.map((item) => {
+    return navListItems.map((item, index) => {
       const link = item !== "Home" ? `/${item.toLowerCase()}` : `/`;
       return (
-        <NavLink to={link}>
+        <NavLink to={link} key={index}>
           <span className="nav-link--text">{item}</span>
         </NavLink>
       );
