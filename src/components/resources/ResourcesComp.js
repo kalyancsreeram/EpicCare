@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import "./ResourcesComp.scss";
 
 import Typography from "@mui/material/Typography";
 import ResourcesTable from "./ResourcesTable";
@@ -10,18 +10,18 @@ const { articles, websites } = resourcesPageData;
 
 function ResourcesComp() {
   return (
-    <div className="resourcesContainer">
+    <div className="resources-container">
       <Typography
-        className="resourcesMainHeading"
+        className="main-title"
         gutterBottom
-        variant="h4"
+        variant="h1"
         component="div"
       >
         Resources
       </Typography>
 
       <Typography
-        className="boldHeading secondaryTitle"
+        className="secondary-title"
         gutterBottom
         variant="h5"
         component="div"
@@ -29,73 +29,59 @@ function ResourcesComp() {
         Articles and book references:
       </Typography>
 
-      <br></br>
-
-      {articles.map(({ title, list }, index) => (
-        <div key={index}>
-          <Typography
-            className="boldHeading"
-            gutterBottom
-            variant="h6"
-            component="div"
-          >
-            {title}
-          </Typography>
-          <Typography
-            className="smallerFont"
-            gutterBottom
-            variant="h6"
-            component="div"
-          >
-            <ul>
+      <div className="articles-list">
+        {articles.map(({ title, list }, index) => (
+          <div key={index} className="article">
+            <Typography
+              className="article-title"
+              gutterBottom
+              variant="h6"
+              component="div"
+            >
+              {title}
+            </Typography>
+            <ul className="article-notes">
               {list.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li className="article-notes-item" key={index}>
+                  {item}
+                </li>
               ))}
             </ul>
-          </Typography>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
 
       <Typography
-        className="boldHeading secondaryTitle"
+        className="secondary-title"
         gutterBottom
-        variant="h6"
+        variant="h4"
         component="div"
       >
         Websites:
       </Typography>
 
-      <Typography gutterBottom variant="h6" component="div">
-        <ol className="smallerFont">
-          {websites.map(({ link, title, description }, index) => (
-            <li key={index}>
-              <a href={link} className="smallerFont">
-                {link}
-              </a>
-              <Typography
-                className="addPadding smallerFont"
-                gutterBottom
-                variant="h6"
-                component="div"
-              >
-                {title}
-              </Typography>
-              <Typography
-                className="addPadding smallerFont"
-                gutterBottom
-                variant="h6"
-                component="div"
-              >
-                <ul>
-                  {description?.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </Typography>
-            </li>
-          ))}
-        </ol>
-      </Typography>
+      <ol className="websites-list">
+        {websites.map(({ link, title, description }, index) => (
+          <li key={index} className="website-list-item">
+            <p className="website-link">
+              <a href={link}>{link}</a>
+            </p>
+            <Typography
+              className="website-title"
+              gutterBottom
+              variant="h6"
+              component="div"
+            >
+              {title}
+            </Typography>
+            <ul className="website-content">
+              {description?.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ol>
 
       <ResourcesTable />
     </div>
