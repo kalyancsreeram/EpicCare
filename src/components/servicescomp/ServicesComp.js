@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ServicesComp.scss";
 import Typography from "@mui/material/Typography";
-import { servicesData } from "../../data/data";
+import { servicesPageData } from "../../data/data";
 
 const ServicesComp = () => {
   return (
@@ -27,7 +27,7 @@ const ServicesComp = () => {
         </Typography>
       </div>
       <div className="services-panel-container">
-        {servicesData.map(({ title, desc, image }, index) => {
+        {servicesPageData.map(({ title, desc, image }, index) => {
           const imgSrc = require(`../../assets/images/${image}`);
           return (
             <div className="service-container" key={index}>
