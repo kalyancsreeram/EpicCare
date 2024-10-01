@@ -11,7 +11,7 @@ const ServicesComp = () => {
         <Typography
           className="main-title"
           gutterBottom
-          variant="h4"
+          variant="h1"
           component="div"
         >
           Services

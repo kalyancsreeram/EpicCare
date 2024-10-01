@@ -6,7 +6,10 @@
     color: #35294d;
     font-weight: bolder;
     font-size: 2em;
-    margin-bottom: 0px;
+
+    @media (width > 480px) {
+      margin-bottom: 0px;
+    }
   }
 
   .intro {
@@ -131,6 +134,10 @@
 
     .services-text--default {
       font-size: 16px;
+    }
+
+    .services-text--default {
+      margin-top: 0px;
     }
   }
 }

@@ -38,12 +38,12 @@ function HomePageFooter() {
         {linkItems.map((item, index) => {
           const link = `/${item.toLowerCase()}`;
           return (
-            <>
-              <NavLink to={link} key={index}>
+            <div key={index}>
+              <NavLink to={link}>
                 <span className="link">{item}</span>
               </NavLink>
               {index !== linkItems.length - 1 && "|"}
-            </>
+            </div>
           );
         })}
       </div>
