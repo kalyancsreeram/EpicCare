@@ -17,9 +17,16 @@
       display: flex;
       justify-content: space-around;
       font-family: "Inter";
+      font-weight: 550;
+
+      a {
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
       a:hover {
         // text-decoration: underline;
-        font-weight: bolder;
+        opacity: 0.8;
       }
     }
   }
@@ -35,6 +42,7 @@
       color: inherit;
       padding: 0 10px;
       text-decoration: none;
+      font-weight: 550;
 
       link {
         color: #35294d;
@@ -42,10 +50,14 @@
     }
     a:hover {
       // text-decoration: underline;
-      font-weight: bolder;
+      // font-weight: bolder;
+      opacity: 0.8;
     }
     a.active {
       text-decoration: underline;
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
     }
   }
 

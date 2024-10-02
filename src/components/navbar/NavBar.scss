@@ -27,6 +27,9 @@ nav > .nav-links-desktop > a:hover {
 
 nav > .nav-links-desktop > a.active {
   text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 nav > .nav-links-mobile {

@@ -185,7 +185,7 @@ const resourcesPageData = {
   ],
   websites: [
     {
-      link: "www.epilepsy.com",
+      link: "https://www.epilepsy.com",
       title: "National Epilepsy Foundation",
       description: [
         "Include an overview of epilepsy, discussions of treatments including medications",
@@ -194,7 +194,7 @@ const resourcesPageData = {
       ],
     },
     {
-      link: "www.cdc.gov/epilepsy",
+      link: "https://www.cdc.gov/epilepsy",
       title:
         "Epilepsy information from the Centers for Disease Control and Prevention",
       description: [
@@ -204,14 +204,14 @@ const resourcesPageData = {
       ],
     },
     {
-      link: "www.seizuretracker.com",
+      link: "https://www.seizuretracker.com",
       title: "Downloadable logs, spreadsheets, and smartphone apps",
       description: ["Track seizure activity and medication"],
     },
-    {
-      link: "www.coping-with-navigator.com",
-      title: "Forum for patients and families coping with epilepsy",
-    },
+    // {
+    //   link: "https://www.coping-with-navigator.com",
+    //   title: "Forum for patients and families coping with epilepsy",
+    // },
   ],
 };
 
