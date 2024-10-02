@@ -19,74 +19,78 @@ function ResourcesComp() {
       >
         Resources
       </Typography>
+      <div className="articles-container">
+        <Typography
+          className="secondary-title"
+          gutterBottom
+          variant="h5"
+          component="div"
+        >
+          Articles and book references:
+        </Typography>
 
-      <Typography
-        className="secondary-title"
-        gutterBottom
-        variant="h5"
-        component="div"
-      >
-        Articles and book references:
-      </Typography>
-
-      <div className="articles-list">
-        {articles.map(({ title, list }, index) => (
-          <div key={index} className="article">
-            <Typography
-              className="article-title"
-              gutterBottom
-              variant="h6"
-              component="div"
-            >
-              {title}
-            </Typography>
-            <ul className="article-notes">
-              {list.map((item, index) => (
-                <li className="article-notes-item" key={index}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <Typography
-        className="secondary-title"
-        gutterBottom
-        variant="h4"
-        component="div"
-      >
-        Websites:
-      </Typography>
-
-      <ol className="websites-list">
-        {websites.map(({ link, title, description }, index) => (
-          <li key={index} className="website-list-item">
-            <div className="website-link-title">
+        <div className="articles-list">
+          {articles.map(({ title, list }, index) => (
+            <div key={index} className="article">
               <Typography
-                className="website-title"
+                className="article-title"
                 gutterBottom
                 variant="h6"
                 component="div"
               >
-                {title}:
+                {title}
               </Typography>
-              <span className="website-link">
-                <a href={link}>{link}</a>
-              </span>
+              <ul className="article-notes">
+                {list.map((item, index) => (
+                  <li className="article-notes-item" key={index}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
+        </div>
+      </div>
 
-            <ul className="website-content">
-              {description?.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ol>
+      <div className="websites-container">
+        <Typography
+          className="secondary-title"
+          gutterBottom
+          variant="h4"
+          component="div"
+        >
+          Websites:
+        </Typography>
 
-      <ResourcesTable />
+        <ol className="websites-list">
+          {websites.map(({ link, title, description }, index) => (
+            <li key={index} className="website-list-item">
+              <div className="website-link-title">
+                <Typography
+                  className="website-title"
+                  gutterBottom
+                  variant="h6"
+                  component="div"
+                >
+                  {title}:
+                </Typography>
+                <span className="website-link">
+                  <a href={link}>{link}</a>
+                </span>
+              </div>
+
+              <ul className="website-content">
+                {description?.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div className="table-container">
+        <ResourcesTable />
+      </div>
     </div>
   );
 }
