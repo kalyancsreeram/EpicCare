@@ -1,6 +1,6 @@
 import React from "react";
 import "./ResourcesComp.scss";
-
+import { NavLink } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import ResourcesTable from "./ResourcesTable";
 
@@ -72,7 +72,7 @@ function ResourcesComp() {
                   variant="h6"
                   component="div"
                 >
-                  <a href={link}>{title}</a>
+                  <NavLink href={link}>{title}</NavLink>
                 </Typography>
                 {/* <span className="website-link">
                   <a href={link}>{link}</a>

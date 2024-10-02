@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.scss";
 import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
-import { Button, IconButton, Menu } from "@mui/material";
+import { IconButton, Menu } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
+import { TbExternalLink } from "react-icons/tb";
+
+import { navLinks } from "../../data/data";
 
 function NavBar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -22,22 +25,24 @@ function NavBar() {
     setAnchorEl(null);
   };
 
-  const navListItems = [
-    "Home",
-    "Services",
-    "Order",
-    "Research",
-    "Resources",
-    "About",
-    "Contact",
-  ];
-
   const getNavLinks = () => {
-    return navListItems.map((item, index) => {
-      const link = item !== "Home" ? `/${item.toLowerCase()}` : `/`;
+    return navLinks.map((item, index) => {
+      let link = ``;
+      if (item === "Home") {
+        link = `/`;
+      } else if (item === "Login") {
+        link = `https://app.seizurecarenet.com/`;
+      } else {
+        link = `/${item.toLowerCase()}`;
+      }
       return (
         <NavLink to={link} key={index}>
-          <span className="nav-link--text">{item}</span>
+          <span className="nav-link--text">
+            {item}
+            {item === "Login" && (
+              <TbExternalLink className="external-link-icon" size={20} />
+            )}
+          </span>
         </NavLink>
       );
     });
@@ -52,14 +57,7 @@ function NavBar() {
         src={CompanyLogo}
         onClick={homeBtnHandler}
       />
-      <div className="nav-links-desktop">
-        {getNavLinks()}
-        <div className="login-btn-container">
-          <Button variant="contained" className="login-btn" href="/wip">
-            Login
-          </Button>
-        </div>
-      </div>
+      <div className="nav-links-desktop">{getNavLinks()}</div>
       <div className="nav-links-mobile">
         <IconButton id="burger-icon" onClick={(e) => handleClick(e)}>
           <TiThMenu />
@@ -71,15 +69,6 @@ function NavBar() {
           onClose={handleClose}
         >
           {getNavLinks()}
-          <div className="login-btn-container">
-            <Button
-              variant="contained"
-              className="login-btn"
-              onClick={() => navigate(`/wip`)}
-            >
-              Login
-            </Button>
-          </div>
         </Menu>
       </div>
     </nav>

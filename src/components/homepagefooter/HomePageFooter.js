@@ -10,14 +10,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WorldMap from "../../assets/images/map.png";
 import { NavLink } from "react-router-dom";
 
-const linkItems = [
-  "Services",
-  "Order",
-  "Research",
-  "Resources",
-  "About",
-  "Contact",
-];
+import { navLinks } from "../../data/data";
+import { TbExternalLink } from "react-icons/tb";
+
+const getNavLinks = () => {
+  return navLinks.map((item, index) => {
+    let link = ``;
+    if (item === "Home") {
+      link = `/`;
+    } else if (item === "Login") {
+      link = `https://app.seizurecarenet.com/`;
+    } else {
+      link = `/${item.toLowerCase()}`;
+    }
+    return (
+      <div key={index}>
+        <NavLink to={link}>
+          <span className="link">
+            {item}
+            {item === "Login" && (
+              <TbExternalLink className="external-link-icon" size={20} />
+            )}
+          </span>
+        </NavLink>
+        {index !== navLinks.length - 1 && "|"}
+      </div>
+    );
+  });
+};
+
+// {linkItems.map((item, index) => {
+//   const link = `/${item.toLowerCase()}`;
+//   return (
+
+//   );
+// })}
 
 function HomePageFooter() {
   return (
@@ -34,19 +61,7 @@ function HomePageFooter() {
         </div>
         <img className="world-map" alt="SeizureCare" src={WorldMap} />
       </div>
-      <div className="footer-links">
-        {linkItems.map((item, index) => {
-          const link = `/${item.toLowerCase()}`;
-          return (
-            <div key={index}>
-              <NavLink to={link}>
-                <span className="link">{item}</span>
-              </NavLink>
-              {index !== linkItems.length - 1 && "|"}
-            </div>
-          );
-        })}
-      </div>
+      <div className="footer-links">{getNavLinks()}</div>
       <div className="socials-container">
         <FontAwesomeIcon className="icon-fb" icon={faFacebook} />
         <FontAwesomeIcon className="icon-yt" icon={faYoutubeSquare} />

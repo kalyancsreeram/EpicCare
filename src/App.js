@@ -11,7 +11,6 @@ import NoMatch from "./pages/NoMatch";
 import PatientPortal from "./pages/PatientPortal";
 import Resources from "./pages/Resources";
 import Footer from "./pages/Footer";
-import WIP from "./pages/WIP";
 
 import NavBar from "./components/navbar/NavBar";
 import PhysicianPortalComp from "./components/physiciangrid/PhysicianPortalComp";
@@ -98,8 +97,6 @@ function App() {
           <Route path="research" element={<Research />}></Route>
           <Route path="resources" element={<Resources />}></Route>
           <Route path="services" element={<Services />}></Route>
-          {/* //!!Temporary page, remove it once the actual link is working */}
-          <Route path="wip" element={<WIP />}></Route>
           <Route
             path="physician-portal"
             element={
