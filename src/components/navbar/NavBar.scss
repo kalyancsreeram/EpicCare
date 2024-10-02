@@ -59,7 +59,9 @@ nav > .nav-links-mobile {
   nav {
     display: flex;
     justify-content: space-between;
-    margin: 8px 12px 8px 0px;
+    margin: 0px;
+    position: fixed;
+    inset: 0;
   }
 
   nav > .nav-links-desktop {

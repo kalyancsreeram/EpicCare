@@ -44,47 +44,45 @@ function NavBar() {
   };
 
   return (
-    <div>
-      <nav>
-        <img
-          className="home-btn"
-          alt="SeizureCare"
-          style={{ width: "200px", cursor: "pointer", left: "10" }}
-          src={CompanyLogo}
-          onClick={homeBtnHandler}
-        />
-        <div className="nav-links-desktop">
+    <nav>
+      <img
+        className="home-btn"
+        alt="SeizureCare"
+        style={{ width: "200px", cursor: "pointer", left: "10" }}
+        src={CompanyLogo}
+        onClick={homeBtnHandler}
+      />
+      <div className="nav-links-desktop">
+        {getNavLinks()}
+        <div className="login-btn-container">
+          <Button variant="contained" className="login-btn" href="/wip">
+            Login
+          </Button>
+        </div>
+      </div>
+      <div className="nav-links-mobile">
+        <IconButton id="burger-icon" onClick={(e) => handleClick(e)}>
+          <TiThMenu />
+        </IconButton>
+        <Menu
+          id="burgerMenu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+        >
           {getNavLinks()}
           <div className="login-btn-container">
-            <Button variant="contained" className="login-btn" href="/wip">
+            <Button
+              variant="contained"
+              className="login-btn"
+              onClick={() => navigate(`/wip`)}
+            >
               Login
             </Button>
           </div>
-        </div>
-        <div className="nav-links-mobile">
-          <IconButton id="burger-icon" onClick={(e) => handleClick(e)}>
-            <TiThMenu />
-          </IconButton>
-          <Menu
-            id="burgerMenu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-          >
-            {getNavLinks()}
-            <div className="login-btn-container">
-              <Button
-                variant="contained"
-                className="login-btn"
-                onClick={() => navigate(`/wip`)}
-              >
-                Login
-              </Button>
-            </div>
-          </Menu>
-        </div>
-      </nav>
-    </div>
+        </Menu>
+      </div>
+    </nav>
   );
 }
 
