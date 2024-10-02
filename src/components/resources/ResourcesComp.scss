@@ -46,7 +46,7 @@
 
   .article-notes-item {
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   .article-notes {
@@ -69,20 +69,34 @@
       // padding-left: 20px;
       width: 100%;
 
+      .website-link-title {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 24px;
+        align-items: start;
+      }
+
       .website-link {
         width: 100%;
-        text-align: center;
+        // text-align: center;
         margin: 0px;
+        text-align: end;
       }
 
       .website-title {
         margin-bottom: 16px;
         text-align: center;
+        display: inline;
+        white-space: pre;
+        font-size: 1em;
+        line-height: 1.6;
+        font-family: Inter;
       }
 
       .website-content {
         list-style-type: disc;
         list-style-position: inside;
+        padding-inline-start: 0px;
       }
     }
   }
