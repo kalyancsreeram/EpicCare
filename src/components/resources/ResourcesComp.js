@@ -72,11 +72,11 @@ function ResourcesComp() {
                   variant="h6"
                   component="div"
                 >
-                  {title}:
+                  <a href={link}>{title}</a>
                 </Typography>
-                <span className="website-link">
+                {/* <span className="website-link">
                   <a href={link}>{link}</a>
-                </span>
+                </span> */}
               </div>
 
               <ul className="website-content">
