@@ -63,17 +63,20 @@ function ResourcesComp() {
       <ol className="websites-list">
         {websites.map(({ link, title, description }, index) => (
           <li key={index} className="website-list-item">
-            <p className="website-link">
-              <a href={link}>{link}</a>
-            </p>
-            <Typography
-              className="website-title"
-              gutterBottom
-              variant="h6"
-              component="div"
-            >
-              {title}
-            </Typography>
+            <div className="website-link-title">
+              <Typography
+                className="website-title"
+                gutterBottom
+                variant="h6"
+                component="div"
+              >
+                {title}:
+              </Typography>
+              <span className="website-link">
+                <a href={link}>{link}</a>
+              </span>
+            </div>
+
             <ul className="website-content">
               {description?.map((item, index) => (
                 <li key={index}>{item}</li>
