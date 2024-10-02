@@ -19,6 +19,17 @@ nav > .nav-links-desktop > a {
   width: auto;
   color: #35294d;
   text-decoration: none;
+
+  .nav-link--text {
+    color: #35294d;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  svg.external-link-icon {
+    margin-left: 2px;
+    vertical-align: middle;
+  }
 }
 
 nav > .nav-links-desktop > a:hover {
@@ -26,10 +37,12 @@ nav > .nav-links-desktop > a:hover {
 }
 
 nav > .nav-links-desktop > a.active {
-  text-decoration: underline;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+  .nav-link--text {
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
 }
 
 nav > .nav-links-mobile {
@@ -96,6 +109,13 @@ nav > .nav-links-mobile {
 
         .nav-link--text {
           color: #35294d;
+          display: inline-flex;
+          align-items: center;
+        }
+
+        svg.external-link-icon {
+          margin-left: 2px;
+          vertical-align: middle;
         }
       }
 

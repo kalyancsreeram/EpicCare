@@ -1,3 +1,14 @@
+const navLinks = [
+  "Home",
+  "Services",
+  "Order",
+  "Research",
+  "Resources",
+  "About",
+  "Contact",
+  "Login",
+];
+
 const researchPageData = [
   {
     title: "Etiology and Pathophysiology",
@@ -215,4 +226,10 @@ const resourcesPageData = {
   ],
 };
 
-export { researchPageData, aboutPageData, servicesPageData, resourcesPageData };
+export {
+  navLinks,
+  researchPageData,
+  aboutPageData,
+  servicesPageData,
+  resourcesPageData,
+};

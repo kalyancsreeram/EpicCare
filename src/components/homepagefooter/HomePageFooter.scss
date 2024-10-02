@@ -46,6 +46,14 @@
 
       link {
         color: #35294d;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      svg.external-link-icon {
+        margin-left: 2px;
+        vertical-align: middle;
+        padding-bottom: 1px;
       }
     }
     a:hover {
