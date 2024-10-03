@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-around;
   .address {
-    width: 30%;
+    width: 25%;
     font-size: large;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@
   }
   .footer-links {
     display: flex;
-    width: 40%;
+    width: 50%;
     font-size: large;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 25%;
     padding-right: 20px;
     svg {
       width: 2.5em;
