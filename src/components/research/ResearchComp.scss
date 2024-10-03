@@ -28,6 +28,10 @@
   font-family: DMSans;
 }
 
+.research-notes-list-item > .list-item--content {
+  font-weight: 500;
+}
+
 @media (width > 480px) {
   .research-container {
     display: flex;

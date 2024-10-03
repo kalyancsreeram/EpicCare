@@ -118,6 +118,8 @@
 
   .service-text--desc {
     font-size: 1.1em;
+    line-height: 1.6;
+    font-weight: 500;
 
     @media (320px <= width <= 480px) {
       font-size: 1em;
