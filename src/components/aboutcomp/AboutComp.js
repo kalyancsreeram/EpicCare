@@ -139,12 +139,15 @@ const AboutComp = () => {
           {aboutPageData["coreValues"].map(({ value, content }, index) => (
             <Card sx={{ maxWidth: 345 }} className="card" key={index}>
               <CardContent>
-                <div className="card-title">
-                  <div className="card-icon">{getIcon(index, 42)}</div>
-                  <Typography gutterBottom variant="h6" component="div">
-                    {value}
-                  </Typography>
-                </div>
+                <div className="card-icon">{getIcon(index, 42)}</div>
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="div"
+                  className="card-title"
+                >
+                  {value}
+                </Typography>
                 <Typography
                   variant="body2"
                   color="text.secondary"
