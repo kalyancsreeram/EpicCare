@@ -190,41 +190,41 @@
   }
 
   .table-container {
-    padding: 12px;
+    @media (width > 480px) {
+      width: 50%;
+    }
+    margin: 16px 0px 32px 0px;
   }
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+  .resources-table {
+    // min-width: 350px;
+    @media (320px <= width <= 480px) {
+      display: block;
+      overflow-x: auto;
+    }
 
-  td,
-  th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  th.productName {
-    text-align: center;
-  }
-  .lifestyle_choices {
-    padding-left: 2rem;
-  }
+    .table-header {
+      font-weight: bolder;
+    }
 
-  tr {
-    background-color: white;
-  }
-  .check {
-    text-align: center;
-  }
+    // @media (width > 480px) {
+    .product-name {
+      text-align: center;
+    }
 
-  .resourcesTable {
-    margin-top: 20px;
-  }
+    .product-feature-value {
+      text-align: center;
+    }
+    // }
 
-  .tableHeading {
-    margin-top: 40px;
-    color: #35294d;
-    text-decoration: underline;
+    th,
+    td {
+      font-size: 1.1em;
+      font-weight: 500;
+
+      @media (320px <= width <= 480px) {
+        font-size: 16px;
+      }
+    }
   }
 }
