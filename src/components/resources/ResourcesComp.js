@@ -8,7 +8,7 @@ import { resourcesPageData } from "../../data/data";
 
 const { articles, websites, featuresTableData } = resourcesPageData;
 
-function ResourcesComp() {
+const ResourcesComp = () => {
   return (
     <div className="resources-container">
       <Typography
@@ -88,6 +88,6 @@ function ResourcesComp() {
       <ResourcesTable data={featuresTableData} />
     </div>
   );
-}
+};
 
 export default ResourcesComp;
