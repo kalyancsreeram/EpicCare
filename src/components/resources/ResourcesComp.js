@@ -6,7 +6,7 @@ import ResourcesTable from "./ResourcesTable";
 
 import { resourcesPageData } from "../../data/data";
 
-const { articles, websites } = resourcesPageData;
+const { articles, websites, featuresTableData } = resourcesPageData;
 
 function ResourcesComp() {
   return (
@@ -74,9 +74,6 @@ function ResourcesComp() {
                 >
                   <NavLink href={link}>{title}</NavLink>
                 </Typography>
-                {/* <span className="website-link">
-                  <a href={link}>{link}</a>
-                </span> */}
               </div>
 
               <ul className="website-content">
@@ -88,9 +85,7 @@ function ResourcesComp() {
           ))}
         </ol>
       </div>
-      <div className="table-container">
-        <ResourcesTable />
-      </div>
+      <ResourcesTable data={featuresTableData} />
     </div>
   );
 }

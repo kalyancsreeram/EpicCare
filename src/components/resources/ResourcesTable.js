@@ -1,118 +1,50 @@
 import React from "react";
 import "./ResourcesComp.scss";
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 
-function ResourcesTable() {
+function ResourcesTable({ data }) {
+  console.log(data);
   return (
-    <div className="resourcesTable">
-      <table>
-        <tr>
-          <th>Possible features:</th>
-          <th className="productName">
-            <p>Seizure Log</p>
-            <p> (By Seizure Tracker LLC)</p>
-          </th>
-          <th className="productName">
-            <p>Epilepsy Toolkit</p>
-            <p> (By MCM Net Limited)</p>
-          </th>
-        </tr>
-        <tr>
-          <td>Seizure calender</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-        </tr>
-        <tr>
-          <td>Video documentation of seizure</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Remainder for medication/Appointment</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-        </tr>
-        <tr>
-          <td>First Aid/Medication information</td>
-          <td></td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-        </tr>
-        <tr>
-          <td>VNS alarms</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Communication with Team</td>
-          <td className="check">Sync with website</td>
-          <td className="check">Export to email</td>
-        </tr>
-        <tr>
-          <td>Graphic Option</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-        </tr>
-        <tr>
-          <td>Lifestyle</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td className="lifestyle_choices">- Diet</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td className="lifestyle_choices">- Mood</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td className="lifestyle_choices">- Triggers</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Cost</td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-          <td className="check">
-            <span>&#10003;</span>
-          </td>
-        </tr>
-        <tr>
-          <td>IOS & Android</td>
-          <td className="check">both</td>
-          <td className="check">both</td>
-        </tr>
-      </table>
-    </div>
+    <TableContainer component={Paper} className="table-container">
+      <Table className="resources-table" sx={{ minWidth: 340 }}>
+        <TableHead>
+          <TableRow>
+            <TableCell className="table-header">Features</TableCell>
+            <TableCell className="table-header product-name" align="right">
+              Seizure Log <br /> (By Seizure Tracker LLC)
+            </TableCell>
+            <TableCell className="table-header product-name" align="right">
+              Epilepsy Toolkit <br /> (By MCM Net Limited)
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {data.map((item, index) => {
+            return (
+              <TableRow key={index}>
+                <TableCell className="product-feature-title">
+                  {item.feature}
+                </TableCell>
+                <TableCell className="product-feature-value" align="right">
+                  {item.product1}
+                </TableCell>
+                <TableCell className="product-feature-value" align="right">
+                  {item.product2}
+                </TableCell>
+              </TableRow>
+            );
+          })}
+        </TableBody>
+      </Table>
+    </TableContainer>
   );
 }
 

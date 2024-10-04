@@ -152,6 +152,76 @@ const servicesPageData = [
   },
 ];
 
+function createTableData(features) {
+  return [
+    {
+      feature: "Seizure calendar",
+      product1: features.seizureCalendar ? "✔" : "✘",
+    },
+    {
+      feature: "Video documentation of seizure",
+      product1: features.videoDocumentation ? "✔" : "✘",
+    },
+    {
+      feature: "Reminder for medication/appointment",
+      product1: features.medicationReminder ? "✔" : "✘",
+    },
+    {
+      feature: "First Aid/Medication information",
+      product1: features.firstAid ? "✔" : "✘",
+    },
+    { feature: "VNS alarms", product1: features.vnsAlarms ? "✔" : "✘" },
+    { feature: "Communication with Team", product1: features.communication },
+    { feature: "Graphic option", product1: features.graphicOption ? "✔" : "✘" },
+    { feature: "Lifestyle", product1: features.lifestyle ? "✔" : "✘" },
+    { feature: "Diet", product1: features.diet ? "✔" : "✘" },
+    { feature: "Mood", product1: features.mood ? "✔" : "✘" },
+    { feature: "Triggers", product1: features.triggers ? "✔" : "✘" },
+    { feature: "Free to Use", product1: features.freeToUse ? "✔" : "✘" },
+    { feature: "IOS & Android", product1: features.platforms },
+  ];
+}
+
+const seizureLogFeatures = {
+  seizureCalendar: true,
+  videoDocumentation: true,
+  medicationReminder: true,
+  firstAid: false,
+  vnsAlarms: true,
+  communication: "Sync with website",
+  graphicOption: true,
+  lifestyle: true,
+  diet: true,
+  mood: true,
+  triggers: true,
+  freeToUse: true,
+  platforms: "Both",
+};
+
+const epilepsyToolkitFeatures = {
+  seizureCalendar: true,
+  videoDocumentation: false,
+  medicationReminder: true,
+  firstAid: true,
+  vnsAlarms: false,
+  communication: "Export to email",
+  graphicOption: true,
+  lifestyle: false,
+  diet: false,
+  mood: false,
+  triggers: false,
+  freeToUse: true,
+  platforms: "Both",
+};
+
+function combineTableData(product1Data, product2Data) {
+  return product1Data.map((row, index) => ({
+    feature: row.feature,
+    product1: row.product1,
+    product2: product2Data[index] ? product2Data[index].product1 : "",
+  }));
+}
+
 const resourcesPageData = {
   articles: [
     {
@@ -224,6 +294,11 @@ const resourcesPageData = {
     //   title: "Forum for patients and families coping with epilepsy",
     // },
   ],
+
+  featuresTableData: combineTableData(
+    createTableData(seizureLogFeatures),
+    createTableData(epilepsyToolkitFeatures)
+  ),
 };
 
 export {
