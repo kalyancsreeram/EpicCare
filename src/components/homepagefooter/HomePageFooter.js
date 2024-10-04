@@ -39,14 +39,7 @@ const getNavLinks = () => {
   });
 };
 
-// {linkItems.map((item, index) => {
-//   const link = `/${item.toLowerCase()}`;
-//   return (
-
-//   );
-// })}
-
-function HomePageFooter() {
+const HomePageFooter = () => {
   return (
     <div className="footer-container">
       <div className="address">
@@ -69,6 +62,6 @@ function HomePageFooter() {
       </div>
     </div>
   );
-}
+};
 
 export default HomePageFooter;
