@@ -19,6 +19,7 @@ nav > .nav-links-desktop > a {
   width: auto;
   color: #35294d;
   text-decoration: none;
+  position: relative;
 
   .nav-link--text {
     color: #35294d;
@@ -32,8 +33,27 @@ nav > .nav-links-desktop > a {
   }
 }
 
-nav > .nav-links-desktop > a:hover {
+nav > .nav-links-desktop > a:not(.active):not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #35294d;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-in;
+}
+
+nav > .nav-links-desktop > a:not(.active):not(:last-child):hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav > .nav-links-desktop > a:not(.active):hover {
   opacity: 0.8;
+  // transition: .2s;
 }
 
 nav > .nav-links-desktop > a.active {
