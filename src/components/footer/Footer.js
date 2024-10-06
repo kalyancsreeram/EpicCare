@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./HomePageFooter.scss";
+import "./Footer.scss";
 
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
@@ -24,8 +24,8 @@ const getNavLinks = () => {
       link = `/${item.toLowerCase()}`;
     }
     return (
-      <div key={index}>
-        <NavLink to={link}>
+      <>
+        <NavLink to={link} key={index}>
           <span className="link">
             {item}
             {item === "Login" && (
@@ -34,34 +34,39 @@ const getNavLinks = () => {
           </span>
         </NavLink>
         {index !== navLinks.length - 1 && "|"}
-      </div>
+      </>
     );
   });
 };
 
-const HomePageFooter = () => {
+const Footer = () => {
   return (
     <div className="footer-container">
-      <div className="address">
-        <div className="address-text">
-          <p>
-            <b>SeizureCare</b>
-          </p>
-          <div className="countries-list">
-            <a href="https://seizurecarenet.com">USA</a>
-            <a href="https://seizurecarenet.in">India</a>
+      <div className="footer-top-container">
+        <div className="address">
+          <div className="address-text">
+            <p>
+              <b>SeizureCare</b>
+            </p>
+            <div className="countries-list">
+              <a href="https://seizurecarenet.com">USA</a>
+              <a href="https://seizurecarenet.in">India</a>
+            </div>
           </div>
+          <img className="world-map" alt="SeizureCare" src={WorldMap} />
         </div>
-        <img className="world-map" alt="SeizureCare" src={WorldMap} />
+        <div className="footer-links">{getNavLinks()}</div>
+        <div className="socials-container">
+          <FontAwesomeIcon className="icon-fb" icon={faFacebook} />
+          <FontAwesomeIcon className="icon-yt" icon={faYoutubeSquare} />
+          <FontAwesomeIcon className="icon-in" icon={faLinkedin} />
+        </div>
       </div>
-      <div className="footer-links">{getNavLinks()}</div>
-      <div className="socials-container">
-        <FontAwesomeIcon className="icon-fb" icon={faFacebook} />
-        <FontAwesomeIcon className="icon-yt" icon={faYoutubeSquare} />
-        <FontAwesomeIcon className="icon-in" icon={faLinkedin} />
+      <div className="footer-bottom-container">
+        Copyright &#169; 2024 SeizureCare | Privacy Notice
       </div>
     </div>
   );
 };
 
-export default HomePageFooter;
+export default Footer;

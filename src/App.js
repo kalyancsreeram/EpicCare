@@ -10,11 +10,10 @@ import Services from "./pages/Services";
 import NoMatch from "./pages/NoMatch";
 import PatientPortal from "./pages/PatientPortal";
 import Resources from "./pages/Resources";
-import Footer from "./pages/Footer";
+import Footer from "./components/footer/Footer";
 
 import NavBar from "./components/navbar/NavBar";
 import PhysicianPortalComp from "./components/physiciangrid/PhysicianPortalComp";
-import HomePageFooter from "./components/homepagefooter/HomePageFooter";
 
 import { AuthProvider } from "./utils/auth";
 import RequireAuth from "./utils/RequireAuth";
@@ -107,7 +106,6 @@ function App() {
           ></Route>
           <Route path="*" element={<NoMatch />}></Route>
         </Routes>
-        <HomePageFooter />
         <Footer />
       </ThemeProvider>
     </AuthProvider>
