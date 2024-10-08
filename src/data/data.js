@@ -178,7 +178,7 @@ function createTableData(features) {
     { feature: "Mood", product1: features.mood ? "✔" : "✘" },
     { feature: "Triggers", product1: features.triggers ? "✔" : "✘" },
     { feature: "Free to Use", product1: features.freeToUse ? "✔" : "✘" },
-    { feature: "IOS & Android", product1: features.platforms },
+    { feature: "iOS & Android", product1: features.platforms },
   ];
 }
 
