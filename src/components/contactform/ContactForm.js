@@ -197,7 +197,7 @@ const ContactForm = () => {
             label="Type your comments here"
             multiline
             rows={4}
-            helperText="Please feel free to leave any comments or feedback."
+            helperText="Please feel free to leave any comments, questions, or inquiries."
             value={formData.message}
             onChange={handleChange}
             required
@@ -214,7 +214,7 @@ const ContactForm = () => {
         </form>
       </div>
       <div className="contact-page-note">
-        <p>Please use this form for general inquiries only.</p>
+        <p>Use this form for general inquiries only.</p>
         <p>
           <b>DO NOT</b> submit any personal health information through this
           form.
@@ -223,7 +223,5 @@ const ContactForm = () => {
     </div>
   );
 };
-
-//TODO: Add Spinner and notification after
 
 export default ContactForm;

@@ -1,131 +1,148 @@
+$border-radius: 8px;
+
+$font-size-base: 1.1em;
+$font-size-title: 2em;
+$font-size-base--mobile: 16px;
+
+$line-height: 1.6;
+
+$font-weight-base: 500;
+
+$padding-page: 40px;
+$padding-form--default: 40px;
+$padding-form--mobile: 0px;
+
+$margin-top-page--mobile: 75px;
+
+$width-form-item--default: 40%;
+$width-form-item--mobile: 100%;
+
+$gap-form-items: 24px;
+
+$color--default: #35294d;
+
+$background-color--default: rgba(
+  $color: #c6aadb,
+  $alpha: 0.2,
+);
+$background-color--alt: white;
+
 .contact-page-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba($color: #c6aadb, $alpha: 0.2);
-  padding: 40px;
+  background-color: $background-color--default;
+  padding: $padding-page;
 
-  font-size: 1.1em;
-  line-height: 1.6;
-  font-weight: 500;
+  font-size: $font-size-base;
+  line-height: $line-height;
+  font-weight: $font-weight-base;
+
+  @media (320px <= width <= 480px) {
+    width: 100vw;
+    margin-top: $margin-top-page--mobile;
+    font-size: $font-size-base--mobile;
+  }
 }
 
 .contact-page-info {
   text-align: center;
 
-  .main-title {
-    color: #35294d;
-    font-weight: bolder;
-    font-size: 2em;
-    margin-bottom: 28px;
+  @media (320px <= width <= 480px) {
+    text-align: start;
   }
-}
 
-.contact-page-note {
-  // font-weight: bold;
-  padding-bottom: 20px;
-  line-height: 1.6;
-  text-align: center;
+  .main-title {
+    color: $color--default;
+    font-weight: bolder;
+    font-size: $font-size-title;
+
+    @media (width > 480px) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .contact-form-container {
   width: 100%;
-  // background-color: #f2f2f2;
-  padding: 40px;
+  padding: $padding-form--default;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+
+  @media (320px <= width <= 480px) {
+    padding: $padding-form--mobile;
+    margin-top: 16px;
+  }
 }
 
 .alert-message {
-  width: 40%;
+  width: $width-form-item--default;
+
+  @media (320px <= width <= 480px) {
+    width: $width-form-item--mobile;
+  }
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: $gap-form-items;
   width: 100%;
 }
 
-// .form-label {
-//   font-weight: bold;
-//   font-family: "DMSans", sans-serif;
-// }
-
-// .form-label-input {
-//   width: 100%;
-//   display: flex;
-// flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// gap: 4px;
-// }
-
 .form-input {
-  width: 40%;
-  // padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  // box-sizing: border-box;
-  // margin-top: 6px;
-  // margin-bottom: 16px;
-  // resize: vertical;
-  // display: block;
-  font-family: "Inter", sans-serif;
   text-align: center;
+  width: $width-form-item--default;
+
+  @media (320px <= width <= 480px) {
+    width: $width-form-item--mobile;
+  }
 
   label,
   input {
-    background-color: white;
+    background-color: $background-color--alt;
   }
 
   label {
-    border-radius: 8px;
+    border-radius: $border-radius;
     padding: 0 4px;
   }
 }
 
-// .form-input:focus::placeholder {
-//   color: transparent;
-// }
-
 .form-dropdown {
-  // display: block;
-  width: 250px;
-  // height: 35px;
-  // margin-top: 5px;
-  // margin-bottom: 16px;
-  // border: 1px solid #ccc;
-  // border-radius: 8px;
   font-family: "Inter", sans-serif;
-  // text-align: center;
   .MuiSelect-select,
   input {
-    background-color: white;
+    background-color: $background-color--alt;
   }
 }
 
 .form-text-area {
-  resize: none;
-  height: 150px;
-
   .MuiInputBase-root {
-    background-color: white;
+    background-color: $background-color--alt;
   }
 }
 
-.form-text-area:-webkit-resizer {
-  display: none;
-}
-
 #formSubmitBtn {
-  background-color: #35294d;
+  background-color: $color--default;
   color: white;
   margin-top: 16px;
+
+  @media (320px <= width <= 480px) {
+    margin-top: 0px;
+  }
+}
+
+.contact-page-note {
+  line-height: $line-height;
+  text-align: center;
+
+  @media (320px <= width <= 480px) {
+    margin-top: 16px;
+  }
 }
