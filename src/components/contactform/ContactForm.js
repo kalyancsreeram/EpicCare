@@ -95,7 +95,7 @@ const ContactForm = () => {
           data-testid="loader"
         />
       </div>
-      <div className="contact-page-info">
+      <div className="contact-page__info">
         <Typography
           className="main-title"
           gutterBottom
@@ -131,7 +131,7 @@ const ContactForm = () => {
             type="text"
             id="fName"
             name="firstname"
-            className="form-input"
+            className="form__input"
             label="First Name"
             variant="outlined"
             value={formData.firstname}
@@ -143,7 +143,7 @@ const ContactForm = () => {
             type="text"
             id="lName"
             name="lastname"
-            className="form-input"
+            className="form__input"
             label="Last Name"
             variant="outlined"
             value={formData.lastname}
@@ -155,7 +155,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            className="form-input"
+            className="form__input"
             label="Email Address"
             variant="outlined"
             value={formData.email}
@@ -167,7 +167,7 @@ const ContactForm = () => {
             type="tel"
             id="phone"
             name="phone"
-            className="form-input"
+            className="form__input"
             label="Phone Number"
             variant="outlined"
             value={formData.phone}
@@ -177,7 +177,7 @@ const ContactForm = () => {
           />
           <TextField
             select
-            className="form-dropdown"
+            className="form__dropdown"
             name="country"
             id="countrySelect"
             value={formData.country}
@@ -193,7 +193,7 @@ const ContactForm = () => {
           <TextField
             id="message"
             name="message"
-            className="form-input form-text-area"
+            className="form__input form__text-area"
             label="Type your comments here"
             multiline
             rows={4}
@@ -204,7 +204,7 @@ const ContactForm = () => {
           />
           <Button
             variant="contained"
-            className="form-submit-button"
+            className="form__submit-button"
             type="submit"
             id="formSubmitBtn"
             size="large"
@@ -213,7 +213,7 @@ const ContactForm = () => {
           </Button>
         </form>
       </div>
-      <div className="contact-page-note">
+      <div className="contact-page__note">
         <p>Use this form for general inquiries only.</p>
         <p>
           <b>DO NOT</b> submit any personal health information through this

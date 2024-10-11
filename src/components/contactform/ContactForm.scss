@@ -46,7 +46,7 @@ $background-color--alt: white;
   }
 }
 
-.contact-page-info {
+.contact-page__info {
   text-align: center;
 
   @media (320px <= width <= 480px) {
@@ -96,7 +96,7 @@ $background-color--alt: white;
   width: 100%;
 }
 
-.form-input {
+.form__input {
   text-align: center;
   width: $width-form-item--default;
 
@@ -115,7 +115,7 @@ $background-color--alt: white;
   }
 }
 
-.form-dropdown {
+.form__dropdown {
   font-family: "Inter", sans-serif;
   .MuiSelect-select,
   input {
@@ -123,13 +123,11 @@ $background-color--alt: white;
   }
 }
 
-.form-text-area {
-  .MuiInputBase-root {
-    background-color: $background-color--alt;
-  }
+.form__text-area .MuiInputBase-root {
+  background-color: $background-color--alt;
 }
 
-#formSubmitBtn {
+.form__submit-button.MuiButton-root {
   background-color: $color--default;
   color: white;
   margin-top: 16px;
@@ -139,7 +137,7 @@ $background-color--alt: white;
   }
 }
 
-.contact-page-note {
+.contact-page__note {
   line-height: $line-height;
   text-align: center;
 
