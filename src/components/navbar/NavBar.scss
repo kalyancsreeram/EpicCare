@@ -98,6 +98,7 @@ nav > .nav-links-mobile {
     margin: 0px;
     position: fixed;
     inset: 0;
+    z-index: 999;
   }
 
   nav > .nav-links-desktop {

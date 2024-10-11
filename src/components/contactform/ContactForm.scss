@@ -84,6 +84,7 @@ $background-color--alt: white;
 
   @media (320px <= width <= 480px) {
     width: $width-form-item--mobile;
+    margin-bottom: $gap-form-items;
   }
 }
 
