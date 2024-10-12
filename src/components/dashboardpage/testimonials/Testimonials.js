@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 // import Marco from '../../../assets/images/Marco.jpg'
 // import Priya from '../../../assets/images/Priya.jpg'
 
-import "./styles.scss";
+import "./Testimonials.scss";
 import { Typography } from "@mui/material";
 
 function Testimonials() {

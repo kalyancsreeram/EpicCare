@@ -8,7 +8,7 @@ import CardOne from "../../../assets/images/card-one.jpg";
 import CardTwo from "../../../assets/images/card-two.jpg";
 import CardThree from "../../../assets/images/card-three.jpg";
 
-import "./styles.scss";
+import "./CardsComponent.scss";
 
 export default function CardsComponent() {
   return (
@@ -70,9 +70,9 @@ export default function CardsComponent() {
               color="text.secondary"
               className="card_text"
             >
-              The preliminary data do not raise major concerns on the use of LCM
-              during pregnancy. Most pregnancies with LCM exposure resulted in
-              healthy live births, and no new safety issues were identified.
+              The preliminary data does not raise major concerns on the use of
+              LCM during pregnancy. Most pregnancies with LCM exposure resulted
+              in healthy live births, and no new safety issues were identified.
             </Typography>
           </CardContent>
           {/* </CardActionArea> */}
