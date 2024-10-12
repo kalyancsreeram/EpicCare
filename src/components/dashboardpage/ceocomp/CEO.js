@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import "./CEO.scss";
 import Typography from "@mui/material/Typography";
 
 import Welcome from "../../../assets/images/welcomeImg.jpg";
