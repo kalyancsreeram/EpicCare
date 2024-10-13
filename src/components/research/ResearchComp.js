@@ -17,7 +17,7 @@ const ResearchComp = () => {
           Research
         </Typography>
 
-        <p className="research-notes-content" id="researchScopeDesc">
+        <p className="research-desc" id="researchScopeDesc">
           The research scope in epilepsy is vast and multidisciplinary,
           encompassing various aspects of this complex condition.
         </p>
@@ -25,24 +25,24 @@ const ResearchComp = () => {
       <span className="research-notes-title">
         Some potential areas of investigation include:
       </span>
-      <div className="research-points-container">
-        <ul className="research-notes-list">
+      <div className="research-list-container">
+        <ul className="research-list">
           {researchPageData.map(({ title, content }, index) => {
             return (
-              <li className="research-notes-list-item" key={index}>
-                <p className="list-item--title">{title}:</p>
-                <p className="list-item--content">{content}</p>
+              <li className="research-list__item" key={index}>
+                <p className="item__title">{title}:</p>
+                <p className="item__content">{content}</p>
               </li>
             );
           })}
         </ul>
       </div>
-      <p className="research-notes-content">
+      <p className="research-desc">
         This comprehensive scope encompasses various disciplines, from basic
         science to clinical practice, aiming to advance our understanding and
         management of epilepsy.
       </p>
-      <p className="research-notes-content">
+      <p className="research-desc">
         <b>
           SeizureCare website will be regularly updated to feature ongoing
           active projects and annual publications related to above disciplines,
