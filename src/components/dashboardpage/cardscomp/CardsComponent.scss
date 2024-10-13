@@ -3,51 +3,66 @@ $background-color--default: rgba(
   $alpha: 0.2,
 );
 
-$padding-top-card: 24px;
+$font-size-card__title: 1.2em;
+$font-size-card__desc: 1em;
+$font-size-component-title: 1.5em;
 
-.cardsContainer {
+$line-height: 1.6;
+
+$padding-card: 30px;
+
+$margin-card: 20px;
+$margin-card__title: 10px auto 10px auto;
+$margin-component-title-container: 3rem;
+
+$border-radius: 30px;
+
+.cards-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+
   .card {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: $margin-card;
     text-align: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: $border-radius;
     background-color: $background-color--default;
-    padding-top: $padding-top-card;
+    padding: $padding-card;
 
-    .MuiTypography-h6 {
-      font-size: 1.2em;
+    .MuiCardContent-root {
+      padding: 0;
+    }
+
+    .card__title.MuiTypography-h6 {
+      font-size: $font-size-card__title;
       font-weight: bold;
-      margin: 10px auto 10px auto;
+      margin: $margin-card__title;
     }
-    p {
-      font-size: 12px;
-    }
-    img {
-      margin-top: 2px;
+    .card__img {
       object-fit: contain;
+      margin-bottom: 16px;
     }
-    .card_text {
-      font-size: 1em;
-      line-height: 1.6;
+    .card__desc {
+      font-size: $font-size-card__desc;
+      line-height: $line-height;
     }
   }
 }
 
-.three-panel-main-title {
+.cards-component-title-container {
   color: #35294d;
   display: block;
-  margin-top: 3rem;
-  margin-left: 3rem;
+  margin-top: $margin-component-title-container;
+  margin-left: $margin-component-title-container;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  .bold_text {
+
+  .cards-component-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: $font-size-component-title;
   }
 }

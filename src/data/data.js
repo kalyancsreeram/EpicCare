@@ -301,10 +301,40 @@ const resourcesPageData = {
   ),
 };
 
+const homePageData = {
+  articlesData: [
+    {
+      title:
+        "Second-line immunotherapy in new-onset refractory status epilepticus: Systematic review",
+      description:
+        "When treatments were initiated in the acute phase, seizures had been controlled in up to 73% of patients with anakinra, 70% with tocilizumab, and 50% with intrathecal dexamethasone. However, they had no clear effect on the emergence of post-NORSE epilepsy or long-term functional outcomes.",
+      image: "card-one.jpg",
+      altText: "Card One",
+    },
+    {
+      title:
+        "Lacosamide and pregnancy: Data from spontaneous and solicited reports",
+      description:
+        "The preliminary data does not raise major concerns on the use of LCM during pregnancy. Most pregnancies with LCM exposure resulted in healthy live births, and no new safety issues were identified.",
+      image: "card-two.jpg",
+      altText: "Card Two",
+    },
+    {
+      title:
+        "Focal electroclinical features in generalized tonic–clonic seizures: Decision flowchart for a diagnostic challenge",
+      description:
+        "Focal semiology and interictal EEG are com-mon in generalized tonic–clonic seizures and should not exclude IGE diagnosis. Focal ictal EEG onset of tonic–clonic seizures is rare in IGE, and when present, it points to dif-ferent location than the IEDs.",
+      image: "card-three.jpg",
+      altText: "Card Three",
+    },
+  ],
+};
+
 export {
   navLinks,
   researchPageData,
   aboutPageData,
   servicesPageData,
   resourcesPageData,
+  homePageData,
 };

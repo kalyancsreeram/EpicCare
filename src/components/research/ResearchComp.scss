@@ -1,35 +1,69 @@
+$font-size-main-title: 2em;
+$font-size-base--default: 1.1em;
+$font-size-base--mobile: 16px;
+$font-size-sec-title: 1.5em;
+$font-size-item__title: 1.1em;
+
+$font-weight-item__content: 500;
+
+$font-family-primary: Inter;
+$font-family-secondary: DMSans;
+
+$line-height: 1.6;
+
+$padding-page--default: 40px;
+$padding-page--mobile: 40px;
+
+$box-shadow-list__item: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+$background-color: rgba(
+  $color: #c6aadb,
+  $alpha: 0.2,
+);
+
+$color--default: #35294d;
+
+$font-color-item__content: rgba(0, 0, 0, 0.6);
+
 .research-container {
-  color: rgba($color: #000000, $alpha: 1);
   min-height: 100vh;
 
   .main-title {
-    color: #35294d;
+    color: $color--default;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: $font-size-main-title;
   }
 
   .research-title-desc {
-    padding: 40px;
+    padding: $padding-page--default;
     background-color: rgba($color: #c6aadb, $alpha: 0.2);
   }
 }
 
-.research-notes-content {
+.research-desc {
   margin: 0 0 32px 0;
-  font-size: 1.1em; //** Can use this as default font size for desktop screens
-  line-height: 1.6;
+  font-size: $font-size-base--default; //** Can use this as default font size for desktop screens
+  line-height: $line-height;
   font-weight: 500;
 }
 
 .research-notes-title {
   font-weight: bold;
-  font-size: 1.5em;
-  line-height: 1.6;
-  font-family: DMSans;
+  font-size: $font-size-sec-title;
+  line-height: $line-height;
+  font-family: $font-family-secondary;
 }
 
-.research-notes-list-item > .list-item--content {
-  font-weight: 500;
+.research-list__item {
+  .item__title {
+    font-family: $font-family-secondary;
+    font-size: $font-size-item__title;
+  }
+  .item__content {
+    font-weight: $font-weight-item__content;
+    color: $font-color-item__content;
+  }
 }
 
 @media (width > 480px) {
@@ -52,8 +86,8 @@
     margin: 32px 24px 12px 24px;
   }
 
-  .research-points-container {
-    .research-notes-list {
+  .research-list-container {
+    .research-list {
       margin-bottom: 48px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -61,17 +95,15 @@
       list-style-type: none;
       padding: 0px;
 
-      .research-notes-list-item {
-        font-size: 1.1em;
+      .research-list__item {
+        font-size: $font-size-base--default;
         margin: 20px 24px;
         padding: 16px;
         border-radius: 30px;
-        background-color: rgba($color: #c6aadb, $alpha: 0.2);
-        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: $background-color;
+        box-shadow: $box-shadow-list__item;
 
-        .list-item--title {
+        .item__title {
           font-weight: bolder;
           margin-bottom: 32px;
         }
@@ -88,7 +120,7 @@
   }
 
   .research-notes-title {
-    padding-left: 40px;
+    padding-left: $padding-page--default;
     margin-top: 24px;
     display: inline-block;
   }
@@ -98,24 +130,24 @@
     margin: 0px;
   }
 
-  .research-notes-content {
-    font-size: 16px;
-    padding: 0 40px 0 40px;
+  .research-desc {
+    font-size: $font-size-base--mobile;
+    padding: $padding-page--mobile;
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
-  .research-points-container {
-    padding: 0 40px 0 40px;
-    .research-notes-list {
+  .research-list-container {
+    padding: $padding-page--mobile;
+    .research-list {
       margin-bottom: 28px;
       padding-left: 20px;
       margin-top: 20px;
 
-      .research-notes-list-item {
+      .research-list__item {
         margin-bottom: 24px;
-        font-size: 16px;
-        .list-item--title {
+        font-size: $font-size-base--mobile;
+        .item__title {
           font-weight: bolder;
         }
       }
