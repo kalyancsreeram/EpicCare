@@ -18,11 +18,11 @@ function Testimonials() {
       interval={6100}
     >
       {testimonials.map(({ name, testimony }) => (
-        <div className="myCarousel">
-          <div className="myCarouselText">
-            <h3 className="carousel-heading">{name}</h3>
+        <div className="carousel__item-container">
+          <div className="carousel__item">
+            <h3 className="item__heading">{name}</h3>
             <Typography
-              className="carousel-testimony"
+              className="item__content"
               variant="p"
               color="text.secondary"
             >

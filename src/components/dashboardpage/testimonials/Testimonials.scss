@@ -14,7 +14,6 @@ $border-radius-arrow: 16px;
 
 .carousel .slide {
   background: #fff !important;
-  // color: black;
   height: 100%;
 }
 .control-next,
@@ -28,7 +27,7 @@ $border-radius-arrow: 16px;
   border-radius: $border-radius;
 }
 
-.myCarousel {
+.carousel__item-container {
   background: $background-color--default;
   width: 75%;
   margin-left: auto;
@@ -52,57 +51,32 @@ $border-radius-arrow: 16px;
   bottom: 4% !important;
 }
 
-.myCarousel h3 {
-  // color: #222;
+.item__heading {
   letter-spacing: 0.2px;
   margin-bottom: 20px;
   font-weight: 600;
-  // text-transform: uppercase;
   font-size: 1.3em;
   font-family: "DMSans";
 }
 
-.myCarousel h4 {
-  // text-transform: uppercase;
-  margin-top: 0;
-  padding-top: 0;
-  font-weight: 500;
-  // color: #787878;
-  font-size: 14px;
-}
-
-// .myCarousel p {
-//   font-weight: 400;
-//   line-height: 29px;
-//   // color: #222;
-//   font-size: 1em;
-//   // font-family: sans-serif;
-//   max-height: 67px;
-// }
-
-.carousel-testimony {
+.item__content {
   line-height: 1.8;
   font-weight: 400;
-  // line-height: 29px;
-  // color: #222;
   font-size: 1em;
-  // font-family: sans-serif;
   max-height: 67px;
 }
 
-.myCarousel p:before {
+.carousel__item-container p:before {
   content: "“";
   color: #aaa;
   font-size: 30px;
-  // font-family: monospace;
   font-weight: 100;
 }
 
-.myCarousel p:after {
+.carousel__item-container p:after {
   content: "”";
   color: #aaa;
   font-size: 30px;
-  // font-family: monospace;
   font-weight: 100;
   line-height: 0;
 }
@@ -121,10 +95,6 @@ $border-radius-arrow: 16px;
   border-radius: $border-radius-arrow;
 }
 
-.App {
-  text-align: center;
-}
-
 @media only screen and (max-width: 934px) {
   .carousel-root {
     outline: 0;
@@ -135,7 +105,7 @@ $border-radius-arrow: 16px;
   .carousel.carousel-slider .control-arrow {
     display: none !important;
   }
-  .myCarousel {
+  .carousel__item-container {
     background: #fafafa;
     margin-top: -9%;
     width: 88%;
