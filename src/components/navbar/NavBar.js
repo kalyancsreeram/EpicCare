@@ -40,7 +40,7 @@ function NavBar() {
           <span className="nav-link--text">
             {item}
             {item === "Login" && (
-              <TbExternalLink className="external-link-icon" size={20} />
+              <TbExternalLink className="external-link-icon" size={18} />
             )}
           </span>
         </NavLink>
