@@ -1,12 +1,12 @@
 import React from "react";
 import Testimonials from "../components/dashboardpage/testimonials/Testimonials";
-import CEO from "../components/dashboardpage/ceocomp/CEO";
+import Welcome from "../components/dashboardpage/welcomeComp/Welcome";
 import CardsComponent from "../components/dashboardpage/cardscomp/CardsComponent";
 
 function Home() {
   return (
-    <div className="homePage">
-      <CEO></CEO>
+    <div className="home-page">
+      <Welcome></Welcome>
       <CardsComponent></CardsComponent>
       <Testimonials></Testimonials>
     </div>

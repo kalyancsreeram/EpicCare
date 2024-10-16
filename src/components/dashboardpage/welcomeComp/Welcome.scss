@@ -1,4 +1,4 @@
-.ceoContainerMain {
+.welcome-container {
   color: rgb(29, 25, 73);
   display: flex;
   position: relative;
@@ -9,22 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .ceoContainer {
+  .welcome-content {
     margin: 50px;
     display: flex;
     width: 75%;
     align-items: center;
   }
-  .ceoImage {
-    display: flex;
-    align-items: center;
-    width: 25%;
-    height: 100%;
-    img {
-      width: 100%;
-    }
-  }
-  .ceoMessage {
+
+  .welcome__message {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -39,7 +31,7 @@
       font-weight: bold;
     }
   }
-  .welcome_msg {
+  .message__text {
     text-align: justify;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -51,7 +43,7 @@
       padding: 0.5em 2em 0.5em 3em;
     }
 
-    #welcomeMsgText {
+    #ceoMessage {
       margin: 1rem 0 0 1rem;
     }
 
@@ -87,7 +79,7 @@
     }
   }
 
-  .seizureCareImg {
+  .welcome__img {
     width: 40%;
     border-radius: 30px;
   }
