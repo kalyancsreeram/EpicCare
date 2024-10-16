@@ -16,10 +16,6 @@ body {
   min-height: 100vh;
 }
 
-.homePage {
-  min-height: calc(100vh - 86px);
-}
-
 .orderFormContainer {
   background-color: #f2f2f2;
   padding-left: 50px;
