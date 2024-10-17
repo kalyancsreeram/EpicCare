@@ -10,6 +10,11 @@ $border-radius-arrow: 16px;
   width: 100% !important;
   margin-top: 3rem;
   margin-bottom: 3rem;
+
+  // TODO: Adjust this to mobile screens
+  @media (320px <= width <= 480px) {
+    display: none;
+  }
 }
 
 .carousel .slide {

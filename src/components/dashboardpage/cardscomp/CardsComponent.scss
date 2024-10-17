@@ -10,8 +10,10 @@ $font-size-component-title: 1.5em;
 $line-height: 1.6;
 
 $padding-card: 30px;
+$padding-page: 40px;
 
-$margin-card: 20px;
+$margin-card--default: 20px;
+$margin-card--mobile: 0px;
 $margin-card__title: 10px auto 10px auto;
 $margin-component-title-container: 3rem;
 
@@ -21,16 +23,31 @@ $border-radius: 30px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding: 0 $padding-page 0 $padding-page;
+
+  @media (320px <= width <= 480px) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 8px;
+    margin-bottom: 32px;
+
+    gap: 24px;
+  }
 
   .card {
     display: flex;
     flex-direction: column;
-    margin: $margin-card;
+    margin: $margin-card--default;
     text-align: center;
     justify-content: center;
     border-radius: $border-radius;
     background-color: $background-color--default;
     padding: $padding-card;
+
+    @media (320px <= width <= 480px) {
+      margin: $margin-card--mobile;
+    }
 
     .MuiCardContent-root {
       padding: 0;
@@ -60,6 +77,11 @@ $border-radius: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 $padding-page 0 $padding-page;
+
+  @media (320px <= width <= 480px) {
+    margin: 32px 0 24px 0;
+  }
 
   .cards-component-title {
     font-weight: bold;
