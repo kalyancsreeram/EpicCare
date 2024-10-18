@@ -22,7 +22,7 @@ function Testimonials() {
           <div className="carousel__item">
             <h3 className="item__heading">{name}</h3>
             <Typography
-              className="item__content"
+              className="item__testimonial"
               variant="p"
               color="text.secondary"
             >
