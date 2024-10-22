@@ -62,9 +62,12 @@ $border-radius: 30px;
       object-fit: contain;
       margin-bottom: 16px;
     }
-    .card__desc {
+    .card__desc, .card__doi {
       font-size: $font-size-card__desc;
       line-height: $line-height;
+    }
+    .card__doi {
+      margin-top: 8px;
     }
   }
 }
