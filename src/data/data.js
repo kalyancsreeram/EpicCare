@@ -303,28 +303,44 @@ const resourcesPageData = {
 
 const homePageData = {
   articlesData: [
+    // {
+    //   title:
+    //     "Second-line immunotherapy in new-onset refractory status epilepticus: Systematic review",
+    //   description:
+    //     "When treatments were initiated in the acute phase, seizures had been controlled in up to 73% of patients with anakinra, 70% with tocilizumab, and 50% with intrathecal dexamethasone. However, they had no clear effect on the emergence of post-NORSE epilepsy or long-term functional outcomes.",
+    //   image: "card-1.jpg",
+    //   altText: "Card One",
+    // },
+    // {
+    //   title:
+    //     "Lacosamide and pregnancy: Data from spontaneous and solicited reports",
+    //   description:
+    //     "The preliminary data does not raise major concerns on the use of LCM during pregnancy. Most pregnancies with LCM exposure resulted in healthy live births, and no new safety issues were identified.",
+    //   image: "card-2.jpg",
+    //   altText: "Card Two",
+    // },
     {
       title:
-        "Second-line immunotherapy in new-onset refractory status epilepticus: Systematic review",
-      description:
-        "When treatments were initiated in the acute phase, seizures had been controlled in up to 73% of patients with anakinra, 70% with tocilizumab, and 50% with intrathecal dexamethasone. However, they had no clear effect on the emergence of post-NORSE epilepsy or long-term functional outcomes.",
-      image: "card-one.jpg",
-      altText: "Card One",
+        "A critical review of Nocturnal paroxysmal dystonia to sleep-related hypermotor epilepsy",
+      description: `Pragmatic classification scheme for sleep‐related paroxysmal motor episodes (SPMEs). (A) Four‐dimensional classification system. Dimension  is the semiology of the episode, dimension II is the epileptogenic zone (only applies to epileptic paroxysmal episodes), dimension III is the etiology, and dimension IV pertains to medical comorbidities. (B) Classification of SPMEs into epileptic, nonepileptic, and undifferentiated categories and their characteristics. EEG, electroencephalographic.`,
+      doi: "DOI: 10.1111/epi.18067",
+      image: "card-4.png",
+      altText: "Card Four",
     },
     {
       title:
-        "Lacosamide and pregnancy: Data from spontaneous and solicited reports",
-      description:
-        "The preliminary data does not raise major concerns on the use of LCM during pregnancy. Most pregnancies with LCM exposure resulted in healthy live births, and no new safety issues were identified.",
-      image: "card-two.jpg",
-      altText: "Card Two",
+        "Risk of breakthrough seizures depends on type and etiology of epilepsy",
+      description: `Approximately 30% of patients with antiseizure medication who had been seizure-free for atleast 12 months had a breakthrough seizure. When adjusting for clinically relevant covariates, an association between breakthrough seizures and four variables was found. There was an inverse association between breakthrough seizures and post-ischemic stroke epilepsy as well as genetic generalized epilepsy. Breakthrough seizures were associated positively with intellectual disability and with the number of antiseizure medications tried before seizure remission.`,
+      doi: "DOI: 10.1111/epi.18048",
+      image: "card-5.png",
+      altText: "Card Five",
     },
     {
       title:
         "Focal electroclinical features in generalized tonic–clonic seizures: Decision flowchart for a diagnostic challenge",
       description:
         "Focal semiology and interictal EEG are com-mon in generalized tonic–clonic seizures and should not exclude IGE diagnosis. Focal ictal EEG onset of tonic–clonic seizures is rare in IGE, and when present, it points to dif-ferent location than the IEDs.",
-      image: "card-three.jpg",
+      image: "card-3.jpg",
       altText: "Card Three",
     },
   ],

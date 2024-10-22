@@ -25,7 +25,7 @@ export default function CardsComponent() {
       </div>
 
       <div className="cards-container">
-        {articlesData.map(({ title, description, image, altText }) => {
+        {articlesData.map(({ title, description, doi, image, altText }) => {
           const imgSrc = require(`../../../assets/images/${image}`);
           return (
             <Card sx={{ maxWidth: 345 }} className="card">
@@ -52,6 +52,15 @@ export default function CardsComponent() {
                 >
                   {description}
                 </Typography>
+                {doi && (
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    className="card__doi"
+                  >
+                    {doi}
+                  </Typography>
+                )}
               </CardContent>
             </Card>
           );
