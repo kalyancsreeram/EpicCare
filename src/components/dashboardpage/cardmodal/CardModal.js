@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Button,
   Card,
@@ -11,7 +12,7 @@ import "./CardModal.scss";
 
 export default function CardModal({ open, handleClose, modalData }) {
   const { title, description, doi, image, altText } = modalData;
-  const imgSrc = require(`../../../assets/images/${image}`);
+  // const imgSrc = require(`../../../assets/images/${image}`);
   return (
     <Modal open={open} onClose={handleClose} className="card-modal">
       <div className="modal__content">
