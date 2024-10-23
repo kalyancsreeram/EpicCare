@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,9 +7,22 @@ import Typography from "@mui/material/Typography";
 import { homePageData } from "../../../data/data";
 
 import "./CardsComponent.scss";
+import { Button, CardActions } from "@mui/material";
+import CardModal from "../cardmodal/CardModal";
 
 export default function CardsComponent() {
+  const [open, setOpen] = useState(false);
+  const [modalData, setModalData] = useState(null);
+
   const { articlesData } = homePageData;
+
+  const handleModalClose = () => {
+    setOpen(false);
+  };
+
+  const handleModalOpen = () => {
+    setOpen(true);
+  };
 
   return (
     <>
@@ -24,8 +37,16 @@ export default function CardsComponent() {
         </Typography>
       </div>
 
+      {open && (
+        <CardModal
+          open={open}
+          handleClose={handleModalClose}
+          modalData={modalData}
+        />
+      )}
+
       <div className="cards-container">
-        {articlesData.map(({ title, description, doi, image, altText }) => {
+        {articlesData.map(({ simplifiedTitle, image, altText }, index) => {
           const imgSrc = require(`../../../assets/images/${image}`);
           return (
             <Card sx={{ maxWidth: 345 }} className="card">
@@ -43,24 +64,20 @@ export default function CardsComponent() {
                   component="div"
                   className="card__title"
                 >
-                  {title}
+                  {simplifiedTitle}
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  className="card__desc"
-                >
-                  {description}
-                </Typography>
-                {doi && (
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    className="card__doi"
+                <CardActions className="card__actions">
+                  <Button
+                    size="medium"
+                    className="actions__button"
+                    onClick={() => {
+                      setModalData(articlesData[index]);
+                      handleModalOpen();
+                    }}
                   >
-                    {doi}
-                  </Typography>
-                )}
+                    Learn More
+                  </Button>
+                </CardActions>
               </CardContent>
             </Card>
           );
