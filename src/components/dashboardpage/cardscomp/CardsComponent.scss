@@ -57,7 +57,6 @@ $border-radius: 30px;
       font-size: $font-size-card__title;
       font-weight: bold;
       margin: $margin-card__title;
-      // text-align: start;
     }
     .card__img {
       object-fit: contain;
@@ -76,8 +75,6 @@ $border-radius: 30px;
       justify-content: center;
       .actions__button {
         color: #35294d;
-        // text-transform: none;
-        // font-size: $font-size-card__desc;
       }
     }
   }
