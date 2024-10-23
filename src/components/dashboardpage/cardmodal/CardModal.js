@@ -1,4 +1,12 @@
-import { Card, CardContent, CardMedia, Modal, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Modal,
+  Typography,
+} from "@mui/material";
 import "./CardModal.scss";
 
 export default function CardModal({ open, handleClose, modalData }) {
@@ -41,6 +49,15 @@ export default function CardModal({ open, handleClose, modalData }) {
                 {doi}
               </Typography>
             )}
+            <CardActions className="card__actions">
+              <Button
+                size="medium"
+                className="actions__button"
+                onClick={handleClose}
+              >
+                Close
+              </Button>
+            </CardActions>
           </CardContent>
         </Card>
       </div>
