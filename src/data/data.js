@@ -322,6 +322,7 @@ const homePageData = {
     {
       title:
         "A critical review of Nocturnal paroxysmal dystonia to sleep-related hypermotor epilepsy",
+      simplifiedTitle: "Understanding Sleep-Related Hypermotor Epilepsy",
       description: `Pragmatic classification scheme for sleep‐related paroxysmal motor episodes (SPMEs). (A) Four‐dimensional classification system. Dimension  is the semiology of the episode, dimension II is the epileptogenic zone (only applies to epileptic paroxysmal episodes), dimension III is the etiology, and dimension IV pertains to medical comorbidities. (B) Classification of SPMEs into epileptic, nonepileptic, and undifferentiated categories and their characteristics. EEG, electroencephalographic.`,
       doi: "DOI: 10.1111/epi.18067",
       image: "card-4.png",
@@ -330,6 +331,8 @@ const homePageData = {
     {
       title:
         "Risk of breakthrough seizures depends on type and etiology of epilepsy",
+      simplifiedTitle:
+        "Breakthrough Seizures: Impact of Epilepsy Type and Cause",
       description: `Approximately 30% of patients with antiseizure medication who had been seizure-free for atleast 12 months had a breakthrough seizure. When adjusting for clinically relevant covariates, an association between breakthrough seizures and four variables was found. There was an inverse association between breakthrough seizures and post-ischemic stroke epilepsy as well as genetic generalized epilepsy. Breakthrough seizures were associated positively with intellectual disability and with the number of antiseizure medications tried before seizure remission.`,
       doi: "DOI: 10.1111/epi.18048",
       image: "card-5.png",
@@ -338,6 +341,8 @@ const homePageData = {
     {
       title:
         "Focal electroclinical features in generalized tonic–clonic seizures: Decision flowchart for a diagnostic challenge",
+      simplifiedTitle:
+        "Diagnosing Generalized Tonic-Clonic Seizures: A Simple Guide",
       description:
         "Focal semiology and interictal EEG are com-mon in generalized tonic–clonic seizures and should not exclude IGE diagnosis. Focal ictal EEG onset of tonic–clonic seizures is rare in IGE, and when present, it points to dif-ferent location than the IEDs.",
       image: "card-3.jpg",
