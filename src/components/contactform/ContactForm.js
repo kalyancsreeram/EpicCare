@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactForm.scss";
 import { countriesList } from "../../data/countries";
 import axios from "axios";
@@ -21,6 +21,10 @@ const ContactForm = () => {
   const [alert, setAlert] = useState({
     type: "success",
     shouldShow: false,
+  });
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   const override = {

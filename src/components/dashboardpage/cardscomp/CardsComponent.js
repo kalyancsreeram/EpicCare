@@ -45,7 +45,7 @@ export default function CardsComponent() {
         />
       )}
 
-      <div className="cards-container">
+      <div className="home-cards-container">
         {articlesData.map(({ simplifiedTitle, image, altText }, index) => {
           const imgSrc = require(`../../../assets/images/${image}`);
           return (

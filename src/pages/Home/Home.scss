@@ -1,0 +1,39 @@
+$font-size-component-title: 1.5em;
+
+$font-weight-item__content: 500;
+
+$font-color-item__content: rgba(0, 0, 0, 0.6);
+
+$color--default: #35294d;
+
+.question-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+
+  .question-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    .question-section__title {
+      font-weight: bold;
+      font-size: $font-size-component-title;
+      color: $color--default;
+    }
+
+    .question-section__sub-title {
+      font-weight: $font-weight-item__content;
+      color: $font-color-item__content;
+      margin: 0;
+    }
+  }
+
+  .question-section__button {
+    background-color: $color--default;
+    color: white;
+  }
+}
