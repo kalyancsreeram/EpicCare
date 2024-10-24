@@ -19,7 +19,7 @@ $margin-component-title-container: 3rem;
 
 $border-radius: 30px;
 
-.cards-container {
+.home-cards-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -81,7 +81,6 @@ $border-radius: 30px;
 }
 
 .cards-component-title-container {
-  color: #35294d;
   display: block;
   margin-top: $margin-component-title-container;
   margin-left: $margin-component-title-container;
@@ -97,5 +96,6 @@ $border-radius: 30px;
   .cards-component-title {
     font-weight: bold;
     font-size: $font-size-component-title;
+    color: #35294d;
   }
 }
