@@ -1,7 +1,9 @@
-$background-color--default: rgba(
-  $color: #c6aadb,
-  $alpha: 0.2,
-);
+// $background-color--default: rgba(
+//   $color: #c6aadb,
+//   $alpha: 0.2,
+// );
+
+$background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #c7a3ff);
 
 $border-radius: 20px;
 $border-radius-arrow: 16px;
@@ -33,7 +35,7 @@ $border-radius-arrow: 16px;
 }
 
 .carousel__item-container {
-  background: $background-color--default;
+  background: $background-gradient;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -64,7 +66,7 @@ $border-radius-arrow: 16px;
   font-family: "DMSans";
 }
 
-.item__testimonial  {
+.item__testimonial {
   line-height: 1.8;
   font-weight: 400;
   font-size: 1em;

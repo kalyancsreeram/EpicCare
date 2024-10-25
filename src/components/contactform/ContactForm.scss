@@ -21,18 +21,21 @@ $gap-form-items: 24px;
 
 $color--default: #35294d;
 
-$background-color--default: rgba(
-  $color: #c6aadb,
-  $alpha: 0.2,
-);
+// $background-color--default: rgba(
+//   $color: #c6aadb,
+//   $alpha: 0.2,
+// );
 $background-color--alt: white;
+
+$background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
 
 .contact-page-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: $background-color--default;
+  // background-color: $background-color--default;
+  background: $background-gradient;
   padding: $padding-page;
 
   font-size: $font-size-base;
