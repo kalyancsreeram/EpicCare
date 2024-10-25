@@ -1,4 +1,22 @@
 //TODO: Add variables wherever needed and use media queries inside respective classes, it looks cleaner.
+// $background-color: rgba(
+//   $color: #c6aadb,
+//   $alpha: 0.2,
+// );
+
+$background-gradient--primary: linear-gradient(
+  0.25turn,
+  #ece0ff,
+  #e0ccff,
+  #d4b8ff
+);
+
+$background-gradient--secondary: linear-gradient(
+  0.25turn,
+  #e0ccff,
+  #ece0ff,
+  #d4b8ff
+);
 
 .about-container {
   .main-title {
@@ -9,7 +27,8 @@
 
   .intro {
     padding: 40px;
-    background-color: rgba($color: #c6aadb, $alpha: 0.2);
+    // background-color: $background-color;
+    background: $background-gradient--secondary;
   }
 
   .intro-title {
@@ -84,7 +103,8 @@
     text-align: center;
     justify-content: center;
     border-radius: 30px;
-    background-color: rgba($color: #c6aadb, $alpha: 0.2);
+    // background-color: $background-color;
+    background: $background-gradient--primary;
     padding: 30px;
 
     .card-icon {
@@ -138,7 +158,6 @@
     }
 
     .intro {
-      background-color: rgba($color: #c6aadb, $alpha: 0.2);
       padding: 40px;
       display: flex;
       flex-direction: column;

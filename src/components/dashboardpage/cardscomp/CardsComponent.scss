@@ -1,7 +1,9 @@
-$background-color--default: rgba(
-  $color: #c6aadb,
-  $alpha: 0.2,
-);
+// $background-color--default: rgba(
+//   $color: #c6aadb,
+//   $alpha: 0.2,
+// );
+
+$background-gradient: linear-gradient(0.25turn, #ece0ff, #e0ccff, #d4b8ff);
 
 $font-size-card__title: 1.2em;
 $font-size-card__desc: 1em;
@@ -42,7 +44,8 @@ $border-radius: 30px;
     text-align: center;
     justify-content: center;
     border-radius: $border-radius;
-    background-color: $background-color--default;
+    // background-color: $background-color--default;
+    background: $background-gradient;
     padding: $padding-card;
 
     @media (320px <= width <= 480px) {

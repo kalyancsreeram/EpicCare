@@ -17,9 +17,23 @@ $padding-page--mobile: 40px;
 $box-shadow-list__item: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
   0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-$background-color: rgba(
-  $color: #c6aadb,
-  $alpha: 0.2,
+// $background-color: rgba(
+//   $color: #c6aadb,
+//   $alpha: 0.2,
+// );
+
+// $background-gradient--primary: linear-gradient(
+//   0.25turn,
+//   #ece0ff,
+//   #e0ccff,
+//   #d4b8ff
+// );
+
+$background-gradient--secondary: linear-gradient(
+  0.25turn,
+  #e0ccff,
+  #ece0ff,
+  #d4b8ff
 );
 
 $color--default: #35294d;
@@ -37,7 +51,8 @@ $font-color-item__content: rgba(0, 0, 0, 0.6);
 
   .research-title-desc {
     padding: $padding-page--default;
-    background-color: rgba($color: #c6aadb, $alpha: 0.2);
+    // background-color: rgba($color: #c6aadb, $alpha: 0.2);
+    background: $background-gradient--secondary;
   }
 }
 
@@ -100,7 +115,8 @@ $font-color-item__content: rgba(0, 0, 0, 0.6);
         margin: 20px 24px;
         padding: 16px;
         border-radius: 30px;
-        background-color: $background-color;
+        // background-color: $background-color;
+        background: $background-gradient--secondary;
         box-shadow: $box-shadow-list__item;
 
         .item__title {
