@@ -22,6 +22,10 @@ $padding-page: 40px;
     align-items: center;
     gap: 4px;
 
+    @media (320px <= width <= 480px) {
+      text-align: center;
+    }
+
     .question-section__title {
       font-weight: bold;
       font-size: $font-size-component-title;
@@ -36,7 +40,7 @@ $padding-page: 40px;
   }
 
   .question-section__button {
+    // TODO: Change the hover color of button here and in contact page
     background-color: $color--default;
-    color: white;
   }
 }
