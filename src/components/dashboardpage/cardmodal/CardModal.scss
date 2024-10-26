@@ -8,7 +8,21 @@ $margin-card__title: 10px auto 10px auto;
 
 $border-radius: 30px;
 
-$background-color--default: #f4eef8;
+// $background-color--default: #f4eef8;
+
+// $background-gradient--primary: linear-gradient(
+//   0.25turn,
+//   #ece0ff,
+//   #e0ccff,
+//   #d4b8ff
+// );
+
+$background-gradient--secondary: linear-gradient(
+  0.25turn,
+  #e0ccff,
+  #ece0ff,
+  #d4b8ff
+);
 
 $padding-card: 16px 30px 0 30px;
 
@@ -34,7 +48,8 @@ $padding-card: 16px 30px 0 30px;
     text-align: center;
     justify-content: center;
     border-radius: $border-radius;
-    background-color: $background-color--default;
+    // background-color: $background-color--default;
+    background: $background-gradient--secondary;
     padding: $padding-card;
 
     @media (max-width: 768px) {

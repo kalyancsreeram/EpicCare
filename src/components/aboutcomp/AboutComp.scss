@@ -4,6 +4,13 @@
 //   $alpha: 0.2,
 // );
 
+$font-size-main-title: 3em;
+$font-size-base--default: 1.1em;
+$font-size-base--mobile: 16px;
+$font-size-sec-title: 1.4em;
+$font-size-card__title: 1.2em;
+$font-size-card__desc: 1em;
+
 $background-gradient--primary: linear-gradient(
   0.25turn,
   #ece0ff,
@@ -22,7 +29,7 @@ $background-gradient--secondary: linear-gradient(
   .main-title {
     color: #35294d;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: $font-size-main-title;
   }
 
   .intro {
@@ -35,7 +42,7 @@ $background-gradient--secondary: linear-gradient(
     margin-top: 20px;
     color: #35294d;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: $font-size-sec-title;
   }
 
   #firstHeadLineBold {
@@ -51,7 +58,7 @@ $background-gradient--secondary: linear-gradient(
 
   .intro-notes {
     margin: 20px;
-    font-size: 1.1em;
+    font-size: $font-size-base--default;
     line-height: 1.6;
     font-weight: 500;
   }
@@ -65,7 +72,7 @@ $background-gradient--secondary: linear-gradient(
 
   .core-values-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: $font-size-sec-title;
   }
 
   .cards-container {
@@ -116,14 +123,14 @@ $background-gradient--secondary: linear-gradient(
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 1.2em;
+      font-size: $font-size-card__title;
       font-weight: bold;
       padding: 0 20px 20px 20px;
     }
   }
 
   .card-content {
-    font-size: 1em;
+    font-size: $font-size-card__desc;
     line-height: 1.6;
     font-weight: 500;
   }
@@ -154,7 +161,6 @@ $background-gradient--secondary: linear-gradient(
     .main-title {
       color: #35294d;
       font-weight: bolder;
-      font-size: 2em;
     }
 
     .intro {
@@ -168,7 +174,6 @@ $background-gradient--secondary: linear-gradient(
       margin-top: 12px;
       color: #35294d;
       font-weight: bold;
-      font-size: 22px;
     }
 
     #firstHeadLineBold {
@@ -178,7 +183,7 @@ $background-gradient--secondary: linear-gradient(
 
     .intro-notes {
       margin: 0 0 18px 0;
-      font-size: 16px;
+      font-size: $font-size-base--mobile;
       line-height: 1.6;
       font-weight: 500;
     }

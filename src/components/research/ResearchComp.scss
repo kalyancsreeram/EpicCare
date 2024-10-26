@@ -1,13 +1,13 @@
-$font-size-main-title: 2em;
+$font-size-main-title: 3em;
 $font-size-base--default: 1.1em;
 $font-size-base--mobile: 16px;
-$font-size-sec-title: 1.5em;
+$font-size-sec-title: 1.4em;
 $font-size-item__title: 1.1em;
 
 $font-weight-item__content: 500;
 
 $font-family-primary: Inter;
-$font-family-secondary: DMSans;
+$font-family-secondary: IBMPlexSans;
 
 $line-height: 1.6;
 
@@ -38,14 +38,14 @@ $background-gradient--secondary: linear-gradient(
 
 $color--default: #35294d;
 
-$font-color-item__content: rgba(0, 0, 0, 0.6);
+$font-color-item__content: #333333;
 
 .research-container {
   min-height: 100vh;
 
   .main-title {
     color: $color--default;
-    font-weight: bolder;
+    // font-weight: bolder;
     font-size: $font-size-main-title;
   }
 

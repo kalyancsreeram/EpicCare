@@ -22,7 +22,11 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import useWhatsappScript from "./hooks/useWhatsappScript";
 
 const headingStyle = {
-  fontFamily: "DMSans",
+  fontFamily: "Barlow",
+};
+
+const subHeadingStyle = {
+  fontFamily: "IBMPlexSans",
 };
 
 const otherTextStyle = {
@@ -32,11 +36,11 @@ const otherTextStyle = {
 const theme = createTheme({
   typography: {
     h1: headingStyle,
-    h2: headingStyle,
-    h3: headingStyle,
-    h4: headingStyle,
-    h5: headingStyle,
-    h6: headingStyle,
+    h2: subHeadingStyle,
+    h3: subHeadingStyle,
+    h4: subHeadingStyle,
+    h5: subHeadingStyle,
+    h6: subHeadingStyle,
     body1: otherTextStyle,
     body2: otherTextStyle,
     subtitle1: otherTextStyle,
@@ -45,6 +49,22 @@ const theme = createTheme({
     caption: otherTextStyle,
     overline: otherTextStyle,
     fontFamily: otherTextStyle,
+  },
+  components: {
+    // MuiTypography: {
+    //   styleOverrides: {
+    //     root: {
+    //       color: "#333333",
+    //     },
+    //   },
+    // },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#333333 !important",
+        },
+      },
+    },
   },
 });
 

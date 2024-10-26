@@ -3,6 +3,14 @@
 //   $alpha: 0.2,
 // );
 
+$font-size-main-title: 3em;
+$font-size-base--default: 1.1em;
+$font-size-base--mobile: 16px;
+$font-size-sec-title: 1.4em;
+$font-size-item__title: 1.1em;
+$font-size-card__title: 1.2em;
+$font-size-card__desc: 1em;
+
 $background-gradient--primary: linear-gradient(
   0.25turn,
   #ece0ff,
@@ -24,7 +32,7 @@ $background-gradient--secondary: linear-gradient(
   .main-title {
     color: #35294d;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: $font-size-main-title;
 
     @media (width > 480px) {
       margin-bottom: 0px;
@@ -47,7 +55,7 @@ $background-gradient--secondary: linear-gradient(
   }
 
   .services-text--default {
-    font-size: 1.1em; //** Can use this as default font size for desktop screens
+    font-size: $font-size-base--default; //** Can use this as default font size for desktop screens
     line-height: 1.6;
     font-weight: 500;
     margin-top: 20px;
@@ -123,7 +131,7 @@ $background-gradient--secondary: linear-gradient(
     padding: 30px;
 
     .MuiTypography-h6 {
-      font-size: 1.2em;
+      font-size: $font-size-card__title;
       font-weight: bold;
     }
 
@@ -139,12 +147,12 @@ $background-gradient--secondary: linear-gradient(
   }
 
   .service-text--desc {
-    font-size: 1em;
+    font-size: $font-size-card__desc;
     line-height: 1.6;
     font-weight: 500;
 
     @media (320px <= width <= 480px) {
-      font-size: 1em;
+      // font-size: 1em;
       line-height: 1.6;
     }
   }
@@ -159,7 +167,7 @@ $background-gradient--secondary: linear-gradient(
     }
 
     .services-text--default {
-      font-size: 16px;
+      font-size: $font-size-base--mobile;
     }
 
     .services-text--default {

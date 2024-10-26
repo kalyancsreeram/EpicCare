@@ -17,11 +17,11 @@ function ResourcesTable({ data }) {
       <Table className="resources-table" sx={{ minWidth: 340 }}>
         <TableHead>
           <TableRow>
-            <TableCell className="table-header">Features</TableCell>
-            <TableCell className="table-header product-name" align="right">
+            <TableCell className="table__header">Features</TableCell>
+            <TableCell className="table__header product-name" align="right">
               Seizure Log <br /> (By Seizure Tracker LLC)
             </TableCell>
-            <TableCell className="table-header product-name" align="right">
+            <TableCell className="table__header product-name" align="right">
               Epilepsy Toolkit <br /> (By MCM Net Limited)
             </TableCell>
           </TableRow>
@@ -30,13 +30,13 @@ function ResourcesTable({ data }) {
           {data.map((item, index) => {
             return (
               <TableRow key={index}>
-                <TableCell className="product-feature-title">
+                <TableCell className="table__data product-feature-title">
                   {item.feature}
                 </TableCell>
-                <TableCell className="product-feature-value" align="right">
+                <TableCell className="table__data product-feature-value" align="right">
                   {item.product1}
                 </TableCell>
-                <TableCell className="product-feature-value" align="right">
+                <TableCell className="table__data product-feature-value" align="right">
                   {item.product2}
                 </TableCell>
               </TableRow>
