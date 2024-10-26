@@ -1,8 +1,10 @@
+$background-color: #f8f4ff;
+
 nav {
-  background-color: white;
+  background-color: $background-color;
   height: 75px;
   padding-left: 20px;
-  margin-right: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -77,7 +79,7 @@ nav > .nav-links-mobile {
   .login-btn {
     width: auto;
     margin-left: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
     background-color: #35294d;
   }
   .login-btn:hover {
@@ -118,6 +120,10 @@ nav > .nav-links-mobile {
   }
 
   #burgerMenu {
+    .MuiPaper-root.MuiPaper-elevation {
+      background-color: $background-color;
+    }
+
     ul {
       display: flex;
       flex-direction: column;

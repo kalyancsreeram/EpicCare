@@ -6,12 +6,15 @@ $font-color-item__content: rgba(0, 0, 0, 0.6);
 
 $color--default: #35294d;
 
+$padding-page: 40px;
+
 .question-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   margin-bottom: 48px;
+  padding: 0 $padding-page 0 $padding-page;
 
   .question-section__content {
     display: flex;
