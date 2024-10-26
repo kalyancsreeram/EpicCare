@@ -1,7 +1,4 @@
-// $background-color: rgba(
-//   $color: #c6aadb,
-//   $alpha: 0.2,
-// );
+$background-color--table: #f8f4ff;
 
 // $background-gradient--primary: linear-gradient(
 //   0.25turn,
@@ -218,6 +215,8 @@ $background-gradient--secondary: linear-gradient(
 
   .resources-table {
     // min-width: 350px;
+    background-color: $background-color--table;
+
     @media (320px <= width <= 480px) {
       display: block;
       overflow-x: auto;
