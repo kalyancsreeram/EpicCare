@@ -1,3 +1,9 @@
+$font-size-main-title: 3em;
+$font-size-base--default: 1.1em;
+$font-size-base--mobile: 16px;
+$font-size-sec-title: 1.4em;
+$font-size-article__title: 1.25em;
+
 $background-color--table: #f8f4ff;
 
 // $background-gradient--primary: linear-gradient(
@@ -31,7 +37,7 @@ $background-gradient--secondary: linear-gradient(
   .main-title {
     color: #35294d;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: $font-size-main-title;
     padding: 40px 40px 0 40px;
 
     @media (width > 480px) {
@@ -45,9 +51,9 @@ $background-gradient--secondary: linear-gradient(
 
   .secondary-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: $font-size-sec-title;
     line-height: 1.6;
-    font-family: DMSans;
+    font-family: "IBMPlexSans";
     margin-top: 24px;
     margin-bottom: 32px;
 
@@ -91,15 +97,15 @@ $background-gradient--secondary: linear-gradient(
     // margin-top: 20px;
     color: #35294d;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: $font-size-article__title;
   }
 
   .article-notes-item {
-    font-size: 1.1em;
+    font-size: $font-size-base--default;
     line-height: 1.8;
     font-weight: 500;
     @media (320px <= width <= 480px) {
-      font-size: 16px;
+      font-size: $font-size-base--mobile;
       // line-height: 1.8;
     }
   }
@@ -121,7 +127,7 @@ $background-gradient--secondary: linear-gradient(
   }
 
   .websites-list {
-    font-size: 1.1em;
+    font-size: $font-size-base--default;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -143,7 +149,7 @@ $background-gradient--secondary: linear-gradient(
         width: 100%;
       }
       @media (320px <= width <= 480px) {
-        font-size: 16px;
+        font-size: $font-size-base--mobile;
         line-height: 1.8;
       }
 
@@ -168,7 +174,7 @@ $background-gradient--secondary: linear-gradient(
       .website-title {
         text-align: center;
         display: inline;
-        font-size: 1.1em;
+        font-size: $font-size-base--default;
         line-height: 1.6;
         font-weight: bolder;
         text-decoration: underline;
@@ -218,12 +224,22 @@ $background-gradient--secondary: linear-gradient(
     background-color: $background-color--table;
 
     @media (320px <= width <= 480px) {
+      font-size: 16px;
+    }
+
+    @media (320px <= width <= 480px) {
       display: block;
       overflow-x: auto;
     }
 
-    .table-header {
+    .table__header {
       font-weight: bolder;
+      font-size: $font-size-base--default;
+      font-family: "IBMPlexSans";
+    }
+
+    .table__data {
+      font-size: $font-size-base--default;
     }
 
     // @media (width > 480px) {
@@ -235,15 +251,5 @@ $background-gradient--secondary: linear-gradient(
       text-align: center;
     }
     // }
-
-    th,
-    td {
-      font-size: 1.1em;
-      font-weight: 500;
-
-      @media (320px <= width <= 480px) {
-        font-size: 16px;
-      }
-    }
   }
 }

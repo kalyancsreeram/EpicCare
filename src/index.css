@@ -5,14 +5,21 @@
 }
 
 @font-face {
-  font-family: "DMSans";
-  src: local("DMSans"),
-    url("./assets/fonts/dm-sans/dm-sans-latin-500-normal.woff") format("woff");
+  font-family: "Barlow";
+  src: local("Barlow"),
+    url("./assets/fonts/barlow/barlow-latin-600-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: local("IBMPlexSans"),
+    url("./assets/fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff")
+      format("woff");
 }
 
 body {
   margin: 0;
-  font-family: "DMSans", "Inter";
+  font-family: "Inter", "Barlow", "IBMPlexSans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -24,6 +31,6 @@ code {
     monospace;
 }
 
-#root{
+#root {
   min-height: 100vh;
 }
