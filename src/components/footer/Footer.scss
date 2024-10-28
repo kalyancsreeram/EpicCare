@@ -34,7 +34,7 @@ $background-color--default: #e0ccff;
     .countries-list {
       display: flex;
       justify-content: space-around;
-      font-family: "Inter";
+      font-family: IBMPlexSans;
       font-weight: 550;
 
       a {
@@ -51,7 +51,7 @@ $background-color--default: #e0ccff;
   .footer-links {
     display: flex;
     width: 60%;
-    font-size: large;
+    font-size: larger;
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -63,16 +63,14 @@ $background-color--default: #e0ccff;
       font-weight: 550;
       position: relative;
 
-      link {
-        color: #35294d;
-        display: inline-flex;
-        align-items: center;
-      }
-
       svg.external-link-icon {
         margin-left: 2px;
         vertical-align: middle;
         padding-bottom: 2px;
+      }
+
+      .link {
+        font-family: IBMPlexSans;
       }
     }
 
