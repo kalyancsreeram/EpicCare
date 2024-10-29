@@ -62,11 +62,9 @@ const ServicesComp = () => {
         className="services-text--default"
         id="servicesTextBottom"
       >
-        <b>
-          In summary, we offer a holistic approach to epilepsy management,
-          combining expert care, informative education, and innovative research
-          to address the diverse needs of individuals with epilepsy.
-        </b>
+        In summary, we offer a holistic approach to epilepsy management,
+        combining expert care, informative education, and innovative research to
+        address the diverse needs of individuals with epilepsy.
       </Typography>
     </div>
   );

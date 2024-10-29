@@ -43,12 +43,10 @@ const ResearchComp = () => {
         management of epilepsy.
       </p>
       <p className="research-desc">
-        <b>
           SeizureCare website will be regularly updated to feature ongoing
           active projects and annual publications related to above disciplines,
           showcasing our commitment to innovation, research, and knowledge
           sharing.
-        </b>
       </p>
     </div>
   );
