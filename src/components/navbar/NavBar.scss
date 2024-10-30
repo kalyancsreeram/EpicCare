@@ -43,7 +43,7 @@ nav > .nav-links-desktop > a:not(.active):not(:last-child):after {
   width: 100%;
   transform: scaleX(0);
   height: 1px;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
   background-color: #35294d;
   transform-origin: bottom right;
@@ -65,7 +65,7 @@ nav > .nav-links-desktop > a.active {
     text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
+    text-underline-offset: 4.5px;
   }
 }
 
