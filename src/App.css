@@ -16,19 +16,3 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-
-.orderFormContainer {
-  background-color: #f2f2f2;
-  padding-left: 50px;
-  padding-top: 20px;
-}
-.servicesLabel {
-  color: #35294d;
-  padding: 0px;
-}
-.typeOfService {
-  color: #35294d;
-  font-weight: bold;
-  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
-  font-size: 1.25rem;
-}

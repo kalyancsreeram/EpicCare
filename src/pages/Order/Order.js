@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import PatientFormComp from "../components/patientform/PatientFormComp";
-import PatientFormComp2 from "../components/patientform/PatientFormComp2";
+import PatientFormComp from "../../components/patientform/PatientFormComp";
+import PatientFormComp2 from "../../components/patientform/PatientFormComp2";
+import "./Order.scss";
+import { Typography } from "@mui/material";
 
-function PatientPortal() {
+function Order() {
   const [typeOfService, setTypeOfService] = useState("EEG");
 
   const serviceChangeHandler = (event) => {
@@ -11,7 +13,14 @@ function PatientPortal() {
   return (
     <div style={{ minHeight: "100vh" }}>
       <div className="orderFormContainer">
-        <h1 className="servicesLabel">Order Online</h1>
+        <Typography
+          className="main-title"
+          gutterBottom
+          variant="h1"
+          component="div"
+        >
+          Order Online
+        </Typography>
         <label htmlFor="serviceType" className="typeOfService">
           Type of service
         </label>
@@ -42,4 +51,4 @@ function PatientPortal() {
   );
 }
 
-export default PatientPortal;
+export default Order;
