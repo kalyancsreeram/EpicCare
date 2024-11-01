@@ -8,7 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
 import NoMatch from "./pages/NoMatch";
-import PatientPortal from "./pages/PatientPortal";
+import Order from "./pages/Order/Order";
 import Resources from "./pages/Resources";
 import Footer from "./components/footer/Footer";
 
@@ -112,7 +112,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
           <Route path="contact" element={<ContactUs />}></Route>
-          <Route path="order" element={<PatientPortal />}></Route>
+          <Route path="order" element={<Order />}></Route>
           <Route path="research" element={<Research />}></Route>
           <Route path="resources" element={<Resources />}></Route>
           <Route path="services" element={<Services />}></Route>
