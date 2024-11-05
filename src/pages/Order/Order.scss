@@ -14,7 +14,7 @@ $background-gradient--secondary: linear-gradient(
   #d4b8ff
 );
 
-.orderFormContainer {
+.order-form-container {
   //   background-color: #f2f2f2;
   background: $background-gradient--secondary;
   padding-left: 50px;
@@ -31,7 +31,7 @@ $background-gradient--secondary: linear-gradient(
     }
   }
 
-  .typeOfService {
+  .service-type-form__label {
     color: #35294d;
     font-weight: bold;
     /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
