@@ -12,7 +12,7 @@ function Order() {
   };
   return (
     <div style={{ minHeight: "100vh" }}>
-      <div className="orderFormContainer">
+      <div className="order-form-container">
         <Typography
           className="main-title"
           gutterBottom
@@ -21,23 +21,25 @@ function Order() {
         >
           Order Online
         </Typography>
-        <label htmlFor="serviceType" className="typeOfService">
-          Type of service
-        </label>
-        <select
-          className="servicesField"
-          name="services"
-          id="services"
-          value={typeOfService}
-          onChange={serviceChangeHandler}
-        >
-          <option value="EEG">EEG Services</option>
-          <option value="EpilepsyCare">Epilepsy Care</option>
-          <option value="EMU">EMU Services</option>
-          <option value="EpilepsySurgicalEvaluation">
-            Epilepsy Surgical Evaluation
-          </option>
-        </select>
+        <form className="service-type-form">
+          <label htmlFor="serviceType" className="service-type-form__label">
+            Type of service
+          </label>
+          <select
+            className="service-type-form__select"
+            name="services"
+            id="services"
+            value={typeOfService}
+            onChange={serviceChangeHandler}
+          >
+            <option value="EEG">EEG Services</option>
+            <option value="EpilepsyCare">Epilepsy Care</option>
+            <option value="EMU">EMU Services</option>
+            <option value="EpilepsySurgicalEvaluation">
+              Epilepsy Surgical Evaluation
+            </option>
+          </select>
+        </form>
       </div>
       {typeOfService === "EEG" && <PatientFormComp />}
       {typeOfService === "EpilepsyCare" && (
