@@ -133,7 +133,7 @@ const servicesPageData = [
   {
     title: "Epilepsy Monitoring Unit (EMU) Services",
     desc: "For patients with drug-resistant epilepsy, providing specialized tailored plans (Video EEG, MEG, SPM-PET, interictal and ictal SPECT,functional MRI, TMS, etc) to better understand epileptogenic networks.",
-    image: "services3.png",
+    image: "services3.jpg",
   },
   {
     title: "Epilepsy Surgery Consultation",
