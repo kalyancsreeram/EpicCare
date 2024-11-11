@@ -123,12 +123,12 @@ const servicesPageData = [
   {
     title: "Monitored Video EEG Services",
     desc: "Short-term and long-term video EEG monitoring, adhering to established acquisition guidelines. Providing real-time, actionable insights to physicians based on EEG analysis to expedite treatment decisions and patient care.",
-    image: "services1.jpg",
+    image: "services1.png",
   },
   {
     title: "Epilepsy Management",
     desc: "Supporting day-to-day treatment decisions for outpatient and inpatient settings, empowering clinicians with up-to-date knowledge.",
-    image: "services2.png",
+    image: "services2.jpg",
   },
   {
     title: "Epilepsy Monitoring Unit (EMU) Services",
@@ -138,7 +138,7 @@ const servicesPageData = [
   {
     title: "Epilepsy Surgery Consultation",
     desc: "Offering expert guidance for epilepsy surgery decision-making, including personalized stereo EEG plans, and comprehensive post-operative care, empowering clinical management with epilepsy devices such as VNS, RNS, DBS, etc.",
-    image: "services4.png",
+    image: "services4.jpg",
   },
   {
     title: "Educational Webinars and Knowledge Dissemination",
@@ -148,7 +148,7 @@ const servicesPageData = [
   {
     title: "Research and Collaboration",
     desc: "Promoting and participating in epilepsy research, collaborating with multiple centers worldwide to drive innovations and improve patient outcomes.",
-    image: "services6.png",
+    image: "services6.jpg",
   },
 ];
 
