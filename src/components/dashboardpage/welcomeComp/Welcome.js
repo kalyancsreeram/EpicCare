@@ -4,13 +4,18 @@ import Typography from "@mui/material/Typography";
 
 import WelcomeImg from "../../../assets/images/welcomeImg.jpg";
 
+import { homePageData } from "../../../data/data";
+
 function Welcome() {
+  const { companyInfo } = homePageData;
+
+  //TODO: Clean the unused code
   return (
     <div className="welcome-container">
       <div className="welcome-content">
         <img className="welcome__img" alt="SeizureCare" src={WelcomeImg} />
         <div className="welcome__message">
-          <Typography
+          {/* <Typography
             className="message__text"
             gutterBottom
             variant="p"
@@ -18,24 +23,26 @@ function Welcome() {
           >
             <blockquote>
               <p id="ceoMessage">
-                <b>Welcome to SeizureCare</b>, an American healthcare company
-                revolutionizing remote epilepsy care. Our team of esteemed
-                American board-certified epileptologists earns global trust and
-                respect from healthcare professionals through an unwavering
-                commitment to exceptional patient care and life-changing
-                outcomes. By harnessing the latest advancements in medical
-                technology, we're redefining access to epilepsy services while
-                maintaining the highest standards of patient privacy and
-                confidentiality. Guided by our core values of integrity,
-                empathy, quality, innovation, and refinement, we're dedicated to
-                reshaping the boundaries of epilepsy care and setting a new
-                benchmark for patient experience and success.
+                <b>Welcome to SeizureCare</b>
+                <br />
+                {companyInfo.intro}
                 <footer>
                   <cite>Chief Executive Officer</cite>
                 </footer>
               </p>
             </blockquote>
+          </Typography> */}
+          <Typography
+            className="main-title"
+            gutterBottom
+            variant="h1"
+            component="div"
+          >
+            Welcome to SeizureCare
           </Typography>
+          <p className="home-text--default">{companyInfo.intro}</p>
+          <p className="home-text--default">{companyInfo.serviceCommitment}</p>
+          <p className="home-text--default">{companyInfo.futureVision}</p>
         </div>
       </div>
     </div>
