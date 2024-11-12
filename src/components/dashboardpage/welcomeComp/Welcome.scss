@@ -9,12 +9,10 @@ $margin-top-page--mobile: 75px;
 //   #d4b8ff
 // );
 
-$background-gradient--secondary: linear-gradient(
-  0.25turn,
-  #e0ccff,
-  #ece0ff,
-  #d4b8ff
-);
+$background-gradient--secondary: linear-gradient(#e0ccff, #ece0ff, #d4b8ff);
+
+$font-size-main-title: 3em;
+$font-size-base--default: 1.2em;
 
 .welcome-container {
   // color: rgb(29, 25, 73);
@@ -27,7 +25,7 @@ $background-gradient--secondary: linear-gradient(
   // background-position: center;
   // background-repeat: no-repeat;
   // background-size: cover;
-  padding: $padding-page;
+  // padding: $padding-page;
 
   @media (320px <= width <= 480px) {
     margin: 0px;
@@ -37,9 +35,9 @@ $background-gradient--secondary: linear-gradient(
   }
 
   .welcome-content {
-    margin: 50px;
+    // margin: 50px;
     display: flex;
-    width: 75%;
+    // width: 75%;
     align-items: center;
 
     @media (320px <= width <= 480px) {
@@ -54,19 +52,49 @@ $background-gradient--secondary: linear-gradient(
     flex-direction: column;
     width: 100%;
     // padding-left: 50px;
-    margin-left: 50px;
-    p {
-      text-align: justify;
-    }
-    .ceoTitle {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+    // margin-left: 50px;
+    margin: 40px 80px;
+    // p {
+    //   text-align: justify;
+    // }
+    // .ceoTitle {
+    //   margin-top: 5px;
+    //   margin-bottom: 5px;
+    //   font-weight: bold;
+    // }
 
     @media (320px <= width <= 480px) {
       margin-left: 0px;
     }
+  }
+
+  //TODO: Reuse this animation on different pages
+  //TODO: Cleanup unused code
+  @keyframes fadeInRight {
+    0% {
+      transform: translateX(-1%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .main-title {
+    color: #35294d;
+    font-weight: bolder;
+    font-size: $font-size-main-title;
+
+    animation: 1.5s fadeInRight;
+  }
+
+  .home-text--default {
+    font-size: $font-size-base--default;
+    line-height: 1.6;
+    font-weight: 500;
+
+    animation: 1.5s fadeInRight;
   }
 
   .message__text {
@@ -138,7 +166,10 @@ $background-gradient--secondary: linear-gradient(
 
   .welcome__img {
     width: 40%;
-    border-radius: 30px;
+    // border-radius: 30px;
+    object-fit: fill;
+    height: 100%;
+    // aspect-ratio: 5/4;
 
     @media (320px <= width <= 480px) {
       width: 100%;
