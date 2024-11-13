@@ -17,8 +17,8 @@ function Testimonials() {
       autoPlay={false}
       interval={6100}
     >
-      {testimonials.map(({ name, testimony }) => (
-        <div className="carousel__item-container">
+      {testimonials.map(({ name, testimony }, index) => (
+        <div className="carousel__item-container" key={index}>
           <div className="carousel__item">
             <h3 className="item__heading">{name}</h3>
             <Typography
