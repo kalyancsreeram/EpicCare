@@ -49,7 +49,7 @@ export default function CardsComponent() {
         {articlesData.map(({ simplifiedTitle, image, altText }, index) => {
           const imgSrc = require(`../../../assets/images/${image}`);
           return (
-            <Card sx={{ maxWidth: 345 }} className="card">
+            <Card key={index} sx={{ maxWidth: 345 }} className="card">
               <CardMedia
                 component="img"
                 height="140"

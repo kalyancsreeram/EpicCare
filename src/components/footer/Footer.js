@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import "./Footer.scss";
 
@@ -24,8 +24,8 @@ const getNavLinks = () => {
       link = `/${item.toLowerCase()}`;
     }
     return (
-      <>
-        <NavLink to={link} key={index}>
+      <Fragment key={index}>
+        <NavLink to={link}>
           <span className="link">
             {item}
             {item === "Login" && (
@@ -34,7 +34,7 @@ const getNavLinks = () => {
           </span>
         </NavLink>
         {index !== navLinks.length - 1 && "|"}
-      </>
+      </Fragment>
     );
   });
 };
