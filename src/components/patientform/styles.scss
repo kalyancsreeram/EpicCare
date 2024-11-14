@@ -4,11 +4,13 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   /* border-radius: 5px; */
   // background-color: #f2f2f2;
   background: $background-gradient;
-  padding: 50px;
+  // padding: 50px;
   padding-top: 20px;
   //color: #006ba6;
   color: #35294d;
+  background-color: #f2f2f2;
 }
+
 .inputField {
   width: 50%;
   display: block;
@@ -20,6 +22,7 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   margin-bottom: 16px;
   resize: vertical;
 }
+
 .inputSubmit {
   background-color: #673147;
   color: white;
@@ -30,20 +33,12 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   margin-top: 20px;
   width: 200px;
 }
+
 .inputSubmit:hover {
   background-color: #673147 !important;
   opacity: 0.8;
 }
-.patientFormContainer {
-  /* border-radius: 5px; */
-  background-color: #f2f2f2;
-  padding: 50px;
-  padding-top: 20px;
-  // border-radius: 5px;
-  // background-color: lightblue;
-  // padding: 50px;
-  // margin: 20px;
-}
+
 .multiSet {
   width: 50%;
   margin-bottom: 16px;
@@ -59,6 +54,7 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
 // .multiSetInput{
 //   margin-right: 5px;
 // }
+
 .statesField {
   display: block;
   width: 100px;
@@ -66,12 +62,14 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   margin-top: 5px;
   margin-bottom: 16px;
 }
+
 .servicesField {
   margin-left: 10px;
   width: 200px;
   height: 30px;
   margin-top: 5px;
 }
+
 .upload_comp,
 .fileUploadField {
   display: flex;
@@ -92,6 +90,7 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   padding-bottom: 20px;
   font-weight: bold;
 }
+
 .patientNoteContainer {
   margin-top: 20px;
   font-size: 1rem;

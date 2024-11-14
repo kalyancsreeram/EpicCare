@@ -109,7 +109,7 @@ const ContactForm = () => {
           Contact Us
         </Typography>
 
-        <p> Thank you for choosing SeizureCare.</p>
+        <p id="contactPageHeadline"> Thank you for choosing SeizureCare.</p>
         <p>
           We value your inquiries and are here to assist you. Please complete
           the form below, and we will respond to your message as soon as
