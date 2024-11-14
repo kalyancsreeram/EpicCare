@@ -1,7 +1,7 @@
 $border-radius: 8px;
 
 $font-size-base: 1.1em;
-$font-size-title: 3em;
+$font-size-title: 2.8em;
 $font-size-base--mobile: 16px;
 
 $line-height: 1.6;
@@ -13,6 +13,7 @@ $padding-form--default: 40px;
 $padding-form--mobile: 0px;
 
 $margin-top-page--mobile: 75px;
+$margin-headline: 28px 24px 12px 24px;
 
 $width-form-item--default: 40%;
 $width-form-item--mobile: 100%;
@@ -62,7 +63,16 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
     font-size: $font-size-title;
 
     @media (width > 480px) {
-      margin-bottom: 28px;
+      // margin-bottom: 28px;
+      margin-bottom: 0px;
+    }
+  }
+
+  #contactPageHeadline {
+    margin: $margin-headline;
+
+    @media (320px <= width <= 480px) {
+      margin: 0px;
     }
   }
 }

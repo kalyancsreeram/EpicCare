@@ -14,6 +14,8 @@ $line-height: 1.6;
 $padding-page--default: 40px;
 $padding-page--mobile: 40px;
 
+$margin-headline: 28px 24px 12px 24px;
+
 $box-shadow-list__item: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
   0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
@@ -93,8 +95,8 @@ $font-color-item__content: #333333;
     }
   }
 
-  #researchScopeDesc {
-    margin: 20px;
+  #researchPageHeadline {
+    margin: $margin-headline;
   }
 
   .research-notes-title {
@@ -141,7 +143,7 @@ $font-color-item__content: #333333;
     display: inline-block;
   }
 
-  #researchScopeDesc {
+  #researchPageHeadline {
     padding: 0px;
     margin: 0px;
   }

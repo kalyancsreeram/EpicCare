@@ -4,6 +4,9 @@ $font-size-base--mobile: 16px;
 $font-size-sec-title: 1.4em;
 $font-size-article__title: 1.25em;
 
+$margin-headline: 24px 24px 20px 24px;
+$margin-navbar-offset: 75px;
+
 $background-color--table: #f8f4ff;
 
 // $background-gradient--primary: linear-gradient(
@@ -31,7 +34,7 @@ $background-gradient--secondary: linear-gradient(
   @media (320px <= width <= 480px) {
     width: 100vw;
     align-items: start;
-    margin-top: 75px;
+    margin-top: $margin-navbar-offset;
   }
 
   .main-title {
@@ -41,7 +44,7 @@ $background-gradient--secondary: linear-gradient(
     padding: 40px 40px 0 40px;
 
     @media (width > 480px) {
-      margin-bottom: 20px;
+      margin-bottom: 4px;
     }
   }
 

@@ -17,7 +17,7 @@ const ResearchComp = () => {
           Research
         </Typography>
 
-        <p className="research-desc" id="researchScopeDesc">
+        <p className="research-desc" id="researchPageHeadline">
           The research scope in epilepsy is vast and multidisciplinary,
           encompassing various aspects of this complex condition.
         </p>

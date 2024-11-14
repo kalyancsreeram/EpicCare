@@ -11,6 +11,9 @@ $font-size-item__title: 1.1em;
 $font-size-card__title: 1.2em;
 $font-size-card__desc: 1em;
 
+$margin-headline: 28px 24px 12px 24px;
+$margin-navbar-offset: 75px;
+
 $background-gradient--primary: linear-gradient(
   0.25turn,
   #ece0ff,
@@ -39,8 +42,12 @@ $background-gradient--secondary: linear-gradient(
     }
   }
 
+  #servicesPageHeadline {
+    margin: $margin-headline;
+  }
+
   .intro {
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -53,6 +60,7 @@ $background-gradient--secondary: linear-gradient(
     @media (320px <= width <= 480px) {
       align-items: start;
       text-align: start;
+      padding: 40px;
     }
   }
 
@@ -63,7 +71,7 @@ $background-gradient--secondary: linear-gradient(
     margin-top: 20px;
   }
 
-  #servicesTextBottom {
+  #servicesPageTextBottom {
     margin-bottom: 32px;
     @media (width > 480px) {
       text-align: center;
@@ -163,7 +171,11 @@ $background-gradient--secondary: linear-gradient(
 
 @media (320px <= width <= 480px) {
   .services-container {
-    margin-top: 75px;
+    margin-top: $margin-navbar-offset;
+
+    #servicesPageHeadline {
+      margin: 0px;
+    }
 
     #servicesTextBottom {
       padding: 0 40px;

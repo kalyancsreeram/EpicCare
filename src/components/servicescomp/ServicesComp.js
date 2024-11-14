@@ -20,6 +20,7 @@ const ServicesComp = () => {
           variant="body2"
           color="text.primary"
           className="services-text--default"
+          id="servicesPageHeadline"
         >
           SeizureCare provides cutting-edge, remote care through a range of
           specialized services, delivering comprehensive support to providers
