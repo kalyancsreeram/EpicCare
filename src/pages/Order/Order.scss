@@ -88,4 +88,10 @@ $background-gradient--secondary: linear-gradient(
     /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
     font-size: 1.25rem;
   }
+
+  .order-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

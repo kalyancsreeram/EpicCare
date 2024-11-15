@@ -3,9 +3,12 @@ import PatientFormComp from "../../components/patientform/PatientFormComp";
 import PatientFormComp2 from "../../components/patientform/PatientFormComp2";
 import "./Order.scss";
 import { Typography } from "@mui/material";
+import { orderPageData } from "../../data/data";
 
 function Order() {
   const [typeOfService, setTypeOfService] = useState("EEG");
+
+  const { serviceSelectOptions } = orderPageData;
 
   const serviceChangeHandler = (event) => {
     setTypeOfService(event.target.value);
@@ -32,34 +35,33 @@ function Order() {
           dealing with epilepsy patients.
         </Typography>
       </div>
-      <form className="service-type-form">
-        <label htmlFor="serviceType" className="service-type-form__label">
-          Type of service
-        </label>
-        <select
-          className="service-type-form__select"
-          name="services"
-          id="services"
-          value={typeOfService}
-          onChange={serviceChangeHandler}
-        >
-          <option value="EEG">EEG Services</option>
-          <option value="EpilepsyCare">Epilepsy Care</option>
-          <option value="EMU">EMU Services</option>
-          <option value="EpilepsySurgicalEvaluation">
-            Epilepsy Surgical Evaluation
-          </option>
-        </select>
-      </form>
+      <div className="order-form-container">
+        <form className="service-type-form">
+          <label htmlFor="serviceType" className="service-type-form__label">
+            Type of service
+          </label>
+          <select
+            className="service-type-form__select"
+            name="services"
+            id="services"
+            value={typeOfService}
+            onChange={serviceChangeHandler}
+          >
+            {serviceSelectOptions.map(({ value, label }) => (
+              <option value={value}>{label}</option>
+            ))}
+          </select>
+        </form>
 
-      {typeOfService === "EEG" && <PatientFormComp />}
-      {typeOfService === "EpilepsyCare" && (
-        <PatientFormComp2 typeOfService="EpilepsyCare" />
-      )}
-      {typeOfService === "EMU" && <PatientFormComp2 typeOfService="EMU" />}
-      {typeOfService === "EpilepsySurgicalEvaluation" && (
-        <PatientFormComp2 typeOfService="EpilepsySurgicalEvaluation" />
-      )}
+        {typeOfService === "EEG" && <PatientFormComp />}
+        {typeOfService === "EpilepsyCare" && (
+          <PatientFormComp2 typeOfService="EpilepsyCare" />
+        )}
+        {typeOfService === "EMU" && <PatientFormComp2 typeOfService="EMU" />}
+        {typeOfService === "EpilepsySurgicalEvaluation" && (
+          <PatientFormComp2 typeOfService="EpilepsySurgicalEvaluation" />
+        )}
+      </div>
     </div>
   );
 }

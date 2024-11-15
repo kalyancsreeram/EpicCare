@@ -401,6 +401,18 @@ const homePageData = {
   ],
 };
 
+const orderPageData = {
+  serviceSelectOptions: [
+    { value: "EEG", label: "EEG Services" },
+    { value: "EpilepsyCare", label: "Epilepsy Care" },
+    { value: "EMU", label: "EMU Services" },
+    {
+      value: "EpilepsySurgicalEvaluation",
+      label: "Epilepsy Surgical Evaluation",
+    },
+  ],
+};
+
 export {
   navLinks,
   researchPageData,
@@ -408,4 +420,5 @@ export {
   servicesPageData,
   resourcesPageData,
   homePageData,
+  orderPageData,
 };
