@@ -5,6 +5,7 @@ $font-weight-item__content: 500;
 $font-color-item__content: #333333;
 
 $color--default: #35294d;
+$color--hover: rgba(54, 42, 81, 0.9);
 
 $padding-page: 40px;
 
@@ -42,5 +43,9 @@ $padding-page: 40px;
   .question-section__button {
     // TODO: Change the hover color of button here and in contact page
     background-color: $color--default;
+  }
+
+  .question-section__button:hover {
+    background-color: $color--hover;
   }
 }
