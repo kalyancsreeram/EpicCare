@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactForm from '../components/contactform/ContactForm'
 
-function ContactUs() {
+function Contact() {
   return (
     <div  style = {{minHeight:"100vh"}}>
         <ContactForm/>
@@ -10,4 +10,4 @@ function ContactUs() {
   )
 }
 
-export default ContactUs
+export default Contact

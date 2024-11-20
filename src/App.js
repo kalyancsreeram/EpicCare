@@ -4,7 +4,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
+import Contact from "./pages/Contact";
 import Research from "./pages/Research";
 import Services from "./pages/Services";
 import NoMatch from "./pages/NoMatch";
@@ -111,7 +111,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
-          <Route path="contact" element={<ContactUs />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
           <Route path="order" element={<Order />}></Route>
           <Route path="research" element={<Research />}></Route>
           <Route path="resources" element={<Resources />}></Route>

@@ -1,0 +1,137 @@
+$background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
+
+.patientFormContainer {
+  /* border-radius: 5px; */
+  // background-color: #f2f2f2;
+  background: $background-gradient;
+  // padding: 50px;
+  padding-top: 20px;
+  //color: #006ba6;
+  color: #35294d;
+  background-color: #f2f2f2;
+}
+
+.inputField {
+  width: 50%;
+  display: block;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.inputSubmit {
+  background-color: #673147;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.inputSubmit:hover {
+  background-color: #673147 !important;
+  opacity: 0.8;
+}
+
+.multiSet {
+  width: 50%;
+  margin-bottom: 16px;
+  display: block;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+
+  resize: vertical;
+}
+// .multiSetInput{
+//   margin-right: 5px;
+// }
+
+.statesField {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+
+.servicesField {
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.upload_comp,
+.fileUploadField {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add_button,
+.delete_button {
+  padding: 0;
+  width: 25px !important;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.patientNote {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.patientNoteContainer {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.orderTextArea {
+  height: 200px;
+}
+
+.orderFormInputElement {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  display: block;
+}
+
+.contactInfo {
+  text-decoration: underline;
+  color: #003b71;
+}
+
+.contactInfo:hover {
+  opacity: 0.8;
+}
+
+.patientForm2Submit:hover:enabled {
+  opacity: 0.8;
+}
+
+.patientForm2Submit {
+  color: white;
+  background-color: #673147 !important;
+}
+
+.boldText {
+  font-weight: bold;
+  // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
