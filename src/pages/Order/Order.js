@@ -55,7 +55,7 @@ function Order() {
 
         {typeOfService === "EEG" && <OrderFormEEG />}
         {typeOfService === "EpilepsyCare" && (
-          <OrderFormEEG typeOfService="EpilepsyCare" />
+          <OrderFormOther typeOfService="EpilepsyCare" />
         )}
         {typeOfService === "EMU" && <OrderFormOther typeOfService="EMU" />}
         {typeOfService === "EpilepsySurgicalEvaluation" && (
