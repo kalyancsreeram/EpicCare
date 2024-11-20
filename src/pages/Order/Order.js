@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import PatientFormComp from "../../components/patientform/PatientFormComp";
-import PatientFormComp2 from "../../components/patientform/PatientFormComp2";
+import OrderFormEEG from "../../components/forms/orderform/eeg/OrderFormEEG";
+import OrderFormOther from "../../components/forms/orderform/other/OrderFormOther";
 import "./Order.scss";
 import { Typography } from "@mui/material";
 import { orderPageData } from "../../data/data";
@@ -53,13 +53,13 @@ function Order() {
           </select>
         </form>
 
-        {typeOfService === "EEG" && <PatientFormComp />}
+        {typeOfService === "EEG" && <OrderFormEEG />}
         {typeOfService === "EpilepsyCare" && (
-          <PatientFormComp2 typeOfService="EpilepsyCare" />
+          <OrderFormEEG typeOfService="EpilepsyCare" />
         )}
-        {typeOfService === "EMU" && <PatientFormComp2 typeOfService="EMU" />}
+        {typeOfService === "EMU" && <OrderFormOther typeOfService="EMU" />}
         {typeOfService === "EpilepsySurgicalEvaluation" && (
-          <PatientFormComp2 typeOfService="EpilepsySurgicalEvaluation" />
+          <OrderFormOther typeOfService="EpilepsySurgicalEvaluation" />
         )}
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./ContactForm.scss";
-import { countriesList } from "../../data/countries";
+import { countriesList } from "../../../data/countries";
 import axios from "axios";
-import { CONSTANTS } from "../../Constants";
+import { CONSTANTS } from "../../../Constants";
 
 import FadeLoader from "react-spinners/FadeLoader";
 import { Alert, Button, MenuItem, TextField, Typography } from "@mui/material";

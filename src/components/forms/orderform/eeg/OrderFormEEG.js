@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./styles.scss";
+import "./OrderFormEEG.scss";
 
 import axios from "axios";
-import UploadComp from "./UploadComp";
+import UploadComp from "../UploadComp";
 import FadeLoader from "react-spinners/FadeLoader";
-import { CONSTANTS } from "../../Constants";
+import { CONSTANTS } from "../../../../Constants";
 
-function PatientFormComp() {
+function OrderFormEEG() {
   const [formData, setFormData] = useState({
     typeOfService: "EEG Services",
     firstname: "",
@@ -371,4 +371,4 @@ function PatientFormComp() {
   );
 }
 
-export default PatientFormComp;
+export default OrderFormEEG;
