@@ -401,6 +401,27 @@ const homePageData = {
   ],
 };
 
+const orderPageData = {
+  services: [
+    {
+      value: "EEG",
+      title: "EEG Services",
+    },
+    {
+      value: "EpilepsyCare",
+      title: "Epilepsy Care",
+    },
+    {
+      value: "EMU",
+      title: "EMU Services",
+    },
+    {
+      value: "EpilepsySurgicalEvaluation",
+      title: "Epilepsy Surgical Evaluation",
+    },
+  ],
+};
+
 export {
   navLinks,
   researchPageData,
@@ -408,4 +429,5 @@ export {
   servicesPageData,
   resourcesPageData,
   homePageData,
+  orderPageData,
 };
