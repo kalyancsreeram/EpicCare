@@ -402,13 +402,22 @@ const homePageData = {
 };
 
 const orderPageData = {
-  serviceSelectOptions: [
-    { value: "EEG", label: "EEG Services" },
-    { value: "EpilepsyCare", label: "Epilepsy Care" },
-    { value: "EMU", label: "EMU Services" },
+  services: [
+    {
+      value: "EEG",
+      title: "EEG Services",
+    },
+    {
+      value: "EpilepsyCare",
+      title: "Epilepsy Care",
+    },
+    {
+      value: "EMU",
+      title: "EMU Services",
+    },
     {
       value: "EpilepsySurgicalEvaluation",
-      label: "Epilepsy Surgical Evaluation",
+      title: "Epilepsy Surgical Evaluation",
     },
   ],
 };

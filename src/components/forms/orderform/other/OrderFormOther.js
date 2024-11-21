@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { CONSTANTS } from "../../../../Constants";
 import "./OrderFormOther.scss";
+import { Button, TextField } from "@mui/material";
 
 function OrderFormOther(props) {
   const { typeOfService } = props;
@@ -35,82 +36,66 @@ function OrderFormOther(props) {
       });
   };
 
-  const { drName, hospital, contactInfo } = formData;
-  const enabled =
-    drName.length > 0 && hospital.length > 0 && contactInfo.length > 0;
+  const { drName, hospital, contactInfo, message } = formData;
 
   return (
-    <div className="patientFormContainer">
-      <form onSubmit={handleSubmit}>
-        <label className="boldText" htmlFor="drName">
-          Doctor Name
-        </label>
-        <input
-          className="inputField"
-          type="text"
-          id="drName"
-          name="drName"
-          placeholder="Doctor Name"
-          value={formData.drName}
-          onChange={handleChange}
-        />
-        <label className="boldText" htmlFor="hospital">
-          Hospital
-        </label>
-        <input
-          className="inputField"
-          type="text"
-          id="hospital"
-          name="hospital"
-          placeholder="Hospital"
-          value={formData.hospital}
-          onChange={handleChange}
-        />
-        <label className="boldText" htmlFor="contactInfo">
-          Contact Info
-        </label>
-        <input
-          className="inputField"
-          type="text"
-          id="contactInfo"
-          name="contactInfo"
-          placeholder="Contact Info"
-          value={formData.contactInfo}
-          onChange={handleChange}
-        />
-
-        <label className="boldText" htmlFor="message">
-          Message
-        </label>
-        <textarea
-          className="orderTextArea orderFormInputElement"
-          id="message"
-          name="message"
-          placeholder="Type your message here..."
-          value={formData.message}
-          onChange={handleChange}
-        />
-
-        <div className="patientNoteContainer">
-          <p>
-            Thank you for your interest in SeizureCare. We will get back to you
-            with confirmation shortly. <br></br>If you have any questions, feel
-            free to contact us at{" "}
-            <span className="contactInfo">info@seizurecarenet.com</span>.
-          </p>
-          <p className="patientNote">
-            NOTE: Please use this form for general clinical information only. DO
-            NOT send any specific patient health information through this form.
-          </p>
-        </div>
-        <input
-          className="inputField patientForm2Submit"
-          type="submit"
-          value="Submit"
-          disabled={!enabled}
-        ></input>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="order-form--other">
+      <TextField
+        className="order-form-other__input"
+        type="text"
+        id="drName"
+        name="drName"
+        value={drName}
+        onChange={handleChange}
+        label="Doctor's Name"
+        helperText="Please enter your doctor's name."
+        required
+      />
+      <TextField
+        className="order-form-other__input"
+        type="text"
+        id="hospital"
+        name="hospital"
+        label="Hospital"
+        value={hospital}
+        helperText="Please enter your hospital's name."
+        onChange={handleChange}
+        required
+      />
+      <TextField
+        className="order-form-other__input"
+        type="text"
+        id="contactInfo"
+        name="contactInfo"
+        label="Contact Information"
+        value={contactInfo}
+        helperText="Please enter your contact number."
+        onChange={handleChange}
+        required
+      />
+      <TextField
+        className="order-form-other__input order-form-other__text-area"
+        id="message"
+        name="message"
+        label="Please type your message here..."
+        helperText="Please enter your message here."
+        value={message}
+        onChange={handleChange}
+        rows={4}
+        multiline
+        required
+      />
+      <Button
+        variant="contained"
+        id="orderformOtherSubmitBtn"
+        size="large"
+        value="Submit"
+        className="order-form-other__submit-button"
+        type="submit"
+      >
+        Submit
+      </Button>
+    </form>
   );
 }
 

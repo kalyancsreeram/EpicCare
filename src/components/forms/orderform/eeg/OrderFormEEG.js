@@ -345,19 +345,6 @@ function OrderFormEEG() {
               ></UploadComp>
             );
           })}
-          <div className="patientNoteContainer">
-            <p>
-              Thank you for your interest in SeizureCare. We will get back to
-              you with confirmation shortly. <br></br>If you have any questions,
-              feel free to contact us at{" "}
-              <span className="contactInfo">info@seizurecarenet.com</span>.
-            </p>
-            <p className="patientNote">
-              NOTE: Please use this form for general clinical information only.
-              DO NOT send any specific patient health information through this
-              form.
-            </p>
-          </div>
           <button
             type="submit"
             className="inputField inputSubmit"

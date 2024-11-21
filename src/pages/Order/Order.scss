@@ -2,6 +2,8 @@ $font-size-main-title: 3em;
 $font-size-base--default: 1.1em;
 $font-size-base--mobile: 16px;
 
+$line-height: 1.6;
+
 $padding-page--default: 40px;
 $padding-page--mobile: 40px;
 
@@ -15,6 +17,8 @@ $padding-page: 40px;
 //   #e0ccff,
 //   #d4b8ff
 // );
+
+$background-color--alt: #f8f4ff;
 
 $background-gradient--secondary: linear-gradient(
   0.25turn,
@@ -80,18 +84,42 @@ $background-gradient--secondary: linear-gradient(
         margin-bottom: 24px;
       }
     }
+
+    p.order-page__text--default {
+      margin-top: 0px;
+    }
   }
 
-  .service-type-form__label {
+  .service-select-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-type-input__label {
     color: #35294d;
     font-weight: bold;
     /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
     font-size: 1.25rem;
   }
 
-  .order-form-container {
+  .service-type-input__select {
+    .MuiSelect-select,
+    input {
+      background-color: $background-color--alt;
+    }
+  }
+
+  .patient-note-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $font-size-base--default;
+    margin-top: 32px;
+
+    .order-page__note {
+      line-height: $line-height;
+      text-align: center;
+    }
   }
 }
