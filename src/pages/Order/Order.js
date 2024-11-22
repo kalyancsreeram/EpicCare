@@ -87,7 +87,8 @@ function Order() {
         </div>
 
         <p>
-          If you have any questions, feel free to contact us at{" "}
+          If you have any questions, feel free to contact us at
+          {/* //TODO: add mail to for the email address here */}
           <span className="contactInfo">info@seizurecarenet.com</span>.
         </p>
       </div>
