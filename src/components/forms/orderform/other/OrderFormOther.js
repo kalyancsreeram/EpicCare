@@ -39,7 +39,7 @@ function OrderFormOther(props) {
   const { drName, hospital, contactInfo, message } = formData;
 
   return (
-    <form onSubmit={handleSubmit} className="order-form--other">
+    <form onSubmit={handleSubmit} className="order-form-other">
       <TextField
         className="order-form-other__input"
         type="text"
