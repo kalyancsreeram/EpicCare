@@ -85,24 +85,24 @@ function OrderFormEEG() {
     }));
   };
 
-  const calculate_age = (dob1) => {
-    var today = new Date();
-    var birthDate = new Date(dob1);
-    var age_now = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
+  const calculate_age = ({ $D, $M, $y, $d }) => {
+    const today = new Date();
+    const birthDate = new Date($y, $M, $D);
+    let age_now = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
       age_now--;
     }
-    console.log(age_now);
     setFormData((prevState) => ({
       ...prevState,
-      dob: `${dob1} - [Age: ${age_now}]`,
+      dob: `${$d} - [Age: ${age_now}]`,
     }));
     return age_now;
   };
 
   const submitHandler = (event) => {
-    document.getElementById("patientForm").disabled = true;
+    console.log(event.preventDefault());
+    document.getElementById("patientFormEEG").disabled = true;
     console.log(formData);
     setLoading(true);
     event.preventDefault();
@@ -133,11 +133,11 @@ function OrderFormEEG() {
           message: "",
         });
         setLoading(false);
-        document.getElementById("patientForm").disabled = false;
+        document.getElementById("patientFormEEG").disabled = false;
         alert("Form submitted successfully!!");
       })
       .catch(() => {
-        document.getElementById("patientForm").disabled = false;
+        document.getElementById("patientFormEEG").disabled = false;
         setLoading(false);
         alert("Something went wrong. Try again later");
       });
@@ -156,7 +156,11 @@ function OrderFormEEG() {
         />
       </div>
       {/* <div className="eeg-form-container"> */}
-      <form className="order-form-eeg" onSubmit={submitHandler}>
+      <form
+        className="order-form-eeg"
+        id="patientFormEEG"
+        onSubmit={submitHandler}
+      >
         <TextField
           className="order-form-eeg__input"
           type="text"
@@ -210,7 +214,10 @@ function OrderFormEEG() {
               <DatePicker
                 className="order-form-eeg__input"
                 name="serviceend"
-                onChange={(event) => setAge(calculate_age(event.target.value))}
+                onChange={(value) => {
+                  console.log(value);
+                  setAge(calculate_age(value));
+                }}
               />
             </DemoItem>
           </DemoContainer>
@@ -477,7 +484,7 @@ function OrderFormEEG() {
           label="Time Slot"
           value={formData.timeslot}
           onChange={handleChange}
-          helperText="Please enter a Time SLot."
+          helperText="Please enter a Time Slot."
         />
         {/* <label className="boldText" htmlFor="timeSlot">
             Time Slot
