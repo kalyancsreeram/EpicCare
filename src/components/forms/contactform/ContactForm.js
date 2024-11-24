@@ -55,26 +55,26 @@ const ContactForm = () => {
           email: "",
           message: "",
         });
-        document.getElementById("contactForm").disabled = false;
         setLoading(false);
 
         const successAlert = {
           type: "success",
           shouldShow: true,
         };
-
         setAlert(successAlert);
       })
       .catch(() => {
-        document.getElementById("contactForm").disabled = false;
         setLoading(false);
 
         const errorAlert = {
           type: "error",
           shouldShow: true,
         };
-
         setAlert(errorAlert);
+      })
+      .finally(() => {
+        document.getElementById("contactForm").disabled = false;
+        setLoading(false);
       });
   };
 
