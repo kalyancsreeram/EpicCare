@@ -5,7 +5,7 @@ import axios from "axios";
 import UploadComp from "../UploadComp";
 import FadeLoader from "react-spinners/FadeLoader";
 import { CONSTANTS } from "../../../../Constants";
-import { Button, MenuItem, TextField } from "@mui/material";
+import { Alert, Button, MenuItem, TextField } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
@@ -31,26 +31,32 @@ function OrderFormEEG() {
     timeslot: "",
     message: "",
   });
-  const [color] = useState("#9b2c79");
   const [loading, setLoading] = useState(false);
-  const override = {
-    display: "block",
-    margin: "0 auto",
-    borderColor: "red",
-  };
-
-  const style = {
-    position: "fixed",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    zIndex: "2",
-  };
 
   const [additionalFields, setAdditionalFields] = useState([]);
   const [count, setCount] = useState(0);
 
   const [age, setAge] = useState(0);
+
+  const [alert, setAlert] = useState({
+    type: "success",
+    shouldShow: false,
+  });
+
+  const spinnerColor = "#9b2c79";
+  const overrideStyle = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
+
+  const spinnerStyle = {
+    top: "50%",
+    position: "fixed",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    zIndex: "2",
+  };
 
   const genders = [
     { value: "male", title: "Male" },
@@ -101,9 +107,7 @@ function OrderFormEEG() {
   };
 
   const submitHandler = (event) => {
-    console.log(event.preventDefault());
     document.getElementById("patientFormEEG").disabled = true;
-    console.log(formData);
     setLoading(true);
     event.preventDefault();
     patientFormSubmit();
@@ -113,7 +117,6 @@ function OrderFormEEG() {
     axios
       .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
       .then((response) => {
-        console.log(response);
         setFormData({
           firstname: "",
           lastname: "",
@@ -132,28 +135,53 @@ function OrderFormEEG() {
           timeslot: "",
           message: "",
         });
-        setLoading(false);
-        document.getElementById("patientFormEEG").disabled = false;
-        alert("Form submitted successfully!!");
+        // alert("Form submitted successfully!!");
+        const successAlert = {
+          type: "success",
+          shouldShow: true,
+        };
+        setAlert(successAlert);
       })
       .catch(() => {
+        const errorAlert = {
+          type: "error",
+          shouldShow: true,
+        };
+        setAlert(errorAlert);
+        // alert("Something went wrong. Try again later");
+      })
+      .finally(() => {
         document.getElementById("patientFormEEG").disabled = false;
         setLoading(false);
-        alert("Something went wrong. Try again later");
       });
   };
 
   return (
-    <>
-      <div style={style}>
+    <div className="eeg-form-container">
+      <div style={spinnerStyle}>
         <FadeLoader
-          color={color}
+          color={spinnerColor}
           loading={loading}
-          cssOverride={override}
+          cssOverride={overrideStyle}
           size={150}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
+      </div>
+      <div className="eeg-alert-container">
+        {alert.shouldShow && (
+          <Alert
+            severity={alert.type}
+            onClose={() => {
+              setAlert({});
+            }}
+            className="alert-message-eeg"
+          >
+            {alert.type === "success"
+              ? `Your form has been submitted successfully! Thank you for your input.`
+              : `There was an error submitting your form. Please check your information and try again.`}
+          </Alert>
+        )}
       </div>
       {/* <div className="eeg-form-container"> */}
       <form
@@ -552,7 +580,7 @@ function OrderFormEEG() {
           </button> */}
       </form>
       {/* </div> */}
-    </>
+    </div>
   );
 }
 

@@ -2,11 +2,30 @@ $color--default: #35294d;
 
 $gap-form-items: 24px;
 
+$width-form-item--default: 40%;
+$width-form-item--mobile: 100%;
+
 $border-radius: 8px;
 
 $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
 
 $background-color--alt: #f8f4ff;
+
+.other-form-alert-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.alert-message-other {
+  width: $width-form-item--default;
+
+  @media (320px <= width <= 480px) {
+    width: $width-form-item--mobile;
+    margin-bottom: $gap-form-items;
+  }
+}
 
 .order-form-other {
   /* border-radius: 5px; */
