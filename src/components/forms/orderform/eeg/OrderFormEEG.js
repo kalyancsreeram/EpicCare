@@ -243,8 +243,7 @@ function OrderFormEEG() {
                 className="order-form-eeg__input"
                 name="serviceend"
                 onChange={(value) => {
-                  console.log(value);
-                  setAge(calculate_age(value));
+                  value && setAge(calculate_age(value));
                 }}
               />
             </DemoItem>

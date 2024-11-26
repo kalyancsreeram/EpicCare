@@ -74,7 +74,7 @@ function Order() {
         </TextField>
       </div>
 
-      {displayForm()}
+      <div className="order-form-container">{displayForm()}</div>
 
       <div className="patient-note-container">
         <div className="order-page__note">
@@ -86,9 +86,11 @@ function Order() {
         </div>
 
         <p>
-          If you have any questions, feel free to contact us at
+          If you have any questions, feel free to contact us at:{" "}
           {/* //TODO: add mail to for the email address here */}
-          <span className="contactInfo">info@seizurecarenet.com</span>.
+          <a href="mailto:info@seizurecarenet.com" className="contact-email">
+            info@seizurecarenet.com
+          </a>
         </p>
       </div>
     </div>

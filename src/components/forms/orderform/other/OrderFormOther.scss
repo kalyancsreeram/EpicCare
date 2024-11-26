@@ -5,6 +5,10 @@ $gap-form-items: 24px;
 $width-form-item--default: 40%;
 $width-form-item--mobile: 100%;
 
+$margin-top-page--mobile: 16px;
+
+$font-size-base--mobile: 16px;
+
 $border-radius: 8px;
 
 $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
@@ -41,6 +45,13 @@ $background-color--alt: #f8f4ff;
   justify-content: center;
   align-items: center;
   gap: $gap-form-items;
+
+  @media (320px <= width <= 480px) {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: $margin-top-page--mobile;
+    font-size: $font-size-base--mobile;
+  }
 }
 
 .MuiStack-root.css-5rcoci-MuiStack-root {
@@ -70,6 +81,10 @@ $background-color--alt: #f8f4ff;
   label {
     border-radius: $border-radius;
     padding: 0 4px;
+  }
+
+  @media (320px <= width <= 480px) {
+    width: 100%;
   }
 }
 
