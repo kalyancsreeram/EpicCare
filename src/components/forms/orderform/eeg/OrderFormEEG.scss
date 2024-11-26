@@ -7,6 +7,10 @@ $gap-form-items: 24px;
 $width-form-item--default: 40%;
 $width-form-item--mobile: 100%;
 
+$margin-top-page--mobile: 16px;
+
+$font-size-base--mobile: 16px;
+
 $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
 
 $background-color--alt: #f8f4ff;
@@ -16,6 +20,7 @@ $background-color--alt: #f8f4ff;
   width: 100%;
   justify-content: center;
   margin-top: 32px;
+  padding: 0 40px;
 }
 
 .alert-message-eeg {
@@ -41,6 +46,13 @@ $background-color--alt: #f8f4ff;
   justify-content: center;
   align-items: center;
   gap: $gap-form-items;
+
+  @media (320px <= width <= 480px) {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: $margin-top-page--mobile;
+    font-size: $font-size-base--mobile;
+  }
 }
 
 .order-form-eeg__input {
@@ -62,6 +74,10 @@ $background-color--alt: #f8f4ff;
   label {
     border-radius: $border-radius;
     padding: 0 4px;
+  }
+
+  @media (320px <= width <= 480px) {
+    width: 100%;
   }
 }
 
@@ -86,115 +102,115 @@ $background-color--alt: #f8f4ff;
   // }
 }
 
-.inputSubmit {
-  background-color: #673147;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 200px;
-}
-
-.inputSubmit:hover {
-  background-color: #673147 !important;
-  opacity: 0.8;
-}
-
-.multiSet {
-  width: 50%;
-  margin-bottom: 16px;
-  display: block;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-
-  resize: vertical;
-}
-// .multiSetInput{
-//   margin-right: 5px;
+// .inputSubmit {
+//   background-color: #673147;
+//   color: white;
+//   padding: 12px 20px;
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   margin-top: 20px;
+//   width: 200px;
 // }
 
-.statesField {
-  display: block;
-  width: 100px;
-  height: 30px;
-  margin-top: 5px;
-  margin-bottom: 16px;
-}
+// .inputSubmit:hover {
+//   background-color: #673147 !important;
+//   opacity: 0.8;
+// }
 
-.servicesField {
-  margin-left: 10px;
-  width: 200px;
-  height: 30px;
-  margin-top: 5px;
-}
+// .multiSet {
+//   width: 50%;
+//   margin-bottom: 16px;
+//   display: block;
+//   padding: 12px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   box-sizing: border-box;
+//   margin-top: 6px;
 
-.upload_comp,
-.fileUploadField {
-  display: flex;
-  margin-top: 5px;
-  align-items: center;
-  margin-bottom: 15px;
-}
+//   resize: vertical;
+// }
+// // .multiSetInput{
+// //   margin-right: 5px;
+// // }
 
-.add_button,
-.delete_button {
-  padding: 0;
-  width: 25px !important;
-  height: 25px;
-  margin-right: 10px;
-}
+// .statesField {
+//   display: block;
+//   width: 100px;
+//   height: 30px;
+//   margin-top: 5px;
+//   margin-bottom: 16px;
+// }
 
-.patientNote {
-  padding-bottom: 20px;
-  font-weight: bold;
-}
+// .servicesField {
+//   margin-left: 10px;
+//   width: 200px;
+//   height: 30px;
+//   margin-top: 5px;
+// }
 
-.patientNoteContainer {
-  margin-top: 20px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
+// .upload_comp,
+// .fileUploadField {
+//   display: flex;
+//   margin-top: 5px;
+//   align-items: center;
+//   margin-bottom: 15px;
+// }
 
-.orderTextArea {
-  height: 200px;
-}
+// .add_button,
+// .delete_button {
+//   padding: 0;
+//   width: 25px !important;
+//   height: 25px;
+//   margin-right: 10px;
+// }
 
-.orderFormInputElement {
-  width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  display: block;
-}
+// .patientNote {
+//   padding-bottom: 20px;
+//   font-weight: bold;
+// }
 
-.contactInfo {
-  text-decoration: underline;
-  color: #003b71;
-}
+// .patientNoteContainer {
+//   margin-top: 20px;
+//   font-size: 1rem;
+//   line-height: 1.6;
+// }
 
-.contactInfo:hover {
-  opacity: 0.8;
-}
+// .orderTextArea {
+//   height: 200px;
+// }
 
-.patientForm2Submit:hover:enabled {
-  opacity: 0.8;
-}
+// .orderFormInputElement {
+//   width: 50%;
+//   padding: 12px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   box-sizing: border-box;
+//   margin-top: 6px;
+//   margin-bottom: 16px;
+//   resize: vertical;
+//   display: block;
+// }
 
-.patientForm2Submit {
-  color: white;
-  background-color: #673147 !important;
-}
+// .contactInfo {
+//   text-decoration: underline;
+//   color: #003b71;
+// }
 
-.boldText {
-  font-weight: bold;
-  // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-}
+// .contactInfo:hover {
+//   opacity: 0.8;
+// }
+
+// .patientForm2Submit:hover:enabled {
+//   opacity: 0.8;
+// }
+
+// .patientForm2Submit {
+//   color: white;
+//   background-color: #673147 !important;
+// }
+
+// .boldText {
+//   font-weight: bold;
+// font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+// }

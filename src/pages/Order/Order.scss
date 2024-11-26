@@ -1,3 +1,5 @@
+$color--default: #35294d;
+
 $font-size-main-title: 3em;
 $font-size-base--default: 1.1em;
 $font-size-base--mobile: 16px;
@@ -31,7 +33,7 @@ $background-gradient--secondary: linear-gradient(
   //   background-color: #f2f2f2;
   background: $background-gradient--secondary;
   // padding-left: 50px;
-  padding: $padding-page;
+  // padding: $padding-page;
 
   @media (320px <= width <= 480px) {
     margin-top: $margin-navbar-offset;
@@ -45,6 +47,7 @@ $background-gradient--secondary: linear-gradient(
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: $padding-page $padding-page 0px $padding-page;
 
     @media (320px <= width <= 480px) {
       align-items: start;
@@ -109,6 +112,12 @@ $background-gradient--secondary: linear-gradient(
     }
   }
 
+  .order-form-container {
+    @media (320px <= width <= 480px) {
+      width: 100vw;
+    }
+  }
+
   .patient-note-container {
     display: flex;
     flex-direction: column;
@@ -117,9 +126,18 @@ $background-gradient--secondary: linear-gradient(
     font-size: $font-size-base--default;
     margin-top: 32px;
 
+    @media (320px <= width <= 480px) {
+      padding: 0px $padding-page $padding-page $padding-page;
+    }
+
     .order-page__note {
       line-height: $line-height;
       text-align: center;
     }
+  }
+
+  .contact-email {
+    color: $color--default;
+    font-weight: bolder;
   }
 }
