@@ -1,4 +1,5 @@
-$color--default: #35294d;
+$color--default: #6a1b9a;
+$color--alt: #4a0072;
 
 $border-radius: 8px;
 
@@ -96,6 +97,11 @@ $background-color--alt: #f8f4ff;
   background-color: $color--default;
   color: white;
   margin-top: 16px;
+
+  &:hover {
+    background-color: $color--alt; // A darker purple for hover
+    transform: scale(1.05); // Slight scale effect
+  }
 
   // @media (320px <= width <= 480px) {
   //   margin-top: 0px;

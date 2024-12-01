@@ -20,8 +20,8 @@ $width-form-item--mobile: 100%;
 
 $gap-form-items: 24px;
 
-$color--default: #35294d;
-$color--hover: rgba(54, 42, 81, 0.9);
+$color--default: #6a1b9a;
+$color--alt: #4a0072;
 
 // $background-color--default: rgba(
 //   $color: #c6aadb,
@@ -146,13 +146,10 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
   color: white;
   margin-top: 16px;
 
-  @media (320px <= width <= 480px) {
-    margin-top: 0px;
+  &:hover {
+    background-color: $color--alt; // A darker purple for hover
+    transform: scale(1.05); // Slight scale effect
   }
-}
-
-.form__submit-button.MuiButton-root:hover {
-  background-color: $color--hover;
 }
 
 .contact-page__note {

@@ -175,4 +175,49 @@ $font-size-base--default: 1.2em;
       width: 100%;
     }
   }
+
+  .cta-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background: #f3e8ff; // A complementary soft background color
+    border: 1px solid #e0ccff; // Matching with the gradient colors
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .cta-title {
+      color: #35294d; // Consistent with the main-title color
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 10px;
+      animation: 1.5s fadeInRight;
+    }
+
+    .cta-description {
+      color: #555555;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      animation: 1.5s fadeInRight;
+    }
+
+    .cta-button {
+      background-color: #6a1b9a; // A standout purple button
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #4a0072; // A darker purple for hover
+        transform: scale(1.05); // Slight scale effect
+      }
+
+      &:active {
+        transform: scale(0.95); // Press effect
+      }
+    }
+  }
 }
