@@ -150,6 +150,10 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
     background-color: $color--alt; // A darker purple for hover
     transform: scale(1.05); // Slight scale effect
   }
+
+  @media (320px <= width <= 480px) {
+    margin-top: 0px;
+  }
 }
 
 .contact-page__note {
