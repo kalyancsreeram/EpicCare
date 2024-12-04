@@ -1,8 +1,9 @@
 import React from "react";
 import "./Welcome.scss";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 
 import WelcomeImg from "../../../assets/images/welcomeImg.jpg";
+import CompanyLogo from "../../../assets/images/CompanyLogoEdited-in.png";
 
 import { homePageData } from "../../../data/data";
 import { useNavigate } from "react-router-dom";
@@ -12,63 +13,62 @@ function Welcome() {
   const { companyInfo } = homePageData;
   const navigate = useNavigate();
 
-  //TODO: Clean the unused code
   return (
     <div className="welcome-container">
       <div className="welcome-content">
         <img className="welcome__img" alt="SeizureCare" src={WelcomeImg} />
         <div className="welcome__message">
           {/* <Typography
-            className="message__text"
-            gutterBottom
-            variant="p"
-            component="div"
-          >
-            <blockquote>
-              <p id="ceoMessage">
-                <b>Welcome to SeizureCare</b>
-                <br />
-                {companyInfo.intro}
-                <footer>
-                  <cite>Chief Executive Officer</cite>
-                </footer>
-              </p>
-            </blockquote>
-          </Typography> */}
-          <Typography
             className="main-title"
             gutterBottom
             variant="h1"
             component="div"
           >
-            Welcome to SeizureCare
-          </Typography>
-          <p className="home-text--default">{companyInfo.intro}</p>
-          <p className="home-text--default">{companyInfo.serviceCommitment}</p>
-          <p className="home-text--default">{companyInfo.futureVision}</p>
-
-          <div className="cta-section">
-            <Typography
-              gutterBottom
-              variant="h4"
-              component="div"
-              className="cta-title"
-            >
-              Order Services Easily
-            </Typography>
-            <p className="welcome__cta-description">
-              Need help with EEG, EMU, or Epilepsy Care? Fill out our service
-              order form, and our team will reach out to confirm your request.
-              Experience seamless support tailored to your needs.
+            SeizureCare
+          </Typography> */}
+          <img src={CompanyLogo} alt="SeizureCare Logo" className="main-logo" />
+          <div className="about-section">
+            <p className="home-text--default headline">
+              {companyInfo.headline}
             </p>
-            <Button
-              variant="contained"
-              size="large"
-              className="cta-button"
-              onClick={() => navigate("/order")}
-            >
-              Order
-            </Button>
+            <p className="home-text--default">{companyInfo.intro}</p>
+            <p className="home-text--default">{companyInfo.mission}</p>
+            <p className="home-text--default">{companyInfo.values}</p>
+            <p className="home-text--default">{companyInfo.vision}</p>
+          </div>
+          <div class="info-section">
+            <div class="info-stats">
+              <div class="stat">
+                <h2>24/7</h2>
+                <p>Support Available</p>
+              </div>
+              <div class="stat">
+                <h2>1000+</h2>
+                <p>Patients Helped</p>
+              </div>
+              <div class="stat">
+                <h2>15+</h2>
+                <p>Years Experience</p>
+              </div>
+            </div>
+            <div class="info-actions">
+              <Button
+                variant="contained"
+                size="large"
+                className="btn btn-primary"
+                onClick={() => navigate("/services")}
+              >
+                Explore Services
+              </Button>
+              <Button
+                variant="outlined"
+                size="large"
+                className="btn btn-secondary"
+                onClick={() => navigate("/contact")}
+              >
+                Contact Us
+              </Button>
+            </div>
           </div>
         </div>
       </div>

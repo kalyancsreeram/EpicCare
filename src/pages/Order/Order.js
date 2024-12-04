@@ -4,9 +4,12 @@ import OrderFormOther from "../../components/forms/orderform/other/OrderFormOthe
 import "./Order.scss";
 import { MenuItem, TextField, Typography } from "@mui/material";
 import { orderPageData } from "../../data/data";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 function Order() {
   const [typeOfService, setTypeOfService] = useState("EEG");
+
+  useScrollToTop();
 
   const { services } = orderPageData;
 
