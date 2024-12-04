@@ -100,5 +100,9 @@ $border-radius: 30px;
     font-weight: bold;
     font-size: $font-size-component-title;
     color: #35294d;
+
+    @media (320px <= width <= 480px) {
+      text-align: center;
+    }
   }
 }

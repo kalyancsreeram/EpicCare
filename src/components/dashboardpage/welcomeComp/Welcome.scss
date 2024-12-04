@@ -80,8 +80,9 @@ $color--alt: #4a0072;
     margin: 0 auto 24px; // Center align with margin below
 
     @media (320px <= width <= 480px) {
-      max-width: 90%;
-      margin-bottom: 16px;
+      width: 100%; // Take 80% of the screen width
+      max-width: 100%; // Remove maximum limit on mobile
+      margin-bottom: 0; // Reduce bottom margin
     }
 
     @media (width > 1280px) {
@@ -91,11 +92,6 @@ $color--alt: #4a0072;
 
   .about-section {
     margin: 0 auto;
-
-    @media (320px <= width <= 480px) {
-      padding: 1rem;
-      max-width: 90%;
-    }
   }
 
   .home-text--default {
@@ -109,11 +105,12 @@ $color--alt: #4a0072;
     animation: 1.5s fadeInRight;
 
     &.headline {
-      font-size: 1.8em; // Larger font size for the headline
-      font-weight: 600; // Emphasize the headline
-      color: $color--alt; // Alternate color for distinction
-      margin-bottom: 1.5rem; // Add spacing after headline
-      text-align: center; // Center align the headline
+      font-size: 1.8em;
+      font-weight: 600;
+      color: $color--alt;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-top: 1.5rem;
     }
   }
 
@@ -197,12 +194,11 @@ $color--alt: #4a0072;
     background: #f9f9f9;
     border-radius: 8px;
     max-width: 600px;
-    margin: 32px auto;
+    margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     @media (320px <= width <= 480px) {
-      padding: 1.5rem;
-      margin-top: $margin-top-page--mobile;
+      margin-top: 32px;
     }
 
     .info-stats {
@@ -278,7 +274,7 @@ $color--alt: #4a0072;
       }
 
       @media (320px <= width <= 480px) {
-        padding: 0.65rem 1.2rem;
+        // padding: 0.65rem 1.2rem;
         font-size: 1em;
       }
     }
@@ -298,7 +294,7 @@ $color--alt: #4a0072;
       }
 
       @media (320px <= width <= 480px) {
-        padding: 0.65rem 1.2rem;
+        // padding: 0.65rem 1.2rem;
         font-size: 1em;
       }
     }
