@@ -24,7 +24,7 @@ function Home() {
         >
           Order Services
         </Typography>
-        <p className="welcome__cta-description">
+        <p className="cta-description">
           Need help with EEG, EMU, or Epilepsy Care? Fill out our service order
           form, and our team will reach out to confirm your request. Experience
           seamless support tailored to your needs.
