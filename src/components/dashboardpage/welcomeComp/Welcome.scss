@@ -2,30 +2,20 @@ $padding-page: 40px;
 
 $margin-top-page--mobile: 75px;
 
-// $background-gradient--primary: linear-gradient(
-//   0.25turn,
-//   #ece0ff,
-//   #e0ccff,
-//   #d4b8ff
-// );
-
 $background-gradient--secondary: linear-gradient(#e0ccff, #ece0ff, #d4b8ff);
 
 $font-size-main-title: 3em;
 $font-size-base--default: 1.2em;
 
+$color--default: #6a1b9a;
+$color--alt: #4a0072;
+
 .welcome-container {
-  // color: rgb(29, 25, 73);
   display: flex;
   position: relative;
   justify-content: center;
   width: 100%;
   background: $background-gradient--secondary;
-  // background-image: url("../../../assets/images/bgImage.jpg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // padding: $padding-page;
 
   @media (320px <= width <= 480px) {
     margin: 0px;
@@ -35,9 +25,7 @@ $font-size-base--default: 1.2em;
   }
 
   .welcome-content {
-    // margin: 50px;
     display: flex;
-    // width: 75%;
     align-items: center;
 
     @media (320px <= width <= 480px) {
@@ -51,17 +39,7 @@ $font-size-base--default: 1.2em;
     display: flex;
     flex-direction: column;
     width: 100%;
-    // padding-left: 50px;
-    // margin-left: 50px;
     margin: 40px 80px;
-    // p {
-    //   text-align: justify;
-    // }
-    // .ceoTitle {
-    //   margin-top: 5px;
-    //   margin-bottom: 5px;
-    //   font-weight: bold;
-    // }
 
     @media (320px <= width <= 480px) {
       padding: 0px 40px;
@@ -69,7 +47,6 @@ $font-size-base--default: 1.2em;
   }
 
   //TODO: Reuse this animation on different pages
-  //TODO: Cleanup unused code
   @keyframes fadeInRight {
     0% {
       transform: translateX(-1%);
@@ -81,20 +58,63 @@ $font-size-base--default: 1.2em;
     }
   }
 
-  .main-title {
-    color: #35294d;
-    font-weight: bolder;
-    font-size: $font-size-main-title;
+  // .main-title {
+  //   color: $color--alt;
+  //   font-weight: bold;
+  //   font-size: 3.5em;
+  //   text-align: center;
 
-    animation: 1.5s fadeInRight;
+  //   animation: 1.5s fadeInRight;
+
+  //   @media (320px <= width <= 480px) {
+  //     font-size: 2.8em;
+  //     margin-bottom: 16px;
+  //   }
+  // }
+
+  .main-logo {
+    width: 40%;
+    max-width: 600px;
+    height: auto; // Maintain aspect ratio
+    display: block;
+    margin: 0 auto 24px; // Center align with margin below
+
+    @media (320px <= width <= 480px) {
+      max-width: 90%;
+      margin-bottom: 16px;
+    }
+
+    @media (width > 1280px) {
+      max-width: 800px;
+    }
+  }
+
+  .about-section {
+    margin: 0 auto;
+
+    @media (320px <= width <= 480px) {
+      padding: 1rem;
+      max-width: 90%;
+    }
   }
 
   .home-text--default {
     font-size: $font-size-base--default;
-    line-height: 1.6;
-    font-weight: 500;
+    line-height: 1.8;
+    font-weight: 400;
+    color: $color--default;
+    margin-bottom: 1rem;
+    text-align: justify;
 
     animation: 1.5s fadeInRight;
+
+    &.headline {
+      font-size: 1.8em; // Larger font size for the headline
+      font-weight: 600; // Emphasize the headline
+      color: $color--alt; // Alternate color for distinction
+      margin-bottom: 1.5rem; // Add spacing after headline
+      text-align: center; // Center align the headline
+    }
   }
 
   .message__text {
@@ -125,7 +145,6 @@ $font-size-base--default: 1.2em;
     }
 
     blockquote:before {
-      // font-family: Georgia, serif;
       position: absolute;
       font-size: 6em;
       line-height: 1;
@@ -138,9 +157,7 @@ $font-size-base--default: 1.2em;
       }
     }
     blockquote:after {
-      //font-family: Georgia, serif;
       position: absolute;
-      /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
       float: right;
       font-size: 6em;
       line-height: 1;
@@ -166,57 +183,123 @@ $font-size-base--default: 1.2em;
 
   .welcome__img {
     width: 40%;
-    // border-radius: 30px;
     object-fit: fill;
     height: 100%;
-    // aspect-ratio: 5/4;
 
     @media (320px <= width <= 480px) {
       width: 100%;
     }
   }
 
-  .cta-section {
+  .info-section {
     text-align: center;
-    margin: 40px auto;
-    padding: 20px 40px;
-    background: #f3e8ff; // A complementary soft background color
-    border: 1px solid #e0ccff; // Matching with the gradient colors
+    padding: 2rem;
+    background: #f9f9f9;
     border-radius: 8px;
+    max-width: 600px;
+    margin: 32px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    .cta-title {
-      color: #35294d; // Consistent with the main-title color
-      font-weight: bold;
-      font-size: 2em;
-      margin-bottom: 10px;
-      animation: 1.5s fadeInRight;
+    @media (320px <= width <= 480px) {
+      padding: 1.5rem;
+      margin-top: $margin-top-page--mobile;
     }
 
-    .cta-description {
-      color: #555555;
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      animation: 1.5s fadeInRight;
+    .info-stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+
+      @media (320px <= width <= 480px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
 
-    .cta-button {
-      background-color: #6a1b9a; // A standout purple button
-      color: white;
-      padding: 12px 24px;
-      font-size: 1em;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+    .stat {
+      flex: 1;
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
 
       &:hover {
-        background-color: #4a0072; // A darker purple for hover
-        transform: scale(1.05); // Slight scale effect
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
       }
 
-      &:active {
-        transform: scale(0.95); // Press effect
+      h2 {
+        font-size: 2rem;
+        color: $color--default;
+        margin: 0;
+
+        @media (320px <= width <= 480px) {
+          font-size: 1.8rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+        margin: 0.5rem 0 0;
+
+        @media (320px <= width <= 480px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .info-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      @media (320px <= width <= 480px) {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+
+    .btn-primary {
+      background: $color--default;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: $font-size-base--default;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color--alt;
+        font-weight: bold;
+      }
+
+      @media (320px <= width <= 480px) {
+        padding: 0.65rem 1.2rem;
+        font-size: 1em;
+      }
+    }
+
+    .btn-secondary {
+      background: #f0f0f0;
+      color: #333;
+      padding: 0.75rem 1.5rem;
+      font-size: $font-size-base--default;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: #ddd;
+        font-weight: bold;
+      }
+
+      @media (320px <= width <= 480px) {
+        padding: 0.65rem 1.2rem;
+        font-size: 1em;
       }
     }
   }

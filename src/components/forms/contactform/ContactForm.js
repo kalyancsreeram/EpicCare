@@ -23,10 +23,6 @@ const ContactForm = () => {
     shouldShow: false,
   });
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
   const override = {
     display: "block",
     margin: "0 auto",

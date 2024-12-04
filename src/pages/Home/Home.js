@@ -5,13 +5,39 @@ import CardsComponent from "../../components/dashboardpage/cardscomp/CardsCompon
 import "./Home.scss";
 import { Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 function Home() {
   const navigate = useNavigate();
 
+  useScrollToTop();
+
   return (
     <div className="home-page">
       <Welcome />
+      <div className="cta-section">
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          className="cta-title"
+        >
+          Order Services
+        </Typography>
+        <p className="welcome__cta-description">
+          Need help with EEG, EMU, or Epilepsy Care? Fill out our service order
+          form, and our team will reach out to confirm your request. Experience
+          seamless support tailored to your needs.
+        </p>
+        <Button
+          variant="contained"
+          size="large"
+          className="cta-button"
+          onClick={() => navigate("/order")}
+        >
+          Order
+        </Button>
+      </div>
       <CardsComponent />
       <Testimonials />
       <div className="question-section">

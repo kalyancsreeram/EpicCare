@@ -303,9 +303,16 @@ const resourcesPageData = {
 
 const homePageData = {
   companyInfo: {
+    headline:
+      "Professional support and resources for individuals affected by seizures",
+
     intro: `SeizureCare is a pioneering American healthcare company focused on transforming remote epilepsy care. With a dedicated team of esteemed American board-certified epileptologists, SeizureCare has built a reputation of trust and respect among healthcare professionals worldwide. Our mission is to deliver exceptional patient care and life-changing outcomes for those living with epilepsy, leveraging the latest advancements in medical technology.`,
-    serviceCommitment: `By providing innovative, accessible, and secure epilepsy care services, SeizureCare redefines what it means to access epilepsy treatment. We understand the profound impact of privacy and confidentiality in patient care, and we uphold these standards rigorously. Our core values—integrity, empathy, quality, innovation, and refinement—shape every aspect of our approach, from patient interactions to care delivery.`,
-    futureVision: `At SeizureCare, we're not just addressing epilepsy care; we're setting new standards for the patient experience, fostering success, and reshaping the future of epilepsy treatment for patients across the globe.`,
+
+    mission: `To provide professional support and innovative resources to individuals affected by seizures, ensuring they receive exceptional care and life-changing outcomes, all while leveraging the latest advancements in medical technology.`,
+
+    values: `Integrity, empathy, quality, innovation, and refinement shape every aspect of our approach. These values guide us in redefining epilepsy treatment and ensuring privacy and confidentiality in patient care.`,
+
+    vision: `We aim to set new standards in epilepsy care by reshaping the patient experience, fostering success, and transforming the future of epilepsy treatment for patients worldwide.`,
   },
 
   articlesData: [
