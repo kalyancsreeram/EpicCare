@@ -304,7 +304,7 @@ const resourcesPageData = {
 const homePageData = {
   companyInfo: {
     headline:
-      "Professional support and resources for individuals affected by seizures",
+      "Empowering Lives through SeizureCare",
 
     intro: `SeizureCare is a pioneering American healthcare company focused on transforming remote epilepsy care. With a dedicated team of esteemed American board-certified epileptologists, SeizureCare has built a reputation of trust and respect among healthcare professionals worldwide. Our mission is to deliver exceptional patient care and life-changing outcomes for those living with epilepsy, leveraging the latest advancements in medical technology.`,
 

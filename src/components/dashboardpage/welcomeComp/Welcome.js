@@ -3,7 +3,7 @@ import "./Welcome.scss";
 // import Typography from "@mui/material/Typography";
 
 import WelcomeImg from "../../../assets/images/welcomeImg.jpg";
-import CompanyLogo from "../../../assets/images/CompanyLogoEdited.png";
+import CompanyLogo from "../../../assets/images/CompanyLogoEdited-in.png";
 
 import { homePageData } from "../../../data/data";
 import { useNavigate } from "react-router-dom";

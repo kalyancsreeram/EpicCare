@@ -80,9 +80,10 @@ $color--alt: #4a0072;
     margin: 0 auto 24px; // Center align with margin below
 
     @media (320px <= width <= 480px) {
-      width: 100%; // Take 80% of the screen width
-      max-width: 100%; // Remove maximum limit on mobile
-      margin-bottom: 0; // Reduce bottom margin
+      // width: 100%; // Take 80% of the screen width
+      // max-width: 100%; // Remove maximum limit on mobile
+      // margin-bottom: 0; // Reduce bottom margin
+      display: none;
     }
 
     @media (width > 1280px) {
@@ -194,7 +195,7 @@ $color--alt: #4a0072;
     background: #f9f9f9;
     border-radius: 8px;
     max-width: 600px;
-    margin: 0;
+    margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     @media (320px <= width <= 480px) {
