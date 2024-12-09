@@ -49,16 +49,15 @@ function Home() {
           component="div"
           className="advanced-care-title"
         >
-          Advanced Epilepsy Care Through Cloud Technology
+          Experience the future of Epilepsy Care
         </Typography>
         <Typography
           variant="subtitle1"
           component="div"
           className="advanced-care-description"
         >
-          Connecting patients with US board-certified epileptologists through
-          our innovative cloud-based platform for comprehensive EEG analysis and
-          expert care.
+          Join the growing network of leading healthcare providers leveraging
+          SeizureCare's advanced epilepsy solutions.
         </Typography>
         <div className="button-group">
           <Button
@@ -67,15 +66,15 @@ function Home() {
             className="primary-button"
             onClick={() => navigate("/contact")}
           >
-            Schedule a Consultation
+            Schedule a Demo
           </Button>
           <Button
             variant="outlined"
             size="large"
             className="secondary-button"
-            onClick={() => navigate("/services")}
+            onClick={() => navigate("/contact")}
           >
-            View Our Services
+            View Sample Reports
           </Button>
         </div>
       </div>
