@@ -6,6 +6,7 @@ import "./Home.scss";
 import { Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import useScrollToTop from "../../hooks/useScrollToTop";
+import WhyChooseSection from "../../components/whychoosesection/WhyChooseSection";
 
 function Home() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ function Home() {
   return (
     <div className="home-page">
       <Welcome />
-      <div className="cta-section">
+      {/* <div className="cta-section">
         <Typography
           gutterBottom
           variant="h4"
@@ -37,9 +38,47 @@ function Home() {
         >
           Order
         </Button>
-      </div>
+      </div> */}
+      <WhyChooseSection />
       <CardsComponent />
       <Testimonials />
+      <div className="advanced-care-section">
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          className="advanced-care-title"
+        >
+          Advanced Epilepsy Care Through Cloud Technology
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          component="div"
+          className="advanced-care-description"
+        >
+          Connecting patients with US board-certified epileptologists through
+          our innovative cloud-based platform for comprehensive EEG analysis and
+          expert care.
+        </Typography>
+        <div className="button-group">
+          <Button
+            variant="contained"
+            size="large"
+            className="primary-button"
+            onClick={() => navigate("/contact")}
+          >
+            Schedule a Consultation
+          </Button>
+          <Button
+            variant="outlined"
+            size="large"
+            className="secondary-button"
+            onClick={() => navigate("/services")}
+          >
+            View Our Services
+          </Button>
+        </div>
+      </div>
       <div className="question-section">
         <div className="question-section__content">
           <Typography
