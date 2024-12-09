@@ -1,0 +1,85 @@
+$color--default: #6a1b9a;
+$color--alt: #4a0072;
+
+.why-choose-section {
+  text-align: center;
+  padding: 2rem;
+  //   background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 1200px;
+
+  .why-choose-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color--default;
+    margin-bottom: 0.5rem;
+  }
+
+  .why-choose-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    width: calc(33.333% - 1rem); // Three cards per row
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      width: calc(50% - 1rem); // Two cards per row
+    }
+
+    @media (max-width: 480px) {
+      width: 100%; // One card per row
+    }
+
+    .service-icon {
+      font-size: 2rem; // Larger icon for prominence
+      color: $color--default; // Matches the theme
+    }
+
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color--alt;
+      text-align: center; // Center align the title
+    }
+
+    .service-description {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+
+        &:before {
+          content: "\2022";
+          color: $color--default;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}

@@ -303,8 +303,7 @@ const resourcesPageData = {
 
 const homePageData = {
   companyInfo: {
-    headline:
-      "Empowering Lives through SeizureCare",
+    headline: "Empowering Lives through SeizureCare",
 
     intro: `SeizureCare is a pioneering healthcare company focused on transforming remote epilepsy care. With a dedicated team of esteemed American board-certified epileptologists, SeizureCare has built a reputation of trust and respect among healthcare professionals worldwide. Our mission is to deliver exceptional patient care and life-changing outcomes for those living with epilepsy, leveraging the latest advancements in medical technology.`,
 
@@ -314,6 +313,36 @@ const homePageData = {
 
     vision: `We aim to set new standards in epilepsy care by reshaping the patient experience, fostering success, and transforming the future of epilepsy treatment for patients worldwide.`,
   },
+
+  services: [
+    {
+      title: "Effortless EEG Test Requests",
+      description: [
+        "24/7 test ordering via platform or WhatsApp",
+        "On-location technician service",
+        "Instant cloud uploads",
+        "Real-time expert reporting",
+      ],
+    },
+    {
+      title: "Comprehensive Cloud Solutions",
+      description: [
+        "Centralized secure platform",
+        "Instant report delivery",
+        "Multi-stakeholder collaboration",
+        "User-friendly interface",
+      ],
+    },
+    {
+      title: "Advanced Video and EEG Monitoring",
+      description: [
+        "Real-time video EEG",
+        "Dual-camera capabilities",
+        "Industry-best guidelines",
+        "Actionable physician insights",
+      ],
+    },
+  ],
 
   articlesData: [
     // {

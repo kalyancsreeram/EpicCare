@@ -54,6 +54,59 @@ $padding-page: 40px;
   }
 }
 
+.advanced-care-section {
+  text-align: center;
+  // padding: 2rem;
+  // background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 3rem auto 5rem auto;
+  max-width: 900px;
+  padding: 0 $padding-page 0 $padding-page;
+
+  .advanced-care-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: $color--default;
+    margin-bottom: 1rem;
+  }
+
+  .advanced-care-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    @media (320px <= width <= 480px) {
+      flex-direction: column;
+    }
+
+    .primary-button {
+      background-color: $color--default;
+      color: white;
+      &:hover {
+        background-color: darken($color--default, 10%);
+        transform: scale(1.05);
+      }
+    }
+
+    .secondary-button {
+      border-color: $color--default;
+      color: $color--default;
+      &:hover {
+        background-color: $color--default;
+        color: white;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
 .question-section {
   display: flex;
   flex-direction: column;
