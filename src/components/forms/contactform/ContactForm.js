@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ContactForm.scss";
 import { countriesList } from "../../../data/countries";
-import axios from "axios";
-import { CONSTANTS } from "../../../Constants";
-
-import FadeLoader from "react-spinners/FadeLoader";
 import { Alert, Button, MenuItem, TextField, Typography } from "@mui/material";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -30,46 +27,44 @@ const ContactForm = () => {
   };
 
   const handleChange = (event) => {
-    console.log(event.target.value);
     const { name, value } = event.target;
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = (event) => {
-    document.getElementById("contactForm").disabled = true;
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    setLoading(true);
     event.preventDefault();
-    axios
-      .post(`${CONSTANTS.serverURL}/contactus`, { ...formData })
-      .then(() => {
-        setFormData({
-          firstname: "",
-          lastname: "",
-          phone: "",
-          country: "India",
-          email: "",
-          message: "",
-        });
-        setLoading(false);
+    setLoading(true);
 
-        const successAlert = {
-          type: "success",
-          shouldShow: true,
-        };
-        setAlert(successAlert);
+    const formElement = document.getElementById("contactForm");
+    const formData = new FormData(formElement);
+    console.log(process.env.REACT_APP_FORMSUBMIT_URL);
+
+    formData.append("submission_id", Date.now().toString());
+
+    fetch(process.env.REACT_APP_FORM_SUBMIT_URL, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          setAlert({ type: "success", shouldShow: true });
+          setFormData({
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            country: "India",
+            message: "",
+          });
+        } else {
+          setAlert({ type: "error", shouldShow: true });
+          throw new Error("Failed to submit form");
+        }
       })
       .catch(() => {
-        setLoading(false);
-
-        const errorAlert = {
-          type: "error",
-          shouldShow: true,
-        };
-        setAlert(errorAlert);
+        setAlert({ type: "error", shouldShow: true });
       })
       .finally(() => {
-        document.getElementById("contactForm").disabled = false;
         setLoading(false);
       });
   };
@@ -82,6 +77,8 @@ const ContactForm = () => {
     transform: "translate(-50%, -50%)",
     zIndex: "999",
   };
+
+  const uniqueId = Date.now();
 
   return (
     <div className="contact-page-container">
@@ -123,10 +120,12 @@ const ContactForm = () => {
           >
             {alert.type === "success"
               ? `Your form has been submitted successfully! Thank you for your input.`
-              : `There was an error submitting your form. Please check your information and try again.`}
+              : `There was an error submitting your form. Please try again.`}
           </Alert>
         )}
         <form onSubmit={handleSubmit} id="contactForm" className="contact-form">
+          <input type="hidden" name="submission_id" value={uniqueId} />
+          <input type="hidden" name="_captcha" value="false" />
           <TextField
             type="text"
             id="fName"

@@ -95,6 +95,7 @@ $background-gradient: linear-gradient(0.25turn, #e0ccff, #ece0ff, #d4b8ff);
 
 .alert-message {
   width: $width-form-item--default;
+  margin-bottom: 20px;
 
   @media (320px <= width <= 480px) {
     width: $width-form-item--mobile;

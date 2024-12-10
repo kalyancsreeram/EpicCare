@@ -4,7 +4,6 @@ import "./OrderFormEEG.scss";
 import axios from "axios";
 import UploadComp from "../UploadComp";
 import FadeLoader from "react-spinners/FadeLoader";
-import { CONSTANTS } from "../../../../Constants";
 import { Alert, Button, MenuItem, TextField } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers";
@@ -35,8 +34,6 @@ function OrderFormEEG() {
 
   const [additionalFields, setAdditionalFields] = useState([]);
   const [count, setCount] = useState(0);
-
-  const [age, setAge] = useState(0);
 
   const [alert, setAlert] = useState({
     type: "success",
@@ -91,70 +88,102 @@ function OrderFormEEG() {
     }));
   };
 
-  const calculate_age = ({ $D, $M, $y, $d }) => {
-    const today = new Date();
+  // const calculate_age = ({ $D, $M, $y, $d }) => {
+  //   const birthDate = new Date($y, $M, $D);
+  //   // console.log($y, $M, $D);
+  //   // let age_now = today.getFullYear() - birthDate.getFullYear();
+  //   // const m = today.getMonth() - birthDate.getMonth();
+  //   // if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+  //   //   age_now--;
+  //   // }
+
+  //   const options = { day: "2-digit", month: "short", year: "numeric" };
+  //   birthDate.toLocaleDateString("en-GB", options).replace(",", "");
+
+  //   setFormData((prevState) => ({
+  //     ...prevState,
+  //     dob: `${$d} - [Age: ${age_now}]`,
+  //   }));
+  // };
+
+  const setDate = ({ $D, $M, $y }) => {
     const birthDate = new Date($y, $M, $D);
-    let age_now = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age_now--;
-    }
+    const options = {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    };
+    const formattedDate = birthDate
+      .toLocaleDateString("en-GB", options)
+      .replace(",", "");
+
     setFormData((prevState) => ({
       ...prevState,
-      dob: `${$d} - [Age: ${age_now}]`,
+      dob: formattedDate,
     }));
-    return age_now;
   };
 
   const submitHandler = (event) => {
-    document.getElementById("patientFormEEG").disabled = true;
+    // document.getElementById("patientFormEEG").disabled = true;
     setLoading(true);
     event.preventDefault();
     patientFormSubmit();
   };
 
   const patientFormSubmit = () => {
-    axios
-      .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
+    const formElement = document.getElementById("patientFormEEG");
+    const formData = new FormData(formElement);
+    console.log(process.env.REACT_APP_FORMSUBMIT_URL);
+
+    formData.append("submission_id", Date.now().toString());
+
+    fetch(process.env.REACT_APP_FORM_SUBMIT_URL, {
+      method: "POST",
+      body: formData,
+    })
       .then((response) => {
-        setFormData({
-          firstname: "",
-          lastname: "",
-          dob: "",
-          gender: "",
-          addressLine1: "",
-          addressLine2: "",
-          city: "",
-          state: "",
-          zip: "",
-          phone: "",
-          email: "",
-          uid: "",
-          eegType: "",
-          advisingDoctor: "",
-          timeslot: "",
-          message: "",
-        });
-        // alert("Form submitted successfully!!");
-        const successAlert = {
-          type: "success",
-          shouldShow: true,
-        };
-        setAlert(successAlert);
+        if (response.ok) {
+          setFormData({
+            firstname: "",
+            lastname: "",
+            dob: "",
+            gender: "",
+            addressLine1: "",
+            addressLine2: "",
+            city: "",
+            state: "",
+            zip: "",
+            phone: "",
+            email: "",
+            uid: "",
+            eegType: "",
+            advisingDoctor: "",
+            timeslot: "",
+            message: "",
+          });
+          const successAlert = {
+            type: "success",
+            shouldShow: true,
+          };
+          setAlert(successAlert);
+        } else {
+          setAlert({ type: "error", shouldShow: true });
+          throw new Error("Failed to submit form");
+        }
       })
       .catch(() => {
-        const errorAlert = {
+        setAlert({
           type: "error",
           shouldShow: true,
-        };
-        setAlert(errorAlert);
-        // alert("Something went wrong. Try again later");
+        });
       })
       .finally(() => {
         document.getElementById("patientFormEEG").disabled = false;
         setLoading(false);
       });
   };
+
+  const uniqueId = Date.now();
 
   return (
     <div className="eeg-form-container">
@@ -189,6 +218,8 @@ function OrderFormEEG() {
         id="patientFormEEG"
         onSubmit={submitHandler}
       >
+        <input type="hidden" name="submission_id" value={uniqueId} />
+        <input type="hidden" name="_captcha" value="false" />
         <TextField
           className="order-form-eeg__input"
           type="text"
@@ -242,8 +273,8 @@ function OrderFormEEG() {
               <DatePicker
                 className="order-form-eeg__input"
                 name="serviceend"
-                onChange={(value) => {
-                  value && setAge(calculate_age(value));
+                onChange={({ $D, $M, $y }) => {
+                  setDate({ $D, $M, $y });
                 }}
               />
             </DemoItem>

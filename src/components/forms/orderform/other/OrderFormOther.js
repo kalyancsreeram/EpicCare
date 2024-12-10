@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { CONSTANTS } from "../../../../Constants";
 import "./OrderFormOther.scss";
 import { Alert, Button, TextField } from "@mui/material";
 import FadeLoader from "react-spinners/FadeLoader";
@@ -44,20 +43,36 @@ function OrderFormOther(props) {
   };
 
   const handleSubmit = (event) => {
-    document.getElementById("patientFormOther").disabled = true;
+    // document.getElementById("patientFormOther").disabled = true;
     setLoading(true);
     event.preventDefault();
-    axios
-      .post(`${CONSTANTS.serverURL}/patientform`, { ...formData })
+
+    const formElement = document.getElementById("patientFormOther");
+    const formData = new FormData(formElement);
+    console.log(process.env.REACT_APP_FORMSUBMIT_URL);
+
+    fetch(process.env.REACT_APP_FORM_SUBMIT_URL, {
+      method: "POST",
+      body: formData,
+    })
       .then((response) => {
-        console.log(response);
-        setFormData({ drName: "", hospital: "", contactInfo: "", message: "" });
-        const successAlert = {
-          type: "success",
-          shouldShow: true,
-        };
-        setAlert(successAlert);
-        // alert("Data has been successfully sent...");
+        if (response.ok) {
+          setFormData({
+            drName: "",
+            hospital: "",
+            contactInfo: "",
+            message: "",
+          });
+          const successAlert = {
+            type: "success",
+            shouldShow: true,
+          };
+          setAlert(successAlert);
+          // alert("Data has been successfully sent...");
+        } else {
+          setAlert({ type: "error", shouldShow: true });
+          throw new Error("Failed to submit form");
+        }
       })
       .catch(() => {
         const errorAlert = {
@@ -74,6 +89,8 @@ function OrderFormOther(props) {
   };
 
   const { drName, hospital, contactInfo, message } = formData;
+
+  const uniqueId = Date.now();
 
   return (
     <>
@@ -107,6 +124,8 @@ function OrderFormOther(props) {
         id="patientFormOther"
         className="order-form-other"
       >
+        <input type="hidden" name="submission_id" value={uniqueId} />
+        <input type="hidden" name="_captcha" value="false" />
         <TextField
           className="order-form-other__input"
           type="text"
