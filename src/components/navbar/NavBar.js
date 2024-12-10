@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.scss";
-import CompanyLogo from "../../assets/images/CompanyLogoEdited.png";
 import { IconButton, Menu } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
 import { TbExternalLink } from "react-icons/tb";
 
+import CompanyLogoDefault from "../../assets/images/CompanyLogoEdited.png";
+import CompanyLogoIndia from "../../assets/images/CompanyLogoEdited-in.png";
+
 import { navLinks } from "../../data/data";
+import useDomainBasedImage from "../../hooks/useDomainBasedImage";
 
 function NavBar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -24,6 +27,13 @@ function NavBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const imageMap = {
+    "seizurecarenet.com": CompanyLogoDefault,
+    "seizurecarenet.in": CompanyLogoIndia,
+  };
+
+  const companyLogo = useDomainBasedImage(imageMap, CompanyLogoDefault);
 
   const getNavLinks = () => {
     return navLinks.map((item, index) => {
@@ -54,7 +64,7 @@ function NavBar() {
         className="home-btn"
         alt="SeizureCare"
         style={{ width: "200px", cursor: "pointer", left: "10" }}
-        src={CompanyLogo}
+        src={companyLogo}
         onClick={homeBtnHandler}
       />
       <div className="nav-links-desktop">{getNavLinks()}</div>

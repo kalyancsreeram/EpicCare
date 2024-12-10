@@ -2,21 +2,30 @@ import React from "react";
 import "./Welcome.scss";
 // import Typography from "@mui/material/Typography";
 
-import WelcomeImg from "../../../assets/images/welcomeImg.jpg";
-import CompanyLogo from "../../../assets/images/CompanyLogoEdited-in.png";
-
+import useDomainBasedImage from "../../../hooks/useDomainBasedImage";
 import { homePageData } from "../../../data/data";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+
+import WelcomeImgDefault from "../../../assets/images/welcomeImg.jpg";
+import WelcomeImgIndia from "../../../assets/images/welcomeImg-in.jpg";
+import CompanyLogo from "../../../assets/images/CompanyLogoEdited-in.png";
 
 function Welcome() {
   const { companyInfo } = homePageData;
   const navigate = useNavigate();
 
+  const imageMap = {
+    "seizurecarenet.com": WelcomeImgDefault,
+    "seizurecarenet.in": WelcomeImgIndia,
+  };
+
+  const welcomeImg = useDomainBasedImage(imageMap, WelcomeImgDefault);
+
   return (
     <div className="welcome-container">
       <div className="welcome-content">
-        <img className="welcome__img" alt="SeizureCare" src={WelcomeImg} />
+        <img className="welcome__img" alt="SeizureCare" src={welcomeImg} />
         <div className="welcome__message">
           {/* <Typography
             className="main-title"
