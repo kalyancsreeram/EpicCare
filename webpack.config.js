@@ -1,7 +1,11 @@
 const path = require("path");
+const webpack = require("webpack");
+const dotenv = require("dotenv");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+dotenv.config();
 
 module.exports = {
   entry: "./src/index.js",
@@ -59,6 +63,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       favicon: "./public/favicon.ico",
+    }),
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(process.env),
     }),
   ],
 };
